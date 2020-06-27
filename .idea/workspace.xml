@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/fixed.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/scripts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -152,10 +163,21 @@
       <option name="presentableId" value="Default" />
       <updated>1593165785115</updated>
       <workItem from="1593165787050" duration="254000" />
+      <workItem from="1593228692161" duration="9997000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="604" y="348" key="NewPhpFileDialog" timestamp="1593233692595">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
+    <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593228907824">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593228907824" />
   </component>
 </project>
