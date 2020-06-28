@@ -19,7 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="" />
+    <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/event/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/frontend/environment_banner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/frontend/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/frontend/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/frontend/scripts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_28_013951_create_table_types.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_28_015436_create_table_news_type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_28_021045_create_table_events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_28_021145_create_table_news.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +193,9 @@
       <workItem from="1593165787050" duration="254000" />
       <workItem from="1593228692161" duration="9997000" />
       <workItem from="1593273656919" duration="526000" />
-      <workItem from="1593307809504" duration="3106000" />
+      <workItem from="1593307809504" duration="7642000" />
+      <workItem from="1593339494179" duration="2000" />
+      <workItem from="1593349858568" duration="3575000" />
     </task>
     <servers />
   </component>
@@ -189,12 +212,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="348" key="NewPhpFileDialog" timestamp="1593233692595">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593353119982">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593353119982" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
+    <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593228907824">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
