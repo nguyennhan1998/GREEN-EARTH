@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="thêm giao diện frontend">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logos.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/frontend/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/frontend/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,11 +154,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fashion_bigboss" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Xampp\htdocs\GREEN-EARTH\public\images" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>

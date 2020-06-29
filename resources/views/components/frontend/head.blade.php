@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>EcoEnvironment Home Page</title>
+    <title>Green Earth</title>
 
     <link href="{{asset("css/bootstrap.css")}}" rel="stylesheet">
     <link href="{{asset("css/font-awesome.css")}}" rel="stylesheet">
