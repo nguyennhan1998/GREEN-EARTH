@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3">
                 <a href="index-2.html" class="environment-logo">
-                    <img src="images/logo.png" alt="">
+                    <img src="images/logos.png" alt="">
                 </a>
             </div>
             <div class="col-md-9">
