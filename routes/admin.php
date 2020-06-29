@@ -11,3 +11,8 @@ Route::delete("/delete-event","AdminController@deleteEvent");
 Route::put("/update-event","AdminController@updateEvent");
 Route::post("/save-event","AdminController@saveEvent");
 
+
+
+
+
+

@@ -20,10 +20,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="thêm giao diện frontend">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/commonmark" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/commonmark" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/commonmark.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/bin/commonmark" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/bin/commonmark" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/src/CommonMarkConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/src/CommonMarkConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/src/Cursor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/src/Cursor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/src/Util/UrlEncoder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/src/Util/UrlEncoder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/myclabs/deep-copy/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/myclabs/deep-copy/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/myclabs/deep-copy/doc/clone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/myclabs/deep-copy/doc/deep-clone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/myclabs/deep-copy/doc/deep-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/myclabs/deep-copy/doc/graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/.github/workflows/push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/.github/workflows/push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/.scrutinizer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/easy-coding-standard.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/phive.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/phpcs.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/phpmd.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/phpstan.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/psalm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/AggregatedType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/AggregatedType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/Compound.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/Compound.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/Intersection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/src/Types/Intersection.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,9 +72,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,18 +198,6 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -194,6 +221,7 @@
       <workItem from="1593339494179" duration="2000" />
       <workItem from="1593349858568" duration="3944000" />
       <workItem from="1593394870391" duration="950000" />
+      <workItem from="1593399908641" duration="5347000" />
     </task>
     <task id="LOCAL-00001" summary="thêm giao diện frontend">
       <created>1593353779554</created>
@@ -206,30 +234,33 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="thêm giao diện frontend" />
     <option name="LAST_COMMIT_MESSAGE" value="thêm giao diện frontend" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593353119982">
+    <state x="144" y="79" key="MergeDialog" timestamp="1593397179100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593353119982" />
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593397179100" />
+    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593405588683">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593405588683" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593353781712">
@@ -240,9 +271,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593228907824" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593355069225">
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593397185639">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593355069225" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593397185639" />
+    <state x="100" y="100" width="1240" height="700" key="dock-window-1" timestamp="1593399506802">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="dock-window-1/0.0.1440.900@0.0.1440.900" timestamp="1593399506802" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593401630542">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593401630542" />
   </component>
 </project>
