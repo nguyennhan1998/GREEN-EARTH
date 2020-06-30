@@ -10,7 +10,7 @@
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li class="nav-item active  ">
-                <a class="nav-link" href="./dashboard.html">
+                <a class="nav-link" href="{{"admin"}}">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
@@ -19,6 +19,18 @@
                 <a class="nav-link" href="./user.html">
                     <i class="material-icons">person</i>
                     <p>User Profile</p>
+                </a>
+            </li>
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-category"}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Category</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{"new-category"}}">
+                    <i class="material-icons">library_books</i>
+                    <p>New Category</p>
                 </a>
             </li>
             <li class="nav-item ">
