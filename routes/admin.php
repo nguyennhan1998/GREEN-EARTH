@@ -16,3 +16,10 @@ Route::post("/save-event","AdminController@saveEvent");
 
 
 
+//Route categories
+Route::get("/new-category","CategoryController@newCategory");
+Route::get("/list-category","CategoryController@listCategory");
+Route::get("/edit-category","CategoryController@editCategory");
+Route::delete("/delete-category","CategoryController@deleteCategory");
+Route::put("/update-category","CategoryController@updateCategory");
+Route::post("/save-category","CategoryController@saveCategory");
