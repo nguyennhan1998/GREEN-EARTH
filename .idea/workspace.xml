@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="taoj database">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organize/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organize/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/organize/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GREEN-EARTH.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GREEN-EARTH.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +152,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../T1907M_laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -208,6 +203,7 @@
       <workItem from="1593489186877" duration="265000" />
       <workItem from="1593525853490" duration="1138000" />
       <workItem from="1593567788586" duration="7838000" />
+      <workItem from="1593612018391" duration="4320000" />
     </task>
     <task id="LOCAL-00001" summary="thêm giao diện frontend">
       <created>1593353779554</created>

@@ -26,11 +26,11 @@
                     <ul class="environment-strip-info">
                         <li>
                             <i class="fa fa-map-marker"></i>
-                            Salford road, east London, UK
+                            8 , Ton That Thuyet
                         </li>
                         <li>
                             <i class="fa fa-phone"></i>
-                            +123 45 678
+                           0969696969
                         </li>
                         <li>
                             <i class="fa fa-envelope-o"></i>
@@ -45,7 +45,8 @@
 
                     <nav class="navbar navbar-default">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1" aria-expanded="true">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -55,163 +56,40 @@
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="index-2.html">Home</a>
+                                    <a href="{{"home"}}">Home</a>
+
+                                </li>
+                                <li>
+                                    <a href="{{"about"}}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{{"event"}}">EVENTS</a>
                                     <ul class="environment-dropdown-menu">
+
                                         <li>
-                                            <a href="index-2.html">Home One</a>
-                                        </li>
-                                        <li>
-                                            <a href="index-two.html">Home Two</a>
-                                        </li>
-                                        <li>
-                                            <a href="demo2/index.html">Demo 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="rtl/index.html">Rtl Demo</a>
+                                            <a href="{{"event-detail"}}">Event Detail</a>
+
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">EVENTS</a>
+                                    <a href="{{"projects"}}">Projects</a>
                                     <ul class="environment-dropdown-menu">
+
+
                                         <li>
-                                            <a href="event-grid.html">Event Grid</a>
-                                        </li>
-                                        <li>
-                                            <a href="event-grid-wls.html">Event Grid W/L/S</a>
-                                        </li>
-                                        <li>
-                                            <a href="event-grid-wrs.html">Event Grid W/R/S</a>
-                                        </li>
-                                        <li>
-                                            <a href="event-list.html">Event List</a>
-                                        </li>
-                                        <li>
-                                            <a href="event-detail.html">Event Detail</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="event-detail-wls.html">Event Detail W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="event-detail.html">Event Detail W/R/S</a>
-                                                </li>
-                                            </ul>
+                                            <a href="{{"projects-detail"}}">Project Detail</a>
+
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="project-grid.html">Projects</a>
+                                    <a href="{{"blog"}}">Blogs</a>
                                     <ul class="environment-dropdown-menu">
-                                        <li>
-                                            <a href="project-grid.html">Project Grid</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="project-grid.html">Project Grid W/O/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-grid-wls.html">Project Grid W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-grid-wrs.html">Project Grid W/R/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="project-list.html">Project List</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="project-list.html">Project List W/R/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-list-wls.html">Project List W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-list-wos.html">Project List W/O/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="project-medium.html">Project Medium</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="project-medium.html">Project Medium W/O/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-medium-wls.html">Project Medium W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-medium-wrs.html">Project Medium W/R/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="project-detail.html">Project Detail</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="project-detail.html">Project Detail W/R/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-detail-wls.html">Project Detail W/L/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="team-grid.html">Blogs</a>
-                                    <ul class="environment-dropdown-menu">
-                                        <li>
-                                            <a href="blog-grid.html">Blog Grid</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="blog-grid.html">Blog Grid W/O/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-grid-wls.html">Blog Grid W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-grid-wrs.html">Blog Grid W/R/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog-large.html">Blog Large</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="blog-large.html">Blog Large W/R/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-large-wls.html">Blog Large W/L/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog-medium.html">Blog Medium</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="blog-medium.html">Blog Medium W/O/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-medium-wls.html">Blog Medium W/L/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-medium-wrs.html">Blog Medium W/R/S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+
                                         <li>
                                             <a href="blog-detail.html">Blog Detail</a>
-                                            <ul class="environment-dropdown-menu">
-                                                <li>
-                                                    <a href="blog-detail.html">Blog Detail W/R/S</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-detail-wls.html">Blog Detail W/L/S</a>
-                                                </li>
-                                            </ul>
+
                                         </li>
                                     </ul>
                                 </li>
@@ -219,145 +97,17 @@
                                     <a href="#">Pages</a>
                                     <ul class="environment-megamenu">
                                         <li class="row">
-                                            <div class="col-md-3">
-                                                <h4>Link 1</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="cause-grid.html">Cause Grid</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="cause-grid-wrls.html">Cause Grid W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="cause-grid-wrs.html">Cause Grid W/R/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="cause-list-wos.html">Cause list</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="cause-list.html">Cause list W/R/S</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <h4>Link 2</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="cause-list-wls.html">Cause list W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="404.html">404 Error Page</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="search-result.html">Search Result</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="gallery.html">Gallery</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="gallery-wls.html">Gallery W/L/S</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <h4>Link 3</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="gallery-wrs.html">Gallery W/R/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="team-grid.html">Team Grid W/O/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="team-grid-wls.html">Team Grid W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="team-grid-wrs.html">Team Grid W/R/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="team-detail.html">Team Detail</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <h4>Link 4</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="team-detail-wls.html">Team Detail W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="donation-page.html">Donation Page</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="about-us.html">About Us</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-list.html">Shop</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="contact-us.html">Contact Us</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="environment-megamenu-li">
                                     <a href="#">shop</a>
                                     <ul class="environment-megamenu">
-                                        <li class="row">
-                                            <div class="col-md-3">
-                                                <h4>Links 1</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="shop-grid.html">Shop Grid</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-grid-wls.html">Shop Grid W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-grid-wrs.html">Shop Grid W/R/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-list.html">Shop List</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-list-wls.html">Shop List W/L/S</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <h4>Links 1</h4>
-                                                <ul class="environment-megalist">
-                                                    <li>
-                                                        <a href="shop-list.html">Shop List W/R/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-grid.html">Shop Grid W/O/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-detail.html">Shop Detail</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-detail-wls.html">Shop Detail W/L/S</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="shop-detail.html">Shop Detail W/R/S</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h4>Artists text</h4>
-                                                <div class="environment-mega-text">
-                                                    <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love.</p>
-                                                    <p>If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart.</p>
-                                                </div>
-                                            </div>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">contact</a>
+                                    <a href="{{"contact"}}">contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -424,7 +174,9 @@
                                 <i class="fa fa-search"></i>
                             </a>
                             <form class="environment-search-popup">
-                                <input value="Search Key Word" onblur="if(this.value == '') { this.value ='Search Key Word'; }" onfocus="if(this.value =='Search Key Word') { this.value = ''; }" type="text">
+                                <input value="Search Key Word"
+                                       onblur="if(this.value == '') { this.value ='Search Key Word'; }"
+                                       onfocus="if(this.value =='Search Key Word') { this.value = ''; }" type="text">
                                 <input value="" type="submit">
                                 <i class="fa fa-search"></i>
                             </form>
