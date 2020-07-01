@@ -5,8 +5,7 @@
       Tip 2: you can also add an image using data-image tag
   -->
     <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            Creative Tim
-        </a></div>
+Admin GreenEarth        </a></div>
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li class="nav-item active  ">
@@ -31,6 +30,19 @@
                 <a class="nav-link" href="{{"new-category"}}">
                     <i class="material-icons">library_books</i>
                     <p>New Category</p>
+                </a>
+            </li>
+{{--            Organizations--}}
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-organize"}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Organize</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{"new-organize"}}">
+                    <i class="material-icons">library_books</i>
+                    <p>New Organize</p>
                 </a>
             </li>
             <li class="nav-item ">
