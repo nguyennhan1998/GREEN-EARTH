@@ -23,3 +23,17 @@ Route::get("/edit-category/{id}","CategoryController@editCategory");
 Route::delete("/delete-category/{id}","CategoryController@deleteCategory");
 Route::put("/update-category/{id}","CategoryController@updateCategory");
 Route::post("/save-category","CategoryController@saveCategory");
+
+
+
+
+
+
+
+//Route Organize
+Route::get("/new-organize","OrganizeController@newOrganize");
+Route::get("/list-organize","OrganizeController@listOrganize");
+Route::get("/edit-organize/{id}","OrganizeController@editOrganize");
+Route::post("/save-organize","OrganizeController@saveOrganize");
+Route::put("/update-organize/{id}","OrganizeController@updateOrganize");
+Route::delete("/delete-organize/{id}","OrganizeController@deleteOrganize");
