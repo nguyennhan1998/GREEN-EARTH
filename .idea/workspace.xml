@@ -22,12 +22,11 @@
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="taoj database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +35,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,6 +189,8 @@
       <workItem from="1593481100172" duration="812000" />
       <workItem from="1593487932004" duration="359000" />
       <workItem from="1593489633332" duration="10945000" />
+      <workItem from="1593489186877" duration="265000" />
+      <workItem from="1593525853490" duration="1138000" />
     </task>
     <task id="LOCAL-00001" summary="thêm giao diện frontend">
       <created>1593353779554</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593471599650</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="taoj database">
+      <created>1593489294810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593489294810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,18 +224,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="thêm giao diện frontend" />
     <MESSAGE value="tạo database" />
-    <option name="LAST_COMMIT_MESSAGE" value="tạo database" />
+    <MESSAGE value="taoj database" />
+    <option name="LAST_COMMIT_MESSAGE" value="taoj database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1593506300349">
@@ -242,17 +248,17 @@
     <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593353119982" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593471602601">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593489305114">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593471602601" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593489305114" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593228907824">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593228907824" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593482372427">
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593528862141">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593482372427" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593528862141" />
   </component>
 </project>
