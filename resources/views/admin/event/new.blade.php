@@ -12,13 +12,15 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
-                                    <script>
-                                        CKEDITOR.replace( 'summary-ckeditor', {
-                                            filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
-                                            filebrowserUploadMethod: 'form'
-                                        });
-                                        </script>
+                                <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+                                <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+
+                                <script>
+                                    CKEDITOR.replace( 'summary-ckeditor', {
+                                        filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+                                        filebrowserUploadMethod: 'form'
+                                    });
+                                </script>
                                 </table>
                             </div>
                         </div>
