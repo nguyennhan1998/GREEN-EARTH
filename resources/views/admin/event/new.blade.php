@@ -11,17 +11,20 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-hover">
-                                <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-                                <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                            <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+                            <script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
+                            <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
 
-                                <script>
-                                    CKEDITOR.replace( 'summary-ckeditor', {
-                                        filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
-                                        filebrowserUploadMethod: 'form'
-                                    });
-                                </script>
-                                </table>
+                            @include('ckfinder::setup')
+                            
+                            <script>
+                                CKFinder.setupCKEditor();
+                                CKEDITOR.replace( 'summary-ckeditor', {
+                                    filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+                                    filebrowserUploadMethod: 'form'
+                                });    
+                            </script>  
                             </div>
                         </div>
                     </div>

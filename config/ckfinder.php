@@ -25,7 +25,6 @@ $config = array();
 $config['loadRoutes'] = true;
 
 $config['authentication'] = '\App\Http\Middleware\CustomCKFinderAuth';
-
 /*============================ License Key ============================================*/
 // http://docs.cksource.com/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
@@ -82,8 +81,8 @@ $config['backends']['laravel_logs'] = array(
 $config['backends']['default'] = array(
     'name'         => 'default',
     'adapter'      => 'local',
-    'baseUrl'      => config('app.url').'/userfiles/',
-    'root'         => public_path('/userfiles/'),
+    'baseUrl'      => config('app.url').'/storage/uploads/',
+    'root'         => public_path('/storage/uploads/'),
     'chmodFiles'   => 0777,
     'chmodFolders' => 0755,
     'filesystemEncoding' => 'UTF-8'

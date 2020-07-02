@@ -22,10 +22,11 @@ class CKEditorController extends Controller
             $filenametostore = $filename.'_'.time().'.'.$extension;
       
             //Upload File
-            $request->file('upload')->storeAs('public/uploads', $filenametostore);
+            $request->file('upload')->storeAs('public/uploads/files', $filenametostore);
  
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('storage/uploads/'.$filenametostore);
+            $url = asset('storage/uploads/files/'.$filenametostore);
+
             $msg = 'Image successfully uploaded';
             $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
              
