@@ -17,11 +17,12 @@ class CreateTableUsers extends Migration
             $table->id();
             $table->string("name");
             $table->string("email");
-            $table->string("phone");
-            $table->string("address");
-            $table->string("client_id");
-            $table->string("secret_id");
-            $table->string("role");
+//            $table->string("phone");
+//            $table->string("address");
+//            $table->string("client_id");
+//            $table->string("secret_id");
+            $table->string("password");
+//            $table->integer("role");
             $table->timestamps();
         });
     }

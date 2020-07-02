@@ -37,3 +37,6 @@ Route::get("/edit-organize/{id}","OrganizeController@editOrganize");
 Route::post("/save-organize","OrganizeController@saveOrganize");
 Route::put("/update-organize/{id}","OrganizeController@updateOrganize");
 Route::delete("/delete-organize/{id}","OrganizeController@deleteOrganize");
+Route::get('/test', function () {
+    return view('test');
+});
