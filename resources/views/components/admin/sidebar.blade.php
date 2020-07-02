@@ -45,6 +45,14 @@ Admin GreenEarth        </a></div>
                     <p>New Organize</p>
                 </a>
             </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="{{"new-event"}}">
+                    <i class="material-icons">library_books</i>
+                    <p>New event</p>
+                </a>
+            </li>
+
             <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                     <i class="material-icons">content_paste</i>
