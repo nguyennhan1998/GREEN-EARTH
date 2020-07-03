@@ -23,6 +23,7 @@ class EventController extends Controller
         return view("admin.event.new",
         [
             "organizations"=>$organizations,
+//
         ]);
     }
 
