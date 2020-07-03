@@ -32,11 +32,11 @@
                                                 <td>{{$category->__get("title")}}</td>
                                                 <td>{{$category->__get("url")}}</td>
                                                 <td>
-                                                    <a href="{{url("edit-category/{$category->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                                    <a href="{{url("admin/edit-category/{$category->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                         <div class="ripple-container"></div></a>
                                                 </td>
                                                 <td>
-                                                    <form action="{{url("delete-category/{$category->__get("id")}")}}" method="post">
+                                                    <form action="{{url("admin/delete-category/{$category->__get("id")}")}}" method="post">
                                                         @method("DELETE")
                                                         @csrf
                                                         <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>

@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("update-category/{$category->__get("id")}")}}" method="post">
+                                    <form role="form" action="{{url("/admin/update-category/{$category->__get("id")}")}}" method="post">
                                         @method("PUT")
                                         @csrf
                                         <div class="form-group">

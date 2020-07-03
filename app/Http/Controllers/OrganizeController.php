@@ -48,7 +48,7 @@ class OrganizeController extends Controller
             return redirect()->back();
 
         }
-        return redirect()->to("/list-organize");
+        return redirect()->to("admin/list-organize");
 
     }
 
@@ -57,7 +57,7 @@ class OrganizeController extends Controller
         return view("admin.organize.edit",
             ["organize"=>$organize]);
     }
-    public  function updateOrganize($id, Request $request){
+    public function updateOrganize($id, Request $request){
         $organize = Organize::findOrFail($id);
         $request->validate([
             "name" => "required|string|min:2|unique:organizations,name,{$id}",
@@ -81,7 +81,7 @@ class OrganizeController extends Controller
         }catch (\Exception $exception){
             return redirect()->back();
         }
-        return redirect()->to("list-organize");
+        return redirect()->to("admin/list-organize");
     }
     public function deleteOrganize($id){
         $organize = Organize::findOrFail($id);
@@ -89,6 +89,6 @@ class OrganizeController extends Controller
             $organize->delete();
         }catch (\Exception $exception){
         }
-        return redirect()->to("list-organize");
+        return redirect()->to("admin/list-organize");
     }
 }

@@ -37,3 +37,13 @@ Route::delete("/delete-organize/{id}","OrganizeController@deleteOrganize");
 Route::get('/test', function () {
     return view('test');
 });
+
+
+
+//Route product
+Route::get("/new-product","ProductController@newProduct");
+Route::get("/list-product","ProductController@listProduct");
+Route::get("/edit-product/{id}","ProductController@editProduct");
+Route::post("/save-product","ProductController@saveProduct");
+Route::put("/update-product/{id}","ProductController@updateProduct");
+Route::delete("/delete-product/{id}","ProductController@deleteProduct");
