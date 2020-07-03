@@ -57,7 +57,7 @@ class OrganizeController extends Controller
         return view("admin.organize.edit",
             ["organize"=>$organize]);
     }
-    public  function updateOrganize($id, Request $request){
+    public function updateOrganize($id, Request $request){
         $organize = Organize::findOrFail($id);
         $request->validate([
             "name" => "required|string|min:2|unique:organizations,name,{$id}",
