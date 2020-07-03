@@ -52,7 +52,7 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return $exception->getMessage();
         }
-//        return redirect()->to("/admin/list-event");
+       return redirect()->to("/admin/list-event");
     }
 
     public function editEvent($id){

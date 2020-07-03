@@ -25,7 +25,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label id="content">Content</label>
-                                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                                            <textarea class="form-control" id="summary-ckeditor" name="content"></textarea>
                                             @include('ckfinder::setup')
 
                                             <script>
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
-                                            <input type="text" name="total_money" class="form-control" placeholder="...">
+                                            <input type="number" name="total_money" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>
