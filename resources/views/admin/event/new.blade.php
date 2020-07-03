@@ -16,8 +16,7 @@
                             <script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
                             <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
 
-                            @include('ckfinder::setup')
-                            
+                            @include('ckfinder::setup')      
                             <script>
                                 CKFinder.setupCKEditor();
                                 CKEDITOR.replace( 'summary-ckeditor', {
