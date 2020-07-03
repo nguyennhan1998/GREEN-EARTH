@@ -15,6 +15,7 @@ class Event extends Model
       "end_at",
       "total_money",
       "organization_id"
+
 //
   ];
 }
