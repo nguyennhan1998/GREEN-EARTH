@@ -8,7 +8,13 @@ class Event extends Model
 {
   protected $table="events";
   protected $fillable=[
-      "event_name",
+      "title",
+      "description",
+      "content",
+      "start_at",
+      "end_at",
+      "total_money",
+      "organization_id"
 //
   ];
 }
