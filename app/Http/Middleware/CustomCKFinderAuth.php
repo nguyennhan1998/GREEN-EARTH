@@ -15,16 +15,20 @@ class CustomCKFinderAuth
      */
     public function handle($request, Closure $next)
     {
-        if (\Auth::check()) {
-            config(['ckfinder.authentication' => function() use ($request) {
-                return true;
-            }] );
-        } else {
-            config(['ckfinder.authentication' => function() use ($request) {
-                return false;
-            }] );
-        }
-
+//        if (\Auth::check()) {
+//            config(['ckfinder.authentication' => function() use ($request) {
+//                return true;
+//            }] );
+//        } else {
+//            config(['ckfinder.authentication' => function() use ($request) {
+//                return false;
+//            }] );
+//        }
+//
+//        return $next($request);
+        config(['ckfinder.authentication' => function() {
+            return true;
+        }]);
         return $next($request);
     }
 }

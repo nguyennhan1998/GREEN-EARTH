@@ -124,3 +124,7 @@
 .bd-docs.dark-edition {
   background-color: #fff;
 }
+
+#content{
+  position: relative;
+}

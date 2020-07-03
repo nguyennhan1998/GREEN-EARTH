@@ -24,10 +24,12 @@
                                             <input type="text" name="description" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
-                                            <label>Content</label>
-                                            <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-                                            <textarea class="form-control" id="summary-ckeditor" name="content"></textarea>
+                                            <label id="content">Content</label>
+                                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                                            @include('ckfinder::setup')
+
                                             <script>
+                                                CKFinder.setupCKEditor();
                                                 CKEDITOR.replace( 'summary-ckeditor', {
                                                     filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
                                                     filebrowserUploadMethod: 'form'
@@ -44,7 +46,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
-                                            <input type="number" name="total_money" class="form-control" placeholder="...">
+                                            <input type="text" name="total_money" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>
