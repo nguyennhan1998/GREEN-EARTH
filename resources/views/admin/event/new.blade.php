@@ -12,15 +12,50 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-                                <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
-
-                                <script>
-                                    CKEDITOR.replace( 'summary-ckeditor', {
-                                        filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
-                                        filebrowserUploadMethod: 'form'
-                                    });
-                                </script>
+                                    <form role="form" action="{{url("/save-event")}}" method="post">
+                                        @method("POST")
+                                        @csrf
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input type="text" name="title" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <input type="text" name="description" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Content</label>
+                                            <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+                                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                                            <script>
+                                                CKEDITOR.replace( 'summary-ckeditor', {
+                                                    filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+                                                    filebrowserUploadMethod: 'form'
+                                                });
+                                            </script>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Start At</label>
+                                            <input  type="text" name="start_at" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>End At</label>
+                                            <input type="text" name="end_at" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Total Money</label>
+                                            <input type="number" name="total_money" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Organization Id</label>
+                                            <select type="text" name="organization_id" class="form-control">
+                                                @foreach($organizations as $organize)
+                                                    <option value="{{$organize->__get("id")}}">{{$organize->__get("title")}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-round">Submit</button>
+                                    </form>
                                 </table>
                             </div>
                         </div>
