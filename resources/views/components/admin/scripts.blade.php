@@ -1,21 +1,23 @@
 <!--   Core JS Files   -->
-<script src="{{asset("../assets/js/core/jquery.min.js")}}"></script>
-<script src="{{asset("../assets/js/core/popper.min.js")}}"></script>
-<script src="{{asset("../assets/js/core/bootstrap-material-design.min.js")}}"></script>
+<script src="{{asset("js/core/jquery.min.js")}}"></script>
+<script src="{{asset("js/core/popper.min.js")}}"></script>
+<script src="{{asset("js/core/bootstrap-material-design.min.js")}}"></script>
 <script src="{{asset("https://unpkg.com/default-passive-events")}}"></script>
-<script src="{{asset("../assets/js/plugins/perfect-scrollbar.jquery.min.js")}}"></script>
+<script src="{{asset("js/plugins/perfect-scrollbar.jquery.min.js")}}"></script>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="{{asset("https://buttons.github.io/buttons.js")}}"></script>
 <!--  Google Maps Plugin    -->
 <script src="{{asset("https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE")}}"></script>
 <!-- Chartist JS -->
-<script src="{{asset("../assets/js/plugins/chartist.min.js")}}"></script>
+<script src="{{asset("js/plugins/chartist.min.js")}}"></script>
 <!--  Notifications Plugin    -->
-<script src="{{asset("../assets/js/plugins/bootstrap-notify.js")}}"></script>
+<script src="{{asset("js/plugins/bootstrap-notify.js")}}"></script>
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="{{asset("../assets/js/material-dashboard.js?v=2.1.0")}}"></script>
+<script src="{{asset("js/material-dashboard.js?v=2.1.0")}}"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src={{asset("../assets/demo/demo.js")}}></script>
+<script src={{asset("demo/demo.js")}}></script>
+
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 <script>
     $(document).ready(function() {
         $().ready(function() {

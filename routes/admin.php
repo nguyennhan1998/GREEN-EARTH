@@ -25,7 +25,8 @@ Route::put("/update-category/{id}","CategoryController@updateCategory");
 Route::post("/save-category","CategoryController@saveCategory");
 
 
-
+// Router events
+Route::get("/new-event","EventController@newEvent");
 
 
 
