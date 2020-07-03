@@ -19,6 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CustomCKFinderAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CustomCKFinderAuth.php" afterDir="false" />
@@ -630,11 +631,13 @@
         </entry>
       </map>
     </option>
+
     <option name="OPEN_TABS">
       <set>
         <option value="1" />
       </set>
     </option>
+
   </component>
   <component name="VcsManagerConfiguration">
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
@@ -642,7 +645,8 @@
     <MESSAGE value="tạo database" />
     <MESSAGE value="taoj database" />
     <MESSAGE value="them sửa xoá products" />
-    <option name="LAST_COMMIT_MESSAGE" value="them sửa xoá products" />
+    <MESSAGE value="them chuc nang middleware phan quyen nguoi dung" />
+    <option name="LAST_COMMIT_MESSAGE" value="them chuc nang middleware phan quyen nguoi dung" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593701514493">
@@ -656,23 +660,25 @@
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1593783857287">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1593783857287" />
     <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1593785069755">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593785069755" />
     <state x="144" y="79" key="MergeDialog" timestamp="1593744725308">
+
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725308" />
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593749971477" />
     <state x="359" y="218" key="MultipleFileMergeDialog" timestamp="1593744725343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="359" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725343" />
-    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593698778718">
+    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593748896646">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593698778718" />
+    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593748896646" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
     <state x="253" y="125" key="SettingsEditor" timestamp="1593788059166">
@@ -683,9 +689,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="433" y="0" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744657655" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593744625992">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593747622815">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593744625992" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593788172125">
       <screen x="0" y="0" width="1536" height="834" />
@@ -699,5 +706,6 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="461" y="274" width="663" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1593785152342" />
+
   </component>
 </project>

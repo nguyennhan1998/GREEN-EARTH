@@ -50,14 +50,18 @@ class EventController extends Controller
             ]);
 
         }catch (\Exception $exception){
-            return redirect()->back();
+            return $exception->getMessage();
         }
-        return redirect()->to("/list-event");
+//        return redirect()->to("/admin/list-event");
     }
 
     public function editEvent($id){
         $event = Event::findOrFail($id);
-        return view("admin.event.edit",["event"=>$event]);
+        $organizations=Organize::all();
+        return view("admin.event.edit",[
+            "event"=>$event,
+            "organizations"=>$organizations,
+            ]);
     }
 
     public function updateEvent($id,Request $request){
@@ -84,7 +88,7 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return redirect()->back();
         }
-        return redirect()->to("/list-event");
+        return redirect()->to("/admin/list-event");
     }
 
     public function deleteEvent($id){
@@ -94,6 +98,6 @@ class EventController extends Controller
         }catch (\Exception $exception){
 
         }
-        return redirect()->to("/list-event");
+        return redirect()->to("admin/list-event");
     }
 }

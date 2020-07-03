@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/save-event")}}" method="post">
+                                    <form role="form" action="{{url("/admin/save-event")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
@@ -27,6 +27,7 @@
                                             <label id="content">Content</label>
                                             <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
                                             @include('ckfinder::setup')
+
                                             <script>
                                                 CKFinder.setupCKEditor();
                                                 CKEDITOR.replace( 'summary-ckeditor', {
