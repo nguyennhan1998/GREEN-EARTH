@@ -19,14 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="taoj database">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" afterDir="false" />
+    <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="them sửa xoá products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrganizeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrganizeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/organize/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/organize/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/organize/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/organize/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/organize/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/organize/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +173,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -259,7 +267,8 @@
     <MESSAGE value="thêm giao diện frontend" />
     <MESSAGE value="tạo database" />
     <MESSAGE value="taoj database" />
-    <option name="LAST_COMMIT_MESSAGE" value="taoj database" />
+    <MESSAGE value="them sửa xoá products" />
+    <option name="LAST_COMMIT_MESSAGE" value="them sửa xoá products" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593701514493">
@@ -274,31 +283,35 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593506300349" />
-    <state x="144" y="79" key="MergeDialog" timestamp="1593653396492">
+    <state x="144" y="79" key="MergeDialog" timestamp="1593744725308">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593653396492" />
-    <state x="359" y="218" key="MultipleFileMergeDialog" timestamp="1593653396531">
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725308" />
+    <state x="359" y="218" key="MultipleFileMergeDialog" timestamp="1593744725343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="359" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593653396531" />
+    <state x="359" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725343" />
     <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593698778718">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593698778718" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593653288295">
+    <state x="433" y="0" key="VCS.ChangeListViewerDialog" timestamp="1593744657655">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593653288295" />
+    <state x="433" y="0" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744657655" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593744625992">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593744625992" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593228907824">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593228907824" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593596986849">
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593744728879">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593596986849" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593744728879" />
   </component>
 </project>

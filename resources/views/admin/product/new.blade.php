@@ -6,13 +6,14 @@
                 <div class="col-md-12">
                     <div class="card card-plain">
                         <div class="card-header card-header-primary">
+                            php artisan make:middleware Admin
                             <h4 class="card-title mt-0">New Product </h4>
                             <p class="card-category"> ------------------------------------------------- </p>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("/save-product")}}" method="post">
+                                    <form role="form" action="{{url("admin/save-product")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">

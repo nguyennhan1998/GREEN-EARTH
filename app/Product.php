@@ -12,8 +12,5 @@ class Product extends Model
         "name",
         "price",
         "event_id",
-//
-//
-//
     ];
 }

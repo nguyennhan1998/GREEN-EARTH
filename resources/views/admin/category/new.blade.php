@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("/save-category")}}" method="post">
+                                    <form role="form" action="{{url("admin/save-category")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
