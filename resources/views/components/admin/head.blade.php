@@ -16,6 +16,11 @@
     <link href="{{asset("../css/material-dashboard.css?v=2.1.0" )}}" rel="stylesheet"/>
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{asset("../demo/demo.css")}}" rel="stylesheet"/>
+
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    {{--ckfinder--}}
+    <script type="text/javascript" src="{{asset("/js/ckfinder/ckfinder.js")}}"></script>
+    <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
 </head>
 
 

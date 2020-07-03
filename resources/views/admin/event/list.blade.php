@@ -32,17 +32,21 @@
                                         <td>{{$event->__get("id")}}</td>
                                         <td>{{$event->__get("title")}}</td>
                                         <td>{{$event->__get("description")}}</td>
-                                        <td>{{$event->__get("content")}}</td>
+                                        <td>@php
+                                                $doc = new DOMDocument();
+                                                $doc->loadHTML($event->__get("content"));
+                                             echo $doc->saveHTML();
+                                            @endphp</td>
                                         <td>{{$event->__get("start_at")}}</td>
                                         <td>{{$event->__get("end_at")}}</td>
                                         <td>{{$event->__get("total_money")}}</td>
                                         <td>{{$event->__get("organization_id")}}</td>
                                         <td>
-                                            <a href="{{url("edit-event/{$event->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                            <a href="{{url("admin/edit-event/{$event->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                 <div class="ripple-container"></div></a>
                                         </td>
                                         <td>
-                                            <form action="{{url("delete-event/{$event->__get("id")}")}}" method="post">
+                                            <form action="{{url("admin/delete-event/{$event->__get("id")}")}}" method="post">
                                                 @method("DELETE")
                                                 @csrf
                                                 <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>

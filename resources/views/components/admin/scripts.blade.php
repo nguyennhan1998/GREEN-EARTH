@@ -17,7 +17,6 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src={{asset("demo/demo.js")}}></script>
 
-<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 <script>
     $(document).ready(function() {
         $().ready(function() {

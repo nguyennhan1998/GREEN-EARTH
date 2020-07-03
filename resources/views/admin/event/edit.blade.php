@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("update-event/{$event->__get("id")}")}}" method="post">
+                                    <form role="form" action="{{url("admin/update-event/{$event->__get("id")}")}}" method="post">
                                         @method("PUT")
                                         @csrf
                                         <div class="form-group">
@@ -24,11 +24,11 @@
                                             <input  value="{{$event->__get("description")}}" type="text" name="description" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
-                                            <label>Content</label>
-                                            <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+                                            <label id="content">Content</label>
                                             <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
-
+                                            @include('ckfinder::setup')
                                             <script>
+                                                CKFinder.setupCKEditor();
                                                 CKEDITOR.replace( 'summary-ckeditor', {
                                                     filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
                                                     filebrowserUploadMethod: 'form'

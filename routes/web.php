@@ -15,3 +15,9 @@ Route::group(["middleware"=>["admin","auth"],"prefix"=>"admin"],function (){
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
+
+Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
+    ->name('ckfinder_connector');
+
+Route::any('/ckfinder/browser', '\CKSource\CKFinderBridge\Controller\CKFinderController@browserAction')
+    ->name('ckfinder_browser');
