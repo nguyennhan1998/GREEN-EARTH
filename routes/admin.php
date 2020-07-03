@@ -3,14 +3,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 Route::get("/admin","AdminController@admin");
-//Route event
-Route::get("/new-event","AdminController@newEvent");
-Route::get("/list-event","Admincontroller@listEvent");
-Route::get("/edit-event/{id}","AdminController@editEvent");
-Route::delete("/delete-event/{id}","AdminController@deleteEvent");
-Route::put("/update-event/{id}","AdminController@updateEvent");
-Route::post("/save-event","AdminController@saveEvent");
-
 
 
 
@@ -27,7 +19,11 @@ Route::post("/save-category","CategoryController@saveCategory");
 
 // Router events
 Route::get("/new-event","EventController@newEvent");
-
+Route::get("/list-event","EventController@listEvent");
+Route::get("/edit-event/{id}","EventController@editEvent");
+Route::delete("/delete-event/{id}","EventController@deleteEvent");
+Route::put("/update-event/{id}","EventController@updateEvent");
+Route::post("/save-event","EventController@saveEvent");
 
 
 
