@@ -19,6 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="them chuc nang middleware phan quyen nguoi dung">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/article/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/article/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/article/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" afterDir="false" />
     <list default="true" id="6a424c46-a963-4fe7-b25b-b72c668f9e27" name="Default Changelist" comment="database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" afterDir="false" />
@@ -251,13 +262,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="thêm giao diện frontend" />
     <MESSAGE value="tạo database" />
     <MESSAGE value="taoj database" />
     <MESSAGE value="them sửa xoá products" />
-    <option name="LAST_COMMIT_MESSAGE" value="them sửa xoá products" />
+    <MESSAGE value="them chuc nang middleware phan quyen nguoi dung" />
+    <option name="LAST_COMMIT_MESSAGE" value="them chuc nang middleware phan quyen nguoi dung" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593701514493">
@@ -272,35 +285,35 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593506300349" />
-    <state x="144" y="79" key="MergeDialog" timestamp="1593744725308">
+    <state x="144" y="79" key="MergeDialog" timestamp="1593749971477">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725308" />
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593749971477" />
     <state x="359" y="218" key="MultipleFileMergeDialog" timestamp="1593744725343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="359" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725343" />
-    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593698778718">
+    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593748896646">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593698778718" />
+    <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593748896646" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
     <state x="433" y="0" key="VCS.ChangeListViewerDialog" timestamp="1593744657655">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="433" y="0" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744657655" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593744625992">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1593747622815">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593744625992" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593747622815" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593228907824">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593228907824" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593744728879">
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593750256159">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593744728879" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593750256159" />
   </component>
 </project>

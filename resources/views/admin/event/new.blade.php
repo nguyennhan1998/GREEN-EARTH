@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/save-event")}}" method="post">
+                                    <form role="form" action="{{url("/admin/save-event")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
@@ -26,7 +26,7 @@
                                         <div class="form-group">
                                             <label>Content</label>
                                             <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-                                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                                            <textarea class="form-control" id="summary-ckeditor" name="content"></textarea>
                                             <script>
                                                 CKEDITOR.replace( 'summary-ckeditor', {
                                                     filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
