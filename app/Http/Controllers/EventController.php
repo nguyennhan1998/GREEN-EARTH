@@ -67,7 +67,7 @@ class EventController extends Controller
     public function updateEvent($id,Request $request){
         $event = Event::findOrFail($id);
         $request->validate([
-            "title"=>"required,title,{$id}",
+            "title"=>"required",
             "description"=>"required",
             "content"=>"required",
             "start_at"=>"required",

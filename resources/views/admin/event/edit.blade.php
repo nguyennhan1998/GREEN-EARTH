@@ -25,7 +25,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label id="content">Content</label>
-                                            <textarea class="form-control" id="summary-ckeditor" name="summary-ckeditor"></textarea>
+                                            <textarea class="form-control" id="summary-ckeditor" name="content"></textarea>
                                             @include('ckfinder::setup')
                                             <script>
                                                 CKFinder.setupCKEditor();
