@@ -13,34 +13,44 @@
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead class="">
-                                    <tr><th>
-                                            ID
-                                        </th>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                        </th>
-                                        <th></th>
-                                    </tr></thead>
-                                    <tbody>
                                     <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>
-                                            Dakota Rice
-                                        </td>
-                                        <td>
-                                            <a href="#pablo" class="btn btn-primary btn-round">Edit
-                                                <div class="ripple-container"></div></a>
-                                        </td>
-                                        <td>
-                                            <a href="#pablo" class="btn btn-primary btn-round">Delete
-                                                <div class="ripple-container"></div></a>
-                                        </td>
-
+                                        <th>ID</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Content</th>
+                                        <th>Category ID</th>
+                                        <th>Event ID</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($articles as $article)
+                                        <tr>
+                                            <td>{{$article->__get("id")}}</td>
+                                            <td>{{$article->__get("title")}}</td>
+                                            <td>{{$article->__get("description")}}</td>
+                                            <td>@php
+                                                    $doc = new DOMDocument();
+                                                    $doc->loadHTML($article->__get("content"));
+                                                 echo $doc->saveHTML();
+                                                @endphp</td>
+                                            <td>{{$article->__get("category_id")}}</td>
+                                            <td>{{$article->__get("event_id")}}</td>
+                                            <td>
+                                                <a href="{{url("admin/edit-article/{$article->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                                    <div class="ripple-container"></div></a>
+                                            </td>
+                                            <td>
+                                                <form action="{{url("admin/delete-article/{$article->__get("id")}")}}" method="post">
+                                                    @method("DELETE")
+                                                    @csrf
+                                                    <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>
+                                                </form>
+                                            </td>
+
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

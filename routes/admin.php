@@ -44,3 +44,13 @@ Route::get("/edit-product/{id}","ProductController@editProduct");
 Route::post("/save-product","ProductController@saveProduct");
 Route::put("/update-product/{id}","ProductController@updateProduct");
 Route::delete("/delete-product/{id}","ProductController@deleteProduct");
+
+
+
+//Route article
+Route::get("/new-article","ArticleController@newArticle");
+Route::get("/list-article","ArticleController@listArticle");
+Route::get("/edit-article/{id}","ArticleController@editArticle");
+Route::post("/save-article","ArticleController@saveArticle");
+Route::put("/update-article/{id}","ArticleController@updateArticle");
+Route::delete("/delete-article/{id}","ArticleController@deleteArticle");
