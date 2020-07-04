@@ -6,28 +6,24 @@
                 <div class="col-md-12">
                     <div class="card card-plain">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title mt-0">New Product </h4>
+                            <h4 class="card-title mt-0">NEW IMAGE </h4>
                             <p class="card-category"> ------------------------------------------------- </p>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/save-product")}}" method="post">
+                                    <form role="form" action="{{url("/admin/save-image")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
-                                            <label>Name Product</label>
-                                            <input type="text"  name="name" class="form-control" placeholder="Name...">
+                                            <label for="exampleInputFile">Url Image</label>
+                                            <input type="text" name="name" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
-                                            <label>Price</label>
-                                            <input type="number"  name="price" class="form-control" placeholder="price...">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Event ID</label>
-                                            <select name="event_id" class="form-control">
-                                                @foreach($events as $event)
-                                                    <option value="{{$event->__get("id")}}">{{$event->__get("event_id")}}</option>
+                                            <label>Article Id</label>
+                                            <select name="article_id" class="form-control">
+                                                @foreach($articles as $article)
+                                                    <option value="{{$article->__get("id")}}">{{$article->__get("title")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>

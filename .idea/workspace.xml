@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="article">
-      <change beforePath="$PROJECT_DIR$/routes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593876008971</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="article">
+      <created>1593876411665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593876411665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,9 +311,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="article" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="489" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593859096362">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="435" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593877426297">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="435" y="171" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593877426297" />
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1593701514493" />
     <state x="489" y="196" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1593859096362" />
     <state x="372" y="93" key="#phpunit.xml" timestamp="1593598493815">
@@ -324,9 +337,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="359" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744725343" />
-    <state x="566" y="376" key="NewPhpFileDialog" timestamp="1593748896646">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="537" y="304" key="NewPhpFileDialog" timestamp="1593876576836">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="537" y="304" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1593876576836" />
     <state x="566" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593748896646" />
     <state x="604" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593233692595" />
     <state x="566" y="356" key="NewPhpFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1593312146826" />
@@ -338,10 +352,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="433" y="0" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1593744657655" />
-    <state x="304" y="143" key="Vcs.Push.Dialog.v2" timestamp="1593876012170">
+    <state x="304" y="143" key="Vcs.Push.Dialog.v2" timestamp="1593876414096">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="304" y="143" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593876012170" />
+    <state x="304" y="143" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593876414096" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593744625992" />
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593860865707">
       <screen x="0" y="0" width="1536" height="834" />
@@ -356,5 +370,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="461" y="274" width="663" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1593785152342" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1593879561864">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593879561864" />
   </component>
 </project>

@@ -26,6 +26,18 @@ Route::put("/update-event/{id}","EventController@updateEvent");
 Route::post("/save-event","EventController@saveEvent");
 
 
+//Route image
+
+
+Route::get("/new-image","ImageController@newImage");
+Route::get("/list-image","ImageController@listImage");
+Route::get("/edit-image/{id}","ImageController@editImage");
+Route::delete("/delete-image/{id}","ImageController@deleteImage");
+Route::put("/update-image/{id}","ImageController@updateImage");
+Route::post("/save-image","ImageController@saveImage");
+
+
+
 
 //Route Organize
 Route::get("/new-organize","OrganizeController@newOrganize");
