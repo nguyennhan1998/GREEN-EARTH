@@ -17,7 +17,7 @@ Admin GreenEarth        </a></div>
             <li class="nav-item ">
                 <a class="nav-link" href="./user.html">
                     <i class="material-icons">person</i>
-                    <p>User Profile</p>
+                    <p>{{Auth::user()->__get("name")}}</p>
                 </a>
             </li>
             <li class="nav-item  ">
@@ -45,24 +45,28 @@ Admin GreenEarth        </a></div>
                     <p>New Organize</p>
                 </a>
             </li>
-
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-event"}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Event</p>
+                </a>
+            </li>
             <li class="nav-item ">
                 <a class="nav-link" href="{{"new-event"}}">
                     <i class="material-icons">library_books</i>
-                    <p>New event</p>
+                    <p>New Event</p>
                 </a>
             </li>
-
-            <li class="nav-item ">
-                <a class="nav-link" href="./tables.html">
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-article"}}">
                     <i class="material-icons">content_paste</i>
-                    <p>Table List</p>
+                    <p>List Article</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./typography.html">
+                <a class="nav-link" href="{{"new-article"}}">
                     <i class="material-icons">library_books</i>
-                    <p>Typography</p>
+                    <p>New Article</p>
                 </a>
             </li>
             <li class="nav-item ">
