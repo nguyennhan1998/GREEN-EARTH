@@ -39,7 +39,7 @@ class ArticleController extends Controller
 
         ]);
         try {
-            Event::create([
+            Article::create([
                 "title"=>$request->get("title"),
                 "description"=>$request->get("description"),
                 "content"=>$request->get("content"),
@@ -51,7 +51,8 @@ class ArticleController extends Controller
         }catch (\Exception $exception){
 //            return $exception->getMessage();
         }
-        return redirect()->to("/admin/list-article");
+//        dd($article);
+       return redirect()->to("/admin/list-article");
     }
 
     public function editArticle($id){

@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Category Id</label>
-                                            <select type="text" name="category_id" class="form-control">
+                                            <select name="category_id" class="form-control">
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->__get("id")}}">{{$category->__get("title")}}</option>
                                                 @endforeach
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Event Id</label>
-                                            <select type="text" name="event_id" class="form-control">
+                                            <select name="event_id" class="form-control">
                                                 @foreach($events as $event)
                                                     <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
                                                 @endforeach
