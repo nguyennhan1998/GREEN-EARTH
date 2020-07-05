@@ -69,6 +69,30 @@ Admin GreenEarth        </a></div>
                     <p>New Article</p>
                 </a>
             </li>
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-product"}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Product</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{"new-product"}}">
+                    <i class="material-icons">library_books</i>
+                    <p>New Product</p>
+                </a>
+            </li>
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{"list-image"}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Image</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{"new-image"}}">
+                    <i class="material-icons">library_books</i>
+                    <p>New Image</p>
+                </a>
+            </li>
             <li class="nav-item ">
                 <a class="nav-link" href="./icons.html">
                     <i class="material-icons">bubble_chart</i>
