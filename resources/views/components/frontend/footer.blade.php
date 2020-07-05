@@ -12,12 +12,12 @@
                         <li>
                             <i class="fa fa-envelope-o"></i>
                             <a href="https://eyecix.com/cdn-cgi/l/email-protection#147a757971547179757d783a777b79">
-                                <span class="__cf_email__" data-cfemail="70191e161f301508111d001c155e131f1d">[email&#160;protected]</span>
+                                <span class="__cf_email__" data-cfemail="70191e161f301508111d001c155e131f1d">Bigboss123@gmail.com</span>
                             </a>
                         </li>
                         <li>
                             <i class="fa fa-map-marker"></i>
-                            Salford road, east London, UK
+                            So 8 Ton That Thuyet
                         </li>
                         <li>
                             <i class="fa fa-phone"></i>
@@ -150,12 +150,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index-2.html" class="environment-footer-logo">
-                        <img src="images/footer-logo.png" alt="">
+                    <a href="{{"home"}}" class="environment-footer-logo">
+                        <img style="height: 50px" src="{{asset("images/logo/unnamed.gif" )}}" alt="">
                     </a>
-                    <p>
+                    <p style="margin-top: 20px">
                         © 2016, All Right Reserved - by
-                        <a href="index-2.html">EyeCix</a>
+                        <a href="{{"home"}}">BigBoss</a>
                     </p>
                     <a href="#" class="environment-back-top">
                         <i class="fa fa-angle-up"></i>
