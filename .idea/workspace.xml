@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/frontend/eviroment_header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,9 +370,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="461" y="274" width="663" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1593785152342" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1593879561864">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="381" y="188" key="run.anything.popup" timestamp="1593923253418">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593879561864" />
+    <state x="381" y="188" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1593923253418" />
   </component>
 </project>
