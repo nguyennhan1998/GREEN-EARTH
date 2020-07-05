@@ -55,7 +55,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active">
+                                <li>
                                     <a href="{{"home"}}">Home</a>
 
                                 </li>

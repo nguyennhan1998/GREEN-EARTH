@@ -12,7 +12,7 @@ Route::group(["middleware"=>["admin","auth"],"prefix"=>"admin"],function (){
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'WebController@Home')->name('home');
 
 Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 
