@@ -33,10 +33,20 @@
                            0969696969
                         </li>
                         <li>
-                            <i class="fa fa-envelope-o"></i>
-                            <a href="https://eyecix.com/cdn-cgi/l/email-protection#c4aaa5a9a184a1a9a5ada8eaa7aba9">
-                                <span class="__cf_email__" data-cfemail="a7cec9c1c8e7c2dfc6cad7cbc289c4c8ca">[email&#160;protected]</span>
-                            </a>
+                            @guest
+                                <a href="{{url("/login")}}"><i class="fa fa-user"></i> Login</a>
+                            @else
+
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            @endguest
                         </li>
                     </ul>
                 </div>
