@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V9</title>
+    <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -30,29 +30,26 @@
 <body>
 
 
-<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+<div class="container-login100" style="background-image: url('images/bg2.jpg');">
     <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+        <img class="image-logo" src="images/logo/unnamed.gif">
         <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
             @csrf
-				<span class="login100-form-title p-b-37">
-                    Đăng ký
-				</span>
-
             <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username">
-                <input class="input100" type="text" name="name" placeholder="name">
+                <input class="input100" type="text" name="name" placeholder="Name">
                 <span class="focus-input100"></span>
             </div>
             <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-                <input class="input100" type="email" name="email" placeholder="email ">
+                <input class="input100" type="email" name="email" placeholder="Email ">
                 <span class="focus-input100"></span>
             </div>
 
-            <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                <input class="input100" type="password" name="password" placeholder="password">
+            <div class="wrap-input100 validate-input m-b-25" data-validate="Enter password">
+                <input class="input100" type="password" name="password" placeholder="Password">
                 <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                <input type="password" class="input100" name="password_confirmation" placeholder="confirm password">
+            <div class="wrap-input100 validate-input m-b-25" data-validate="Enter password">
+                <input type="password" class="input100" name="password_confirmation" placeholder="Confirm password">
 
                 <span class="focus-input100"></span>
             </div>
@@ -90,7 +87,6 @@
 
     </div>
 </div>
-
 
 
 <div id="dropDownSelect1"></div>

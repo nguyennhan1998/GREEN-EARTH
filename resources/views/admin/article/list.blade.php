@@ -6,8 +6,8 @@
                 <div class="col-md-12">
                     <div class="card card-plain">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title mt-0">Danh sách sự kiện </h4>
-                            <p class="card-category"> Dưới đây là  tổng danh sách các sự kiện môi trường</p>
+                            <h4 class="card-title mt-0">LIST ARTICLE</h4>
+                            <p class="card-category">Below is the total list of article</p>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
