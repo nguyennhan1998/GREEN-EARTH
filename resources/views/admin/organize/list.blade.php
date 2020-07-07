@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card card-plain">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title mt-0">List Organize</h4>
+                            <h4 class="card-title mt-0">LIST ORGANIZE</h4>
                             <p class="card-category"> Below is the total list of businesses</p>
                         </div>
                         <div class="card-body">

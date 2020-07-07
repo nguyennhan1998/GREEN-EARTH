@@ -20,20 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/test.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/new.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_29_040652_create_table_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_29_040652_create_table_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/frontend/environment_banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/frontend/environment_banner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,8 +161,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fashion_bigboss" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -178,11 +170,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Xampp\htdocs\GREEN-EARTH\public\images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/fonts" />
-      <recent name="$PROJECT_DIR$/public/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -247,6 +239,10 @@
       <workItem from="1594088152825" duration="757000" />
       <workItem from="1594110565589" duration="2420000" />
       <workItem from="1594125425630" duration="2772000" />
+      <workItem from="1593934870990" duration="2041000" />
+      <workItem from="1593962171135" duration="616000" />
+      <workItem from="1593999747717" duration="1778000" />
+      <workItem from="1594040158933" duration="1876000" />
     </task>
     <task id="LOCAL-00001" summary="thêm giao diện frontend">
       <created>1593353779554</created>
@@ -352,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1593783857287" />
-    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1593861448926">
+    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1594043843684">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593861448926" />
+    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594043843684" />
     <state x="144" y="79" key="MergeDialog" timestamp="1593744725308">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -385,9 +381,11 @@
     </state>
     <state x="304" y="143" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593876414096" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593744625992" />
-    <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593860865707">
+    <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593999775546">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593999775546" />
+    <state x="508" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593790182090">
     <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593788172125" />
     <state x="508" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594000625402">
       <screen x="0" y="23" width="1440" height="797" />

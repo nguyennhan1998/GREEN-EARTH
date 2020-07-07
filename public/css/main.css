@@ -7,30 +7,30 @@
 
 @font-face {
   font-family: SourceSansPro-Regular;
-  src: url('../fonts/source-sans-pro/SourceSansPro-Regular.ttf'); 
+  src: url('../fonts/source-sans-pro/SourceSansPro-Regular.ttf');
 }
 
 @font-face {
   font-family: SourceSansPro-Bold;
-  src: url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf'); 
+  src: url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf');
 }
 
 @font-face {
   font-family: SourceSansPro-SemiBold;
-  src: url('../fonts/source-sans-pro/SourceSansPro-SemiBold.ttf'); 
+  src: url('../fonts/source-sans-pro/SourceSansPro-SemiBold.ttf');
 }
 
 @font-face {
   font-family: JosefinSans-Bold;
-  src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
+  src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -147,7 +147,7 @@ iframe {
 [ login ]*/
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -451,4 +451,10 @@ iframe {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+.container-login100 .image-logo{
+    height: 100px;
+    width: 250px;
+    margin-bottom: 40px;
+    padding-left: 30px ;
 }
