@@ -7,7 +7,7 @@
                     <div class="card card-plain">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title mt-0">New Product </h4>
-                            <p class="card-category">------------------------------------------------- </p>
+                            <p class="card-category">-------------------------------------------------</p>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -27,7 +27,7 @@
                                             <label>Event ID</label>
                                             <select name="event_id" class="form-control">
                                                 @foreach($events as $event)
-                                                    <option value="{{$event->__get("id")}}">{{$event->__get("event_id")}}</option>
+                                                    <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>

@@ -66,3 +66,13 @@ Route::get("/edit-article/{id}","ArticleController@editArticle");
 Route::post("/save-article","ArticleController@saveArticle");
 Route::put("/update-article/{id}","ArticleController@updateArticle");
 Route::delete("/delete-article/{id}","ArticleController@deleteArticle");
+
+
+//Route user
+Route::get("/new-user","UserController@newUser");
+Route::get("/list-user","UserController@listUser");
+Route::get("/edit-user/{id}","UserController@editUser");
+Route::post("/save-user","UserController@saveUser");
+Route::put("/update-user/{id}","UserController@updateUser");
+Route::delete("/delete-user/{id}","UserController@deleteUser");
+

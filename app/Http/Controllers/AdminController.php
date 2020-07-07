@@ -64,6 +64,9 @@ class AdminController extends Controller
         }
         return redirect()->to("/admin/list-event");
     }
+    public function test(){
+        return view("test");
+    }
 
 
 }

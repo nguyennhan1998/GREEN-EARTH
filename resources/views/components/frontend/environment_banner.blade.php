@@ -11,7 +11,9 @@
                             What We HAve
                             <span>In Common</span>
                         </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ven eros et iaculis. Vivamus volutpat hendrerit elementum.Integerl ultrices vestibulum leo eu.</p>
+                        <p>Environmental protection is the protection of the natural environment of individuals,
+                            organizations and the government. Its goal is to preserve the existing natural
+                            resources and environment and, if possible, to repair damage and create the opposite trend.</p>
                         <a href="#" class="environment-bgcolor">Get A Quote</a>
                     </div>
                     <div class="banner-thumb">
