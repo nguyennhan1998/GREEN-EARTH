@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/event/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/event.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/event.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

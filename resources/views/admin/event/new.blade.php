@@ -20,6 +20,10 @@
                                             <input type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="text" name="image" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
                                             <label>Description</label>
                                             <input type="text" name="description" class="form-control" placeholder="...">
                                         </div>
