@@ -20,6 +20,9 @@
                                             <input  value="{{$event->__get("title")}}" type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
+                                            <label>Image</label>
+                                            <input value="{{$event->__get("image")}}" type="text" name="image" class="form-control" placeholder="...">                                        </div>
+                                        <div class="form-group">
                                             <label>Description</label>
                                             <input  value="{{$event->__get("description")}}" type="text" name="description" class="form-control" placeholder="...">
                                         </div>

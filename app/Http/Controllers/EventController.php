@@ -23,13 +23,14 @@ class EventController extends Controller
         return view("admin.event.new",
         [
             "organizations"=>$organizations,
-//
+
         ]);
     }
 
     public function saveEvent(Request $request){
         $request->validate([
             "title"=>"required",
+            "image"=>"required",
             "description"=>"required",
             "content"=>"required",
             "start_at"=>"required",
@@ -41,6 +42,7 @@ class EventController extends Controller
         try {
             Event::create([
                 "title"=>$request->get("title"),
+                "image"=>$request->get("image"),
                 "description"=>$request->get("description"),
                 "content"=>$request->get("content"),
                 "start_at"=>$request->get("start_at"),
@@ -68,6 +70,7 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
         $request->validate([
             "title"=>"required",
+            "image"=>"required",
             "description"=>"required",
             "content"=>"required",
             "start_at"=>"required",
@@ -78,6 +81,7 @@ class EventController extends Controller
         try {
             $event->update([
                 "title"=>$request->get("title"),
+                "image"=>$request->get("image"),
                 "description"=>$request->get("description"),
                 "content"=>$request->get("content"),
                 "start_at"=>$request->get("start_at"),

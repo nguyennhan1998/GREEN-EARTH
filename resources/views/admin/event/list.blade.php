@@ -16,6 +16,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Title</th>
+                                            <th>Image</th>
                                             <th>Description</th>
                                             <th>Content</th>
                                             <th>Start At</th>
@@ -31,6 +32,7 @@
                                     <tr>
                                         <td>{{$event->__get("id")}}</td>
                                         <td>{{$event->__get("title")}}</td>
+                                        <td><img src="{{$event->__get('image')}}" width="50" height="50"/></td>
                                         <td>{{$event->__get("description")}}</td>
                                         <td>@php
                                                 $doc = new DOMDocument();

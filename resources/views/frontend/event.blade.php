@@ -11,19 +11,19 @@
                             <ul class="row">
                                 <li class="col-md-6">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img1.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>
+                                        <a href="#"><img src="extra-images/event-grid-img1.jpg" alt=""><i class="fa fa-search-plus"></i></a>
+{{--                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>--}}
                                     </figure>
                                     <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
+                                        <h5><a href="#">title</a></h5>
                                         <ul class="environment-large-option">
                                             <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
+                                                Start At:
+                                                <p></p>
                                             </li>
                                             <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
+                                                End At:
+                                                <p></p>
                                             </li>
                                         </ul>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
