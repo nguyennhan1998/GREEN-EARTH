@@ -16,6 +16,7 @@ class EventController extends Controller
         return view("admin.event.list", [
             "events" => $events
 //
+//
         ]);
 
     }
