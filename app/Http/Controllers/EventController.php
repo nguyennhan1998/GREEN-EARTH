@@ -8,8 +8,10 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    public function listEvent()
-    {
+    public function listEvent(){
+
+
+        $this->authorize("viewAny");
         $events =Event::paginate(20);
         return view("admin.event.list", [
             "events" => $events
