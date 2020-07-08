@@ -18,7 +18,7 @@ class EventPolicy
      */
     public function viewAny()
     {
-        return false;
+        return true;
     }
 
     /**

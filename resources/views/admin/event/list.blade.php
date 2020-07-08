@@ -44,11 +44,11 @@
                                         <td>{{$event->__get("total_money")}}</td>
                                         <td>{{$event->__get("organization_id")}}</td>
                                         <td>
-                                            <a href="{{url("admin/edit-event/{$event->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                            <a href="{{url("admin/events/edit/{$event->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                 <div class="ripple-container"></div></a>
                                         </td>
                                         <td>
-                                            <form action="{{url("admin/delete-event/{$event->__get("id")}")}}" method="post">
+                                            <form method="POST" action="{{url("admin/events/delete/{$event->__get("id")}")}}">
                                                 @method("DELETE")
                                                 @csrf
                                                 <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>

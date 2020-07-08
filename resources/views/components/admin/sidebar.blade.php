@@ -21,26 +21,26 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"list-category"}}">
+                <a class="nav-link" href="{{ url('admin/list-category')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Category</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-category"}}">
+                <a class="nav-link" href="{{ url('admin/new-category')}}">
                     <i class="material-icons">library_books</i>
                     <p>New Category</p>
                 </a>
             </li>
 {{--            Organizations--}}
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"list-organize"}}">
+                <a class="nav-link" href="{{ url('admin/list-organize')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Organize</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-organize"}}">
+                <a class="nav-link" href="{{ url('admin/new-organize')}}">
                     <i class="material-icons">library_books</i>
                     <p>New Organize</p>
                 </a>
@@ -52,43 +52,43 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-event"}}">
+                <a class="nav-link" href="{{"events/new"}}">
                     <i class="material-icons">library_books</i>
                     <p>New Event</p>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"list-article"}}">
+                <a class="nav-link" href="{{ url('admin/list-article')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Article</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-article"}}">
+                <a class="nav-link" href="{{ url('admin/new-article')}}">
                     <i class="material-icons">library_books</i>
                     <p>New Article</p>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"list-product"}}">
+                <a class="nav-link" href="{{ url('admin/list-product')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Product</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-product"}}">
+                <a class="nav-link" href="{{ url('admin/new-product')}}">
                     <i class="material-icons">library_books</i>
                     <p>New Product</p>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"list-image"}}">
+                <a class="nav-link" href="{{ url('admin/list-image')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Image</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"new-image"}}">
+                <a class="nav-link" href="{{ url('admin/new-image')}}">
                     <i class="material-icons">library_books</i>
                     <p>New Image</p>
                 </a>
