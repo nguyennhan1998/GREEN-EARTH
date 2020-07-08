@@ -19,7 +19,7 @@ Route::post("/save-category","CategoryController@saveCategory");
 
 // Router events
 Route::get("/new-event","EventController@newEvent");
-Route::get("/list-event","EventController@listEvent");
+Route::get("/events","EventController@index");
 Route::get("/edit-event/{id}","EventController@editEvent");
 Route::delete("/delete-event/{id}","EventController@deleteEvent");
 Route::put("/update-event/{id}","EventController@updateEvent");

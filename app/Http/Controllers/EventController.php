@@ -2,21 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Event;
 use App\Organize;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    public function listEvent(){
-
-
-        $this->authorize("viewAny");
+    public function index(){
+        $this->authorize("viewAny" , Event::class);
         $events =Event::paginate(20);
         return view("admin.event.list", [
             "events" => $events
-//
-//
         ]);
 
     }
@@ -58,7 +55,7 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return $exception->getMessage();
         }
-       return redirect()->to("/admin/list-event");
+       return redirect()->to("/admin/events");
     }
 
     public function editEvent($id){
@@ -96,7 +93,7 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return redirect()->back();
         }
-        return redirect()->to("/admin/list-event");
+        return redirect()->to("/admin/events");
     }
 
     public function deleteEvent($id){
@@ -106,6 +103,6 @@ class EventController extends Controller
         }catch (\Exception $exception){
 
         }
-        return redirect()->to("admin/list-event");
+        return redirect()->to("admin/events");
     }
 }

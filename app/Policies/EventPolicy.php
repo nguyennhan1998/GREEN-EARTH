@@ -16,9 +16,9 @@ class EventPolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function viewAny(User $user)
+    public function viewAny()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -28,10 +28,9 @@ class EventPolicy
      * @param  \App\Event  $event
      * @return mixed
      */
-    public function abc(?User $user)
+    public function view(User $user, Event $event)
     {
-        dd($user);
-        return true
+        //
     }
 
     /**
@@ -55,9 +54,6 @@ class EventPolicy
     public function update(User $user, Event $event)
     {
         //
-    }
-    public function listEvent(User $user) {
-        return TRUE;
     }
 
     /**

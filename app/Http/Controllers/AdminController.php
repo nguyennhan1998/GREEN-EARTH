@@ -10,7 +10,8 @@ class AdminController extends Controller
     public function admin(){
         return view("admin.home");
     }
-    public function listEvent(){
+    
+    public function index(){
         $events=Event::all();
         return view("admin.event.list",[
             "events"=>$events
@@ -36,7 +37,7 @@ class AdminController extends Controller
      }catch (\Exception $exception){
          return redirect()->back();
      }
-     return redirect()->to("/admin/list-event");
+     return redirect()->to("/admin/events");
 
     }
     public function updateEvent($id, Request $request){
@@ -53,7 +54,7 @@ class AdminController extends Controller
 
             return redirect()->back();
         }
-        return redirect()->to("/admin/list-event");
+        return redirect()->to("/admin/events");
     }
     public function deleteEvent($id){
         $event=Event::findOrFail($id);
@@ -62,7 +63,7 @@ class AdminController extends Controller
         }catch (\Exception $exception){
 
         }
-        return redirect()->to("/admin/list-event");
+        return redirect()->to("/admin/events");
     }
     public function test(){
         return view("test");
