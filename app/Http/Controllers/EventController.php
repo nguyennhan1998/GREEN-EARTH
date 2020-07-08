@@ -15,6 +15,7 @@ class EventController extends Controller
         $events =Event::paginate(20);
         return view("admin.event.list", [
             "events" => $events
+//
         ]);
 
     }
