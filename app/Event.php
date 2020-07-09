@@ -15,7 +15,8 @@ class Event extends Model
         "start_at",
         "end_at",
         "total_money",
-        "organization_id"
+        "organization_id",
+        "user_id"
     ];
 
     public function user()

@@ -1,7 +1,7 @@
 <?php
 namespace App\Traits;
 
-use App\Models\Role;
+use App\Role;
 
 trait HasPermissions
 {
@@ -12,8 +12,8 @@ trait HasPermissions
         return $this->belongsToMany(Role::class);
     }
 
-    public function hasRole($role)
-    {
+    public function hasRole($role) {
+
         if (is_string($role)) {
             return $this->roles->contains('name', $role);
         }

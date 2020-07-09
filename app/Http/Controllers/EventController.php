@@ -14,21 +14,22 @@ class EventController extends Controller
         $events =Event::paginate(20);
         return view("admin.event.list", [
             "events" => $events
+            //
         ]);
 
     }
 
-    public function newEvent()
+    public function new()
     {
+        $this->authorize("new" , Event::class);
         $organizations=Organize::all();
         return view("admin.event.new",
         [
             "organizations"=>$organizations,
-
         ]);
     }
 
-    public function saveEvent(Request $request){
+    public function create(Request $request){
         $request->validate([
             "title"=>"required",
             "image"=>"required",
@@ -38,7 +39,6 @@ class EventController extends Controller
             "end_at"=>"required",
             "total_money"=>"required",
             "organization_id"=>"required"
-
         ]);
         try {
             Event::create([
@@ -49,7 +49,8 @@ class EventController extends Controller
                 "start_at"=>$request->get("start_at"),
                 "end_at"=>$request->get("end_at"),
                 "total_money"=>$request->get("total_money"),
-                "organization_id"=>$request->get("organization_id")
+                "organization_id"=>$request->get("organization_id"),
+                "user_id" => Auth::id()
             ]);
 
         }catch (\Exception $exception){
@@ -58,8 +59,9 @@ class EventController extends Controller
        return redirect()->to("/admin/events");
     }
 
-    public function editEvent($id){
+    public function edit($id){
         $event = Event::findOrFail($id);
+        $this->authorize("edit" , $event, Event::class);
         $organizations=Organize::all();
         return view("admin.event.edit",[
             "event"=>$event,
@@ -67,7 +69,7 @@ class EventController extends Controller
             ]);
     }
 
-    public function updateEvent($id,Request $request){
+    public function update($id,Request $request){
         $event = Event::findOrFail($id);
         $request->validate([
             "title"=>"required",
@@ -96,7 +98,7 @@ class EventController extends Controller
         return redirect()->to("/admin/events");
     }
 
-    public function deleteEvent($id){
+    public function delete($id){
         $event = Event::findOrFail($id);
         try {
             $event->delete();
