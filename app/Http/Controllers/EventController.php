@@ -20,11 +20,11 @@ class EventController extends Controller
 
     public function new()
     {
+        $this->authorize("new" , Event::class);
         $organizations=Organize::all();
         return view("admin.event.new",
         [
             "organizations"=>$organizations,
-
         ]);
     }
 
@@ -60,6 +60,7 @@ class EventController extends Controller
 
     public function edit($id){
         $event = Event::findOrFail($id);
+        $this->authorize("edit" , $event, Event::class);
         $organizations=Organize::all();
         return view("admin.event.edit",[
             "event"=>$event,

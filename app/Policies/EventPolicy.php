@@ -4,8 +4,9 @@ namespace App\Policies;
 
 use App\Event;
 use App\User;
+use App\Role;
 use Illuminate\Auth\Access\HandlesAuthorization;
-
+use Illuminate\Support\Facades\Auth;
 class EventPolicy
 {
     use HandlesAuthorization;
@@ -16,9 +17,10 @@ class EventPolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function viewAny()
+    public function viewAny(User $user)
     {
-        return true;
+        // dd($user)
+        return $user->hasPermission("new_event");
     }
 
     /**
@@ -31,6 +33,17 @@ class EventPolicy
     public function view(User $user, Event $event)
     {
         //
+    }
+
+    public function new(User $user)
+    {
+        return $user->hasPermission("new_event");
+    }
+
+    public function edit(User $user, Event $event)
+    {
+
+        return $event->__get("user_id") == Auth::id() && $user->hasPermission("new_event");
     }
 
     /**
