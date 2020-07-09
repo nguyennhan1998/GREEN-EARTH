@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/update-event/{$event->__get("id")}")}}" method="post">
+                                    <form method="POST" role="form" action="{{url("admin/events/update/{$event->__get("id")}")}}">
                                         @method("PUT")
                                         @csrf
                                         <div class="form-group">
@@ -40,21 +40,21 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Start At</label>
-                                            <input  value="{{$event->__get("start_at")}}" type="text" name="start_at" class="form-control" placeholder="...">
+                                            <input  value="{{$event->__get("start_at")}}" type="date" name="start_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>End At</label>
-                                            <input  value="{{$event->__get("start_at")}}" type="text" name="end_at" class="form-control" placeholder="...">
+                                            <input value="{{$event->__get("start_at")}}" type="date" name="end_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
-                                            <input  value="{{$event->__get("total_money")}}" type="text" name="total_money" class="form-control" placeholder="...">
+                                            <input  value="{{$event->__get("total_money")}}" type="number" name="total_money" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>
                                             <select name="organization_id" class="form-control">
                                                 @foreach($organizations as $organize)
-                                                    <option value="{{$organize->__get("id")}}">{{$organize->__get("title")}}</option>
+                                                    <option {{ $organize->__get("id") ==$event->__get("organization_id") ? "selected" : "" }}  value="{{$organize->__get("id")}}">{{$organize->__get("name")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>

@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("/admin/save-event")}}" method="post">
+                                    <form role="form" action="{{url("/admin/events/create")}}" method="POST">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
@@ -42,11 +42,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Start At</label>
-                                            <input  type="text" name="start_at" class="form-control" placeholder="...">
+                                            <input  type="date" name="start_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>End At</label>
-                                            <input type="text" name="end_at" class="form-control" placeholder="...">
+                                            <input type="date" name="end_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
@@ -54,9 +54,10 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>
-                                            <select type="text" name="organization_id" class="form-control">
+                                            <select name="organization_id" class="form-control">
+                                                <option value="">Select origaniztions</option>
                                                 @foreach($organizations as $organize)
-                                                    <option value="{{$organize->__get("id")}}">{{$organize->__get("title")}}</option>
+                                                    <option value="{{$organize->__get("id")}}">{{$organize->__get("name")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
