@@ -13,21 +13,23 @@ class EventController extends Controller
         $this->authorize("viewAny" , Event::class);
         $events =Event::paginate(20);
         return view("admin.event.list", [
-            "events" => $events
-            //
+            "events" => $events,
+
         ]);
 
     }
 
-    public function new()
-    {
-        $this->authorize("new" , Event::class);
-        $organizations=Organize::all();
-        return view("admin.event.new",
-        [
-            "organizations"=>$organizations,
-        ]);
-    }
+//    public function new()
+//    {
+//        $this->authorize("new",Event::class);
+//        $events=Event::paginate(20);
+//        $organizations=Organize::all();
+//        return view("admin.event.new",
+//        [
+//            "events" => $events,
+//            "organizations"=>$organizations,
+//        ]);
+//    }
 
     public function create(Request $request){
         $request->validate([

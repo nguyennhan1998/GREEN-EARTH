@@ -32,7 +32,7 @@ class EventPolicy
      */
     public function view(User $user, Event $event)
     {
-        //
+        return $user->hasPermission("list_event");
     }
 
     public function new(User $user)

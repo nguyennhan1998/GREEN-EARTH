@@ -1,0 +1,335 @@
+Index: resources/views/admin/product/edit.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@extends(\"admin.layout\")\n@section(\"content\")\n    <div class=\"content\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <div class=\"card card-plain\">\n                        <div class=\"card-header card-header-primary\">\n                            <h4 class=\"card-title mt-0\">New Product </h4>\n                            <p class=\"card-category\">------------------------------------------------- </p>\n                        </div>\n                        <div class=\"card-body\">\n                            <div class=\"table-responsive\">\n                                <table class=\"table table-hover\">\n                                    <form role=\"form\" action=\"{{url(\"admin/update-product/{$products->__get(\"id\")}\")}}\" method=\"post\">\n                                        @method(\"PUT\")\n                                        @csrf\n                                        <div class=\"form-group\">\n                                            <label>Name Product</label>\n                                            <input value=\"{{$products->__get(\"name\")}}\" type=\"text\"  name=\"name\" class=\"form-control\" placeholder=\"Name...\">\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Price</label>\n                                            <input value=\"{{$products->__get(\"price\")}}\" type=\"number\"  name=\"price\" class=\"form-control\" placeholder=\"price...\">\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Event ID</label>\n                                            <select name=\"event_id\" class=\"form-control\">\n                                                @foreach($events as $event)\n                                                    <option value=\"{{$event->__get(\"id\")}}\">{{$event->__get(\"event_id\")}}</option>\n                                                @endforeach\n                                            </select>\n                                        </div>\n                                        <button type=\"submit\" class=\"btn btn-primary btn-round\">Submit</button>\n                                    </form>\n                                </table>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n@endsection\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/admin/product/edit.blade.php	(revision 0394867499b636810d763c6ccd05f8db039b8756)
++++ resources/views/admin/product/edit.blade.php	(date 1593886224474)
+@@ -27,7 +27,7 @@
+                                             <label>Event ID</label>
+                                             <select name="event_id" class="form-control">
+                                                 @foreach($events as $event)
+-                                                    <option value="{{$event->__get("id")}}">{{$event->__get("event_id")}}</option>
++                                                    <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
+                                                 @endforeach
+                                             </select>
+                                         </div>
+Index: resources/views/components/admin/head.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><head>\n    <meta charset=\"utf-8\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"{{asset(\"../img/apple-icon.png\")}}\">\n    <link rel=\"icon\" type=\"image/png\" href=\"{{asset(\"../img/favicon.png\")}}\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/>\n    <title>\n        Admin Green Earth </title>\n    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'\n          name='viewport'/>\n    <!--     Fonts and icons     -->\n    <link rel=\"stylesheet\" type=\"text/css\"\n          href=\"{{asset(\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons\")}}\"/>\n    <link rel=\"stylesheet\"\n          href=\"{{asset(\"https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css\")}}\">\n    <!-- CSS Files -->\n    <link href=\"{{asset(\"../css/material-dashboard.css?v=2.1.0\" )}}\" rel=\"stylesheet\"/>\n    <!-- CSS Just for demo purpose, don't include it in your project -->\n    <link href=\"{{asset(\"../demo/demo.css\")}}\" rel=\"stylesheet\"/>\n\n    <script src=\"{{ asset('ckeditor/ckeditor.js') }}\"></script>\n    {{--ckfinder--}}\n    <script type=\"text/javascript\" src=\"{{asset(\"/js/ckfinder/ckfinder.js\")}}\"></script>\n    <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>\n</head>\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/components/admin/head.blade.php	(revision 0394867499b636810d763c6ccd05f8db039b8756)
++++ resources/views/components/admin/head.blade.php	(date 1593885762933)
+@@ -17,6 +17,7 @@
+     <!-- CSS Just for demo purpose, don't include it in your project -->
+     <link href="{{asset("../demo/demo.css")}}" rel="stylesheet"/>
+ 
++
+     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+     {{--ckfinder--}}
+     <script type="text/javascript" src="{{asset("/js/ckfinder/ckfinder.js")}}"></script>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"65d1f3b4-2446-4c52-ac6b-9a73dafb104f\" name=\"Default Changelist\" comment=\"article\">\n      <change afterPath=\"$PROJECT_DIR$/resources/views/admin/image/edit.blade.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/resources/views/admin/image/list.blade.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/resources/views/admin/image/new.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/views/admin/product/new.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/resources/views/admin/product/new.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/routes/admin.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/routes/admin.php\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/vendor/nesbot/carbon\" />\n      <path value=\"$PROJECT_DIR$/vendor/spatie/dropbox-api\" />\n      <path value=\"$PROJECT_DIR$/vendor/spatie/flysystem-dropbox\" />\n      <path value=\"$PROJECT_DIR$/vendor/ckfinder/ckfinder-laravel-package\" />\n      <path value=\"$PROJECT_DIR$/vendor/graham-campbell/guzzle-factory\" />\n      <path value=\"$PROJECT_DIR$/vendor/mtdowling/jmespath.php\" />\n      <path value=\"$PROJECT_DIR$/vendor/pimple/pimple\" />\n      <path value=\"$PROJECT_DIR$/vendor/aws/aws-sdk-php\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/flysystem-cached-adapter\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/ui\" />\n      <path value=\"$PROJECT_DIR$/vendor/hamcrest/hamcrest-php\" />\n      <path value=\"$PROJECT_DIR$/vendor/filp/whoops\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpspec/prophecy\" />\n      <path value=\"$PROJECT_DIR$/vendor/swiftmailer/swiftmailer\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/psr7\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/guzzle\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/promises\" />\n      <path value=\"$PROJECT_DIR$/vendor/fzaninotto/faker\" />\n      <path value=\"$PROJECT_DIR$/vendor/monolog/monolog\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpoption/phpoption\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/tinker\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/framework\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/type-resolver\" />\n      <path value=\"$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir\" />\n      <path value=\"$PROJECT_DIR$/vendor/opis/closure\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-common\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock\" />\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\n      <path value=\"$PROJECT_DIR$/vendor/egulias/email-validator\" />\n      <path value=\"$PROJECT_DIR$/vendor/vlucas/phpdotenv\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/commonmark\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/flysystem\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/type\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/mockery/mockery\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/recursion-context\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/resource-operations\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-enumerator\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-reflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/exporter\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/global-state\" />\n      <path value=\"$PROJECT_DIR$/vendor/brick/math\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/diff\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/environment\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/manifest\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/comparator\" />\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\n      <path value=\"$PROJECT_DIR$/vendor/webmozart/assert\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation\" />\n      <path value=\"$PROJECT_DIR$/vendor/ramsey/uuid\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php80\" />\n      <path value=\"$PROJECT_DIR$/vendor/ramsey/collection\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/process\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php72\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php73\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-ctype\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-iconv\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mime\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/http-message\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/ignition-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/simple-cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/flare-client-php\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/ignition\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/css-selector\" />\n      <path value=\"$PROJECT_DIR$/vendor/scrivo/highlight.php\" />\n      <path value=\"$PROJECT_DIR$/vendor/asm89/stack-cors\" />\n      <path value=\"$PROJECT_DIR$/vendor/nunomaduro/collision\" />\n      <path value=\"$PROJECT_DIR$/vendor/myclabs/deep-copy\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/phpunit\" />\n      <path value=\"$PROJECT_DIR$/vendor/theseer/tokenizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/dragonmantank/cron-expression\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-timer\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-token-stream\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-file-iterator\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-text-template\" />\n      <path value=\"$PROJECT_DIR$/vendor/psy/psysh\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-code-coverage\" />\n      <path value=\"$PROJECT_DIR$/vendor/fideloper/proxy\" />\n      <path value=\"$PROJECT_DIR$/vendor/voku/portable-ascii\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\n      <path value=\"$PROJECT_DIR$/vendor/fruitcake/laravel-cors\" />\n      <path value=\"$PROJECT_DIR$/vendor/ralouphie/getallheaders\" />\n      <path value=\"$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectId\" id=\"1dqwAHIH1932fUVMO8PITe8w9bE\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../T1907M_laravel\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"configurable.group.appearance\" />\n    <property name=\"two.files.diff.last.used.folder\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/public\" />\n      <recent name=\"$PROJECT_DIR$/public/js\" />\n      <recent name=\"$PROJECT_DIR$/public/images\" />\n      <recent name=\"$PROJECT_DIR$/public/fonts\" />\n      <recent name=\"$PROJECT_DIR$/public/css\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"phpunit.xml\" type=\"PHPUnitRunConfigurationType\" factoryName=\"PHPUnit\">\n      <TestRunner scope=\"XML\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration>C:\\Users\\vanhv\\AppData\\Roaming\\Subversion</configuration>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"65d1f3b4-2446-4c52-ac6b-9a73dafb104f\" name=\"Default Changelist\" comment=\"\" />\n      <created>1593165785115</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1593165785115</updated>\n      <workItem from=\"1593165787050\" duration=\"254000\" />\n      <workItem from=\"1593228692161\" duration=\"9997000\" />\n      <workItem from=\"1593273656919\" duration=\"526000\" />\n      <workItem from=\"1593307809504\" duration=\"7642000\" />\n      <workItem from=\"1593339494179\" duration=\"2000\" />\n      <workItem from=\"1593349858568\" duration=\"3944000\" />\n      <workItem from=\"1593394870391\" duration=\"950000\" />\n      <workItem from=\"1593444368327\" duration=\"3960000\" />\n      <workItem from=\"1593481100172\" duration=\"297000\" />\n      <workItem from=\"1593481100172\" duration=\"812000\" />\n      <workItem from=\"1593487932004\" duration=\"359000\" />\n      <workItem from=\"1593489633332\" duration=\"10945000\" />\n      <workItem from=\"1593489186877\" duration=\"265000\" />\n      <workItem from=\"1593525853490\" duration=\"1138000\" />\n      <workItem from=\"1593567252426\" duration=\"302000\" />\n      <workItem from=\"1593582320002\" duration=\"120000\" />\n      <workItem from=\"1593586049641\" duration=\"30000\" />\n      <workItem from=\"1593567788586\" duration=\"7838000\" />\n      <workItem from=\"1593600106287\" duration=\"6937000\" />\n      <workItem from=\"1593612018391\" duration=\"4320000\" />\n      <workItem from=\"1593698698436\" duration=\"4802000\" />\n      <workItem from=\"1593742120642\" duration=\"1959000\" />\n      <workItem from=\"1593784038973\" duration=\"1211000\" />\n      <workItem from=\"1593785263979\" duration=\"2801000\" />\n      <workItem from=\"1593788170842\" duration=\"1347000\" />\n      <workItem from=\"1593793027034\" duration=\"761000\" />\n      <workItem from=\"1593831606410\" duration=\"5555000\" />\n      <workItem from=\"1593860703252\" duration=\"814000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"thêm giao diện frontend\">\n      <created>1593353779554</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593353779554</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"tạo database\">\n      <created>1593471599650</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593471599650</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"taoj database\">\n      <created>1593489294810</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593489294810</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"article\">\n      <created>1593876008971</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593876008971</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"article\">\n      <created>1593876411665</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593876411665</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"1\">\n          <value>\n            <State>\n              <option name=\"SHOW_ONLY_AFFECTED_CHANGES\" value=\"true\" />\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"HEAD\" />\n                      </list>\n                    </value>\n                  </entry>\n                  <entry key=\"roots\">\n                    <value>\n                      <list>\n                        <option value=\"$PROJECT_DIR$\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"PERFORM_ROLLBACK_IN_BACKGROUND\" value=\"true\" />\n    <MESSAGE value=\"thêm giao diện frontend\" />\n    <MESSAGE value=\"tạo database\" />\n    <MESSAGE value=\"taoj database\" />\n    <MESSAGE value=\"them sửa xoá products\" />\n    <MESSAGE value=\"them chuc nang middleware phan quyen nguoi dung\" />\n    <MESSAGE value=\"article\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"article\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"435\" y=\"171\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog\" timestamp=\"1593877426297\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\n    </state>\n    <state x=\"435\" y=\"171\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1593877426297\" />\n    <state x=\"458\" y=\"212\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900\" timestamp=\"1593701514493\" />\n    <state x=\"489\" y=\"196\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1593859096362\" />\n    <state x=\"372\" y=\"93\" key=\"#phpunit.xml\" timestamp=\"1593598493815\">\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"900\" />\n    </state>\n    <state x=\"372\" y=\"93\" key=\"#phpunit.xml/0.0.1440.900@0.0.1440.900\" timestamp=\"1593598493815\" />\n    <state x=\"93\" y=\"93\" width=\"1350\" height=\"648\" key=\"DiffContextDialog\" timestamp=\"1593783857287\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\n    </state>\n    <state x=\"93\" y=\"93\" width=\"1350\" height=\"648\" key=\"DiffContextDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1593783857287\" />\n    <state x=\"549\" y=\"175\" key=\"FileChooserDialogImpl\" timestamp=\"1593861448926\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\n    </state>\n    <state x=\"549\" y=\"175\" key=\"FileChooserDialogImpl/0.0.1536.834@0.0.1536.834\" timestamp=\"1593861448926\" />\n    <state x=\"144\" y=\"79\" key=\"MergeDialog\" timestamp=\"1593744725308\">\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"900\" />\n    </state>\n    <state x=\"144\" y=\"79\" key=\"MergeDialog/0.0.1440.900@0.0.1440.900\" timestamp=\"1593749971477\" />\n    <state x=\"359\" y=\"218\" key=\"MultipleFileMergeDialog\" timestamp=\"1593744725343\">\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"900\" />\n    </state>\n    <state x=\"359\" y=\"218\" key=\"MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900\" timestamp=\"1593744725343\" />\n    <state x=\"537\" y=\"304\" key=\"NewPhpFileDialog\" timestamp=\"1593876576836\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\n    </state>\n    <state x=\"537\" y=\"304\" key=\"NewPhpFileDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1593876576836\" />\n    <state x=\"566\" y=\"376\" key=\"NewPhpFileDialog/0.0.1440.900@0.0.1440.900\" timestamp=\"1593748896646\" />\n    <state x=\"604\" y=\"348\" key=\"NewPhpFileDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1593233692595\" />\n    <state x=\"566\" y=\"356\" key=\"NewPhpFileDialog/0.23.1440.797@0.23.1440.797\" timestamp=\"1593312146826\" />\n    <state x=\"253\" y=\"125\" key=\"SettingsEditor\" timestamp=\"1593788059166\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\n    </state>\n    <state x=\"253\" y=\"125\" key=\"SettingsEditor/0.0.1536.834@0.0.1536.834\" timestamp=\"1593788059166\" />\n    <state x=\"433\" y=\"0\" key=\"VCS.ChangeListViewerDialog\" timestamp=\"1593744657655\">\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"900\" />\n    </state>\n    <state x=\"433\" y=\"0\" key=\"VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900\" timestamp=\"1593744657655\" />\n    <state x=\"304\" y=\"143\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1593876414096\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\n    </state>\n    <state x=\"304\" y=\"143\" key=\"Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728\" timestamp=\"1593876414096\" />\n    <state x=\"320\" y=\"177\" key=\"Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900\" timestamp=\"1593744625992\" />\n    <state x=\"477\" y=\"244\" key=\"com.intellij.ide.util.TipDialog\" timestamp=\"1593860865707\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\n    </state>\n    <state x=\"477\" y=\"244\" key=\"com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1593860865707\" />\n    <state x=\"508\" y=\"352\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1593790182090\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state x=\"508\" y=\"371\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900\" timestamp=\"1593744728879\" />\n    <state x=\"508\" y=\"352\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.797@0.23.1440.797\" timestamp=\"1593790182090\" />\n    <state x=\"461\" y=\"274\" width=\"663\" height=\"285\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog\" timestamp=\"1593785152342\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"834\" />\n    </state>\n    <state x=\"461\" y=\"274\" width=\"663\" height=\"285\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834\" timestamp=\"1593785152342\" />\n    <state x=\"339\" y=\"164\" key=\"run.anything.popup\" timestamp=\"1593879561864\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\n    </state>\n    <state x=\"339\" y=\"164\" key=\"run.anything.popup/0.0.1366.728@0.0.1366.728\" timestamp=\"1593879561864\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0394867499b636810d763c6ccd05f8db039b8756)
++++ .idea/workspace.xml	(date 1593960027813)
+@@ -19,13 +19,11 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="article">
+-      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/edit.blade.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/list.blade.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/resources/views/admin/image/new.blade.php" afterDir="false" />
++    <list default="true" id="65d1f3b4-2446-4c52-ac6b-9a73dafb104f" name="Default Changelist" comment="them chuc nang middleware phan quyen nguoi dung">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/new.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/new.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/head.blade.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,115 +39,115 @@
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration">
+     <include_path>
+-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+-      <path value="$PROJECT_DIR$/vendor/spatie/dropbox-api" />
+-      <path value="$PROJECT_DIR$/vendor/spatie/flysystem-dropbox" />
+-      <path value="$PROJECT_DIR$/vendor/ckfinder/ckfinder-laravel-package" />
+-      <path value="$PROJECT_DIR$/vendor/graham-campbell/guzzle-factory" />
+-      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+-      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+-      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+-      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
+-      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+-      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+-      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+-      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+-      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+-      <path value="$PROJECT_DIR$/vendor/composer" />
+-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+-      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
++      <path value="$PROJECT_DIR$/vendor/symfony/string" />
++      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+       <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+-      <path value="$PROJECT_DIR$/vendor/brick/math" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
++      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
++      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
++      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
++      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
++      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
++      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
++      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
++      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
++      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
++      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
++      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
++      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
++      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
++      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
++      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
++      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
++      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
++      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
++      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
++      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
++      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
++      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
++      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
++      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
++      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
++      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
++      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
++      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
++      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
++      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+-      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
++      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
++      <path value="$PROJECT_DIR$/vendor/symfony/console" />
++      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
++      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
++      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
++      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
++      <path value="$PROJECT_DIR$/vendor/symfony/process" />
++      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+-      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+-      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+-      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
++      <path value="$PROJECT_DIR$/vendor/brick/math" />
++      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
++      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+-      <path value="$PROJECT_DIR$/vendor/psr/log" />
+-      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+-      <path value="$PROJECT_DIR$/vendor/psr/container" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+-      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
++      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
++      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
++      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
++      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
++      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
++      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
++      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
++      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
++      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
++      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
++      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+-      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+-      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+-      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
++      <path value="$PROJECT_DIR$/vendor/psr/log" />
++      <path value="$PROJECT_DIR$/vendor/psr/container" />
++      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
++      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
++      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
++      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
++      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
++      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
++      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
++      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
++      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
++      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
++      <path value="$PROJECT_DIR$/vendor/composer" />
++      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
++      <path value="$PROJECT_DIR$/vendor/spatie/dropbox-api" />
++      <path value="$PROJECT_DIR$/vendor/spatie/flysystem-dropbox" />
++      <path value="$PROJECT_DIR$/vendor/ckfinder/ckfinder-laravel-package" />
++      <path value="$PROJECT_DIR$/vendor/graham-campbell/guzzle-factory" />
++      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
++      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
++      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
++      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
++      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
++      <path value="$PROJECT_DIR$/vendor/psr/cache" />
++      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+     </include_path>
+   </component>
+   <component name="ProjectId" id="1dqwAHIH1932fUVMO8PITe8w9bE" />
+@@ -163,7 +161,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../T1907M_laravel" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="nodejs_package_manager_path" value="npm" />
+     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$" />
+@@ -221,6 +219,10 @@
+       <workItem from="1593793027034" duration="761000" />
+       <workItem from="1593831606410" duration="5555000" />
+       <workItem from="1593860703252" duration="814000" />
++      <workItem from="1593793545438" duration="158000" />
++      <workItem from="1593884631707" duration="642000" />
++      <workItem from="1593885539814" duration="816000" />
++      <workItem from="1593959679597" duration="342000" />
+     </task>
+     <task id="LOCAL-00001" summary="thêm giao diện frontend">
+       <created>1593353779554</created>
+@@ -261,7 +263,7 @@
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="1" />
++    <option name="version" value="2" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+@@ -360,7 +362,7 @@
+     <state x="477" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1593860865707">
+       <screen x="0" y="0" width="1536" height="834" />
+     </state>
+-    <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593860865707" />
++    <state x="477" y="244" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593788172125" />
+     <state x="508" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593790182090">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+Index: resources/views/admin/category/new.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@extends(\"admin.layout\")\n@section(\"content\")\n    <div class=\"content\">\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <div class=\"card card-plain\">\n                        <div class=\"card-header card-header-primary\">\n                            <h4 class=\"card-title mt-0\">NEW CATEGORY </h4>\n                            <p class=\"card-category\"> ------------------------------------------------- </p>\n                        </div>\n                        <div class=\"card-body\">\n                            <div class=\"table-responsive\">\n                                <table class=\"table table-hover\">\n                                    <form role=\"form\" action=\"{{url(\"/admin/save-category\")}}\" method=\"post\">\n                                        @method(\"POST\")\n                                        @csrf\n                                        <div class=\"form-group\">\n                                            <label for=\"exampleInputEmail1\">Title Category</label>\n                                            <input type=\"text\"  name=\"title\" class=\"form-control\" placeholder=\"...\">\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label for=\"exampleInputFile\">Url Category</label>\n                                            <input type=\"text\" name=\"url\" class=\"form-control\" placeholder=\"...\">\n                                        </div>\n                                        <button type=\"submit\" class=\"btn btn-primary btn-round\">Submit</button>\n                                    </form>\n                                </table>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n@endsection\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/admin/category/new.blade.php	(revision 0394867499b636810d763c6ccd05f8db039b8756)
++++ resources/views/admin/category/new.blade.php	(date 1593885642429)
+@@ -15,13 +15,13 @@
+                                     <form role="form" action="{{url("/admin/save-category")}}" method="post">
+                                         @method("POST")
+                                         @csrf
+-                                        <div class="form-group">
+-                                            <label for="exampleInputEmail1">Title Category</label>
+-                                            <input type="text"  name="title" class="form-control" placeholder="...">
++                                        <div class="form-group bmd-form-group">
++                                            <label class="bmd-label-floating">Title Category</label>
++                                            <input type="text" class="form-control" name="title">
+                                         </div>
+-                                        <div class="form-group">
+-                                            <label for="exampleInputFile">Url Category</label>
+-                                            <input type="text" name="url" class="form-control" placeholder="...">
++                                        <div class="form-group bmd-form-group">
++                                            <label class="bmd-label-floating">Url Category</label>
++                                            <input type="text" name="url" class="form-control" >
+                                         </div>
+                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
+                                     </form>
