@@ -20,6 +20,7 @@ class EventPolicy
     public function viewAny(User $user)
     {
         // dd($user)
+
         return $user->hasPermission("list_event");
     }
 
