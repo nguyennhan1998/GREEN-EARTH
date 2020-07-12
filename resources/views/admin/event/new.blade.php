@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("/admin/events/create")}}" method="POST">
+                                    <form role="form" action="{{url("/admin/events/save")}}" method="POST">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
@@ -42,11 +42,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Start At</label>
-                                            <input  type="date" name="start_at" class="form-control" placeholder="...">
+                                            <input  type="text" name="start_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>End At</label>
-                                            <input type="date" name="end_at" class="form-control" placeholder="...">
+                                            <input type="text" name="end_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>

@@ -15,9 +15,10 @@ Route::post("/save-category", "CategoryController@saveCategory");
 
 // Router events
 Route::prefix('events')->group(function () {
-    Route::get("", "EventController@index");
-    Route::get("/new", "EventController@new");
-    Route::post("/create", "EventController@create");
+    Route::get("/list", "EventController@index");
+    Route::get("/new","EventController@new");
+//    Route::get("/list","EventController@list");
+    Route::post("/save", "EventController@save");
     Route::get("/edit/{id}", "EventController@edit");
     Route::put("/update/{id}", "EventController@update");
     Route::delete("/delete/{id}", "EventController@delete");
@@ -49,19 +50,23 @@ Route::put("/update-product/{id}", "ProductController@updateProduct");
 Route::delete("/delete-product/{id}", "ProductController@deleteProduct");
 
 //Route article
-Route::get("/new-article", "ArticleController@newArticle");
-Route::get("/list-article", "ArticleController@listArticle");
-Route::get("/edit-article/{id}", "ArticleController@editArticle");
-Route::post("/save-article", "ArticleController@saveArticle");
-Route::put("/update-article/{id}", "ArticleController@updateArticle");
-Route::delete("/delete-article/{id}", "ArticleController@deleteArticle");
+Route::prefix('articles')->group(function () {
+    Route::get("/new", "ArticleController@newArticle");
+    Route::get("/list", "ArticleController@listArticle");
+    Route::get("/edit/{id}", "ArticleController@editArticle");
+    Route::post("/save", "ArticleController@saveArticle");
+    Route::put("/update/{id}", "ArticleController@updateArticle");
+    Route::delete("/delete/{id}", "ArticleController@deleteArticle");
+});
 
 
 //Route user
-Route::get("/new-user", "UserController@newUser");
-Route::get("/list-user", "UserController@listUser");
-Route::get("/edit-user/{id}", "UserController@editUser");
-Route::post("/save-user", "UserController@saveUser");
-Route::put("/update-user/{id}", "UserController@updateUser");
-Route::delete("/delete-user/{id}", "UserController@deleteUser");
+Route::prefix('users')->group(function () {
+Route::get("/new", "UserController@newUser");
+Route::get("/list", "UserController@listUser");
+Route::get("/edit/{id}", "UserController@editUser");
+Route::post("/save", "UserController@saveUser");
+Route::put("/update/{id}", "UserController@updateUser");
+Route::delete("/delete/{id}", "UserController@deleteUser");
+});
 

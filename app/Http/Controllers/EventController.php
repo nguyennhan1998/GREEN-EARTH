@@ -10,28 +10,29 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
     public function index(){
-        $this->authorize("viewAny" , Event::class);
+        $this->authorize("view" , Event::class);
+        $organizations=Organize::all();
         $events =Event::paginate(20);
         return view("admin.event.list", [
             "events" => $events,
-
+            "organizations"=>$organizations,
         ]);
-
     }
 
-//    public function new()
-//    {
-//        $this->authorize("new",Event::class);
-//        $events=Event::paginate(20);
-//        $organizations=Organize::all();
-//        return view("admin.event.new",
-//        [
-//            "events" => $events,
-//            "organizations"=>$organizations,
-//        ]);
-//    }
+    public function new()
+    {
+        $this->authorize("new",Event::class);
+        $events=Event::paginate(20);
+        $organizations=Organize::all();
+        return view("admin.event.new",
+        [
+            "events" => $events,
+            "organizations"=>$organizations,
+        ]);
+    }
 
-    public function create(Request $request){
+    public function save(Request $request){
+        $this->authorize("save",Event::class);
         $request->validate([
             "title"=>"required",
             "image"=>"required",
@@ -58,12 +59,12 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return $exception->getMessage();
         }
-       return redirect()->to("/admin/events");
+       return redirect()->to("/admin/events/list");
     }
 
     public function edit($id){
         $event = Event::findOrFail($id);
-        $this->authorize("edit" , $event, Event::class);
+        $this->authorize("edit",$event, Event::class);
         $organizations=Organize::all();
         return view("admin.event.edit",[
             "event"=>$event,
@@ -73,6 +74,7 @@ class EventController extends Controller
 
     public function update($id,Request $request){
         $event = Event::findOrFail($id);
+        $this->authorize("update",$event,Event::class);
         $request->validate([
             "title"=>"required",
             "image"=>"required",
@@ -97,16 +99,18 @@ class EventController extends Controller
         }catch (\Exception $exception){
             return redirect()->back();
         }
-        return redirect()->to("/admin/events");
+        return redirect()->to("/admin/events/list");
     }
 
     public function delete($id){
         $event = Event::findOrFail($id);
+        $this->authorize("delete",$event,Event::class);
+
         try {
             $event->delete();
         }catch (\Exception $exception){
 
         }
-        return redirect()->to("admin/events");
+        return redirect()->to("admin/events/list");
     }
 }

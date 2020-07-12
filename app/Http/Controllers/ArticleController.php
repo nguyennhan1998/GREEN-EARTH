@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use App\Article;
 use App\Category;
 use App\Event;
@@ -11,6 +11,7 @@ class ArticleController extends Controller
 {
     public function listArticle()
     {
+        $this->authorize("list", Article::class);
         $articles =Article::paginate(20);
         return view("admin.article.list", [
             "articles" => $articles
@@ -20,16 +21,20 @@ class ArticleController extends Controller
 
     public function newArticle()
     {
+        $this->authorize("new" , Article::class);
+
         $categories = Category::all();
         $events = Event::all();
         return view("admin.article.new",
             [
                 "categories"=>$categories,
-                "events"=>$events
+                "events"=>$events,
             ]);
     }
 
     public function saveArticle(Request $request){
+        $this->authorize("save" , Article::class);
+
         $request->validate([
             "title"=>"required",
             "description"=>"required",
@@ -56,7 +61,9 @@ class ArticleController extends Controller
     }
 
     public function editArticle($id){
+
         $article = Article::findOrFail($id);
+        $this->authorize('edit',$article, Article::class);
         $categories =Category::all();
         $event = Event::all();
         return view("admin.article.edit",[
@@ -68,6 +75,7 @@ class ArticleController extends Controller
 
     public function updateArticle($id,Request $request){
         $article = Article::findOrFail($id);
+        $this->authorize("update",$article, Article::class);
         $request->validate([
             "title"=>"required",
             "description"=>"required",
@@ -91,6 +99,7 @@ class ArticleController extends Controller
 
     public function deleteArticle($id){
         $article = Article::findOrFail($id);
+        $this->authorize("delete",$article, Article::class);
         try {
             $article->delete();
         }catch (\Exception $exception){

@@ -17,13 +17,13 @@ class EventPolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function viewAny(User $user)
-    {
-        // dd($user)
-        //
-
-        return $user->hasPermission("list_event");
-    }
+//    public function list(User $user)
+//    {
+//        // dd($user)
+//        //
+//
+//        return $user->hasPermission("list_event");
+//    }
 
     /**
      * Determine whether the user can view the model.
@@ -32,7 +32,7 @@ class EventPolicy
      * @param  \App\Event  $event
      * @return mixed
      */
-    public function view(User $user, Event $event)
+    public function view(User $user)
     {
         return $user->hasPermission("list_event");
     }
@@ -45,8 +45,14 @@ class EventPolicy
     public function edit(User $user, Event $event)
     {
 
-        return $event->__get("user_id") == Auth::id() && $user->hasPermission("new_event");
+        return $event->__get("user_id") == Auth::id() && $user->hasPermission("edit_event");
     }
+    public function save(User $user)
+    {
+
+        return $user->hasPermission("save_event");
+    }
+
 
     /**
      * Determine whether the user can create models.
@@ -68,7 +74,7 @@ class EventPolicy
      */
     public function update(User $user, Event $event)
     {
-        //
+        return $event->__get("user_id") == Auth::id() && $user->hasPermission("update_event");
     }
 
     /**
@@ -80,7 +86,7 @@ class EventPolicy
      */
     public function delete(User $user, Event $event)
     {
-        //
+        return $event->__get("user_id") == Auth::id() && $user->hasPermission("delete_event");
     }
 
     /**
@@ -106,4 +112,6 @@ class EventPolicy
     {
         //
     }
+
+
 }
