@@ -66,7 +66,6 @@ class UserPolicy
      * $model->__get("id") == Auth::id() &&
      */
     public function edit(User $user,User $model){
-//        dd($model->__get("id") == Auth::id() && $user->hasPermission("edit_user"));
         return $model->__get("id") == Auth::id() && $user->hasPermission("edit_user");
     }
     /**

@@ -52,6 +52,7 @@ class UserController extends Controller
         try {
             $user->delete();
         } catch (\Exception $exception) {
+
         }
         return redirect()->to("admin/users/list");
     }
