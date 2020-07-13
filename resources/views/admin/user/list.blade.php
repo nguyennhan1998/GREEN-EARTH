@@ -30,12 +30,12 @@
                                             <td>{{$user->__get("email")}}</td>
                                             <td>{{$user->__get("password")}}</td>
                                             <td>
-                                                <a href="{{url("admin/edit-user/{$user->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                                <a href="{{url("admin/users/edit/{$user->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                     <div class="ripple-container"></div>
                                                 </a>
                                             </td>
                                             <td>
-                                                <form action="{{url("admin/delete-user/{$user->__get("id")}")}}" method="post">
+                                                <form action="{{url("admin/users/delete/{$user->__get("id")}")}}" method="post">
                                                     @method("DELETE")
                                                     @csrf
                                                     <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>

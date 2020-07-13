@@ -1,0 +1,491 @@
+Index: database/migrations/2020_06_29_042630_create_table_articles.php
+===================================================================
+--- database/migrations/2020_06_29_042630_create_table_articles.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_042630_create_table_articles.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,38 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableArticles extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('articles', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("title");
+-            $table->string("description");
+-            $table->string("content");
+-            $table->unsignedBigInteger("category_id");
+-            $table->unsignedBigInteger("event_id");
+-            $table->timestamps();
+-            $table->foreign("category_id")->references("id")->on("categories");
+-            $table->foreign("event_id")->references("id")->on("events");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('articles');
+-    }
+-}
+Index: database/migrations/2020_06_30_014325_create_table_products.php
+===================================================================
+--- database/migrations/2020_06_30_014325_create_table_products.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_30_014325_create_table_products.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,35 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableProducts extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('products', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("name");
+-            $table->integer("price");
+-            $table->unsignedBigInteger("event_id");
+-            $table->timestamps();
+-            $table->foreign("event_id")->references("id")->on("events");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('products');
+-    }
+-}
+Index: database/migrations/2020_06_29_042212_create_table_events.php
+===================================================================
+--- database/migrations/2020_06_29_042212_create_table_events.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_042212_create_table_events.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,39 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableEvents extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('events', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("title");
+-            $table->string("description");
+-            $table->string("content");
+-            $table->dateTime("start_at");
+-            $table->dateTime("end_at");
+-            $table->integer("total_money");
+-            $table->unsignedBigInteger("organization_id");
+-            $table->timestamps();
+-            $table->foreign("organization_id")->references("id")->on("organizations");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('events');
+-    }
+-}
+Index: database/migrations/2020_06_29_042838_create_table_comments.php
+===================================================================
+--- database/migrations/2020_06_29_042838_create_table_comments.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_042838_create_table_comments.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,36 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableComments extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('comments', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("content");
+-            $table->unsignedBigInteger("user_id");
+-            $table->unsignedBigInteger("article_id");
+-            $table->timestamps();
+-            $table->foreign("user_id")->references("id")->on("users");
+-            $table->foreign("article_id")->references("id")->on("articles");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('comments');
+-    }
+-}
+Index: database/migrations/2014_10_12_100000_create_password_resets_table.php
+===================================================================
+--- database/migrations/2014_10_12_100000_create_password_resets_table.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2014_10_12_100000_create_password_resets_table.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,32 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreatePasswordResetsTable extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('password_resets', function (Blueprint $table) {
+-            $table->string('email')->index();
+-            $table->string('token');
+-            $table->timestamp('created_at')->nullable();
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('password_resets');
+-    }
+-}
+Index: database/migrations/2020_06_30_013904_create_table_bills.php
+===================================================================
+--- database/migrations/2020_06_30_013904_create_table_bills.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_30_013904_create_table_bills.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,34 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableBills extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('bills', function (Blueprint $table) {
+-            $table->id();
+-            $table->unsignedBigInteger("user_id");
+-            $table->integer("price");
+-            $table->timestamps();
+-            $table->foreign("user_id")->references("id")->on("users");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('bills');
+-    }
+-}
+Index: database/migrations/2020_06_29_040946_create_table_organizations.php
+===================================================================
+--- database/migrations/2020_06_29_040946_create_table_organizations.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_040946_create_table_organizations.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,38 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableOrganizations extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('organizations', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("email");
+-            $table->string("name");
+-            $table->string("phone");
+-            $table->string("address");
+-            $table->integer("client_id");
+-            $table->string("secret");
+-            $table->integer("team_size");
+-            $table->timestamps();
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('organizations');
+-    }
+-}
+Index: database/migrations/2020_06_30_014528_create_table_bill_details.php
+===================================================================
+--- database/migrations/2020_06_30_014528_create_table_bill_details.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_30_014528_create_table_bill_details.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,35 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableBillDetails extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('bill_details', function (Blueprint $table) {
+-            $table->id();
+-            $table->unsignedBigInteger("bill_id");
+-            $table->unsignedBigInteger("product_id");
+-            $table->timestamps();
+-            $table->foreign("bill_id")->references("id")->on("bills");
+-            $table->foreign("product_id")->references("id")->on("products");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('bill_details');
+-    }
+-}
+Index: database/migrations/2020_06_29_040829_create_table_categories.php
+===================================================================
+--- database/migrations/2020_06_29_040829_create_table_categories.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_040829_create_table_categories.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,33 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableCategories extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('categories', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("title");
+-            $table->string("url");
+-            $table->timestamps();
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('categories');
+-    }
+-}
+Index: database/migrations/2020_06_29_042458_create_table_user_events.php
+===================================================================
+--- database/migrations/2020_06_29_042458_create_table_user_events.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_042458_create_table_user_events.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,36 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableUserEvents extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('user_events', function (Blueprint $table) {
+-            $table->id();
+-            $table->unsignedBigInteger("user_id");
+-            $table->unsignedBigInteger("event_id");
+-            $table->integer("money_supporting");
+-            $table->timestamps();
+-            $table->foreign("user_id")->references("id")->on("users");
+-            $table->foreign("event_id")->references("id")->on("events");
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('user_events');
+-    }
+-}
+Index: database/migrations/2020_06_29_040652_create_table_users.php
+===================================================================
+--- database/migrations/2020_06_29_040652_create_table_users.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_040652_create_table_users.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,40 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableUsers extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('users', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("name");
+-            $table->string("email")->unique();
+-            $table->string("phone")->nullable();
+-            $table->string("address")->nullable();
+-            $table->string("client_id")->nullable();
+-            $table->string("secret_id")->nullable();
+-            $table->string("password");
+-            $table->integer("role")->default(1);
+-            $table->rememberToken();
+-            $table->timestamps();
+-        });
+-    }
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('users');
+-    }
+-}
+Index: database/migrations/2020_06_29_043118_create_table_images.php
+===================================================================
+--- database/migrations/2020_06_29_043118_create_table_images.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
++++ database/migrations/2020_06_29_043118_create_table_images.php	(revision a236c59d20510a17ed80c06e30653a9a11625a1e)
+@@ -1,35 +0,0 @@
+-<?php
+-
+-use Illuminate\Database\Migrations\Migration;
+-use Illuminate\Database\Schema\Blueprint;
+-use Illuminate\Support\Facades\Schema;
+-
+-class CreateTableImages extends Migration
+-{
+-    /**
+-     * Run the migrations.
+-     *
+-     * @return void
+-     */
+-    public function up()
+-    {
+-        Schema::create('images', function (Blueprint $table) {
+-            $table->id();
+-            $table->string("name");
+-            $table->unsignedBigInteger("article_id");
+-            $table->timestamps();
+-            $table->foreign("article_id")->references("id")->on("articles");
+-        });
+-    }
+-
+-
+-    /**
+-     * Reverse the migrations.
+-     *
+-     * @return void
+-     */
+-    public function down()
+-    {
+-        Schema::dropIfExists('images');
+-    }
+-}

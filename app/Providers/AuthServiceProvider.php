@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Policies\EventPolicy;
+use App\Event;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
@@ -14,7 +16,7 @@ class AuthServiceProvider extends ServiceProvider
      */
 
     protected $policies = [
-        \App\Post::class => \App\Policies\PostPolicy::class,
+        Event::class => EventPolicy::class,
     ];
 
     /**
