@@ -23,4 +23,12 @@ class Event extends Model
     {
         return $this->belongsTo('App\Models\User');
     }
+
+    public function getImage(){
+        if(is_null($this->__get("image"))){
+            return asset("images/image_defauld.png");
+        }
+        return asset($this->__get("image"));
+    }
+
 }

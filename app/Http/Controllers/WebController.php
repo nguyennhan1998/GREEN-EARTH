@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
     public function Home()
     {
-        return view("frontend.home");
+        $events = Event::all();
+        return view('frontend.event',[
+            'events'=>$events,
+        ]);
     }
 
     public function Blog()
@@ -23,13 +27,19 @@ class WebController extends Controller
 
     public function Event()
     {
-        return view("frontend.event");
+        $events = Event::all();
+        return view('frontend.event',[
+            'events'=>$events,
+        ]);
 
     }
 
-    public function EventDetail()
+    public function EventDetail($id)
     {
-        return view("frontend.event-detail");
+        $event = Event::findOrFail($id);
+        return view("frontend.event-detail",[
+            'event'=>$event,
+        ]);
     }
 
     public function Projects()

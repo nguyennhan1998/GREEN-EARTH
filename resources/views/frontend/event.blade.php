@@ -9,174 +9,30 @@
                     <div class="col-md-9">
                         <div class="environment-event environment-event-grid">
                             <ul class="row">
+                                @foreach($events as $event)
                                 <li class="col-md-6">
                                     <figure>
-                                        <a href="#"><img src="extra-images/event-grid-img1.jpg" alt=""><i class="fa fa-search-plus"></i></a>
+                                        <a href="#"><img src="{{$event->getImage()}}" alt=""><i class="fa fa-search-plus"></i></a>
 {{--                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>--}}
                                     </figure>
                                     <div class="environment-event-grid-text">
-                                        <h5><a href="#">title</a></h5>
+                                        <h5><a href="#">{{$event->__get("title")}}</a></h5>
                                         <ul class="environment-large-option">
                                             <li>
                                                 Start At:
-                                                <p></p>
+                                                <p>{{$event->__get("start_at")}}</p>
                                             </li>
                                             <li>
                                                 End At:
-                                                <p></p>
+                                                <p>{{$event->__get("end_at")}}</p>
                                             </li>
                                         </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
+                                        <p>{{$event->__get("description")}}</p>
+
+                                        <a href="{{"/event-detail/{$event->__get('id')}"}}" class="environment-readmore-btn">Read More</a>
                                     </div>
                                 </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img2.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">22<br>FEB</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img3.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">10<br>may</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img4.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">21<br>aug</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img5.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">09<br>sep</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img6.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">01<br>nov</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img3.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">01<br>nov</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
-                                <li class="col-md-6">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-grid-img1.jpg" alt=""><i class="fa fa-search-plus"></i></a>
-                                        <time datetime="2008-02-14 20:00">01<br>nov</time>
-                                    </figure>
-                                    <div class="environment-event-grid-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictu eget massa sit amet</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Location:
-                                                <p>Salford road, east London, UK</p>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod. </p>
-                                        <a href="event-detail.html" class="environment-readmore-btn">Read More</a>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
 
