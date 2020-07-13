@@ -46,7 +46,7 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"events"}}">
+                <a class="nav-link" href="{{"events/list"}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Event</p>
                 </a>
