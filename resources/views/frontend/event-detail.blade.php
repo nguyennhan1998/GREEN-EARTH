@@ -8,13 +8,14 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="environment-rich-editor environment-event-richeditor">
-
-                            <td>@php
+                            <h1><a href="#">{{$event->__get("title")}}</a></h1>
+                            <td>
+                                @php
                                     $doc = new DOMDocument();
                                     $doc->loadHTML($event->__get("content"));
                                  echo $doc->saveHTML();
-                                @endphp</td>
-
+                                @endphp
+                            </td>
                         </div>
                         <div class="environment-section-heading"><h2><span>Event Location</span></h2></div>
                         <div class="environment-event-map">
@@ -24,19 +25,19 @@
                             <ul>
                                 <li>
                                     <div class="environment-prev-post">
-                                        <figure><a href="404.html"><img src="extra-images/post-img1.jpg" alt=""></a></figure>
+                                        <figure><a href="#"><img src="{{asset("extra-images/post-img1.jpg")}}" alt=""></a></figure>
                                         <div class="environment-prev-artical">
-                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="404.html" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
+                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="#" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="environment-next-post">
-                                        <figure><a href="404.html"><img src="extra-images/post-img2.jpg" alt=""></a></figure>
+                                        <figure><a href="#"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a></figure>
                                         <div class="environment-next-artical">
-                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="404.html" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
+                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="#" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -46,9 +47,9 @@
                             <div class="environment-post-tags">
                                 <div class="environment-tags">
                                     <span>Tags:</span>
-                                    <a href="404.html">Energy</a>
-                                    <a href="404.html">Animals</a>
-                                    <a href="404.html">Help</a>
+                                    <a href="#">Energy</a>
+                                    <a href="#">Animals</a>
+                                    <a href="#">Help</a>
                                 </div>
                                 <div class="environment-blog-social">
                                     <ul>
@@ -75,71 +76,9 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-5">
-                                    <img src="extra-images/organizer-img.jpg" alt="" class="event-detail-img">
+                                    <img src="{{asset("extra-images/organizer-img.jpg")}}" alt="" class="event-detail-img">
                                 </div>
                             </div>
-                        </div>
-                        <div class="environment-event environment-related-event">
-                            <div class="environment-section-heading"><h2><span>Related Event</span></h2></div>
-                            <ul class="row">
-                                <li class="col-md-4">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img1.jpg" alt=""></a>
-                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>
-                                    </figure>
-                                    <div class="environment-related-event-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Organizer:
-                                                <a href="event-detail.html">G. David</a>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img2.jpg" alt=""></a>
-                                        <time datetime="2008-02-14 20:00">22<br>MAY</time>
-                                    </figure>
-                                    <div class="environment-related-event-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Organizer:
-                                                <a href="event-detail.html">G. David</a>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img3.jpg" alt=""></a>
-                                        <time datetime="2008-02-14 20:00">21<br>AUG</time>
-                                    </figure>
-                                    <div class="environment-related-event-text">
-                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                                        <ul class="environment-large-option">
-                                            <li>
-                                                Organizer:
-                                                <a href="event-detail.html">G. David</a>
-                                            </li>
-                                            <li>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
 
                     </div>

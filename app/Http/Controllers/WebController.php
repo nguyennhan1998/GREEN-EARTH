@@ -9,10 +9,7 @@ class WebController extends Controller
 {
     public function Home()
     {
-        $events = Event::all();
-        return view('frontend.event',[
-            'events'=>$events,
-        ]);
+        return view("frontend.home");
     }
 
     public function Blog()

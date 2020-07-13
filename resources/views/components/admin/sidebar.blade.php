@@ -46,13 +46,13 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{"events/list"}}">
+                <a class="nav-link" href="{{asset("admin/events/list")}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Event</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{"events/new"}}">
+                <a class="nav-link" href="{{asset("admin/events/new")}}">
                     <i class="material-icons">library_books</i>
                     <p>New Event</p>
                 </a>

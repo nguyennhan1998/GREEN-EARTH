@@ -28,8 +28,10 @@
                                             </li>
                                         </ul>
                                         <p>{{$event->__get("description")}}</p>
+                                        <div>
+                                            <a href="{{"/event-detail/{$event->__get('id')}"}}" class="environment-readmore-btn">Read More</a>
+                                        </div>
 
-                                        <a href="{{"/event-detail/{$event->__get('id')}"}}" class="environment-readmore-btn">Read More</a>
                                     </div>
                                 </li>
                                 @endforeach

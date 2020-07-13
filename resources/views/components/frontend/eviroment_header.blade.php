@@ -66,49 +66,31 @@
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="{{"home"}}">Home</a>
+                                    <a href="{{asset("home")}}">Home</a>
 
                                 </li>
                                 <li>
-                                    <a href="{{"about"}}">About Us</a>
+                                    <a href="{{asset("about")}}">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="{{"event"}}">EVENTS</a>
+                                    <a href="{{asset("event")}}">EVENTS</a>
+                                </li>
+                                <li>
+                                    <a href="{{asset("projects")}}">Projects</a>
                                     <ul class="environment-dropdown-menu">
 
+
                                         <li>
-                                            <a href="{{"event-detail"}}">Event Detail</a>
+                                            <a href="{{asset("projects-detail")}}">Project Detail</a>
 
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{{"projects"}}">Projects</a>
-                                    <ul class="environment-dropdown-menu">
-
-
-                                        <li>
-                                            <a href="{{"projects-detail"}}">Project Detail</a>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="{{"blog"}}">Blogs</a>
-                                    <ul class="environment-dropdown-menu">
-
-                                        <li>
-                                            <a href="blog-detail.html">Blog Detail</a>
-
-                                        </li>
-                                    </ul>
+                                    <a href="{{asset("blog")}}">Blogs</a>
                                 </li>
                                 <li class="environment-megamenu-li">
                                     <a href="#">Pages</a>
-                                    <ul class="environment-megamenu">
-                                        <li class="row">
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li class="environment-megamenu-li">
                                     <a href="#">shop</a>
@@ -117,7 +99,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{{"contact"}}">contact</a>
+                                    <a href="{{asset("contact")}}">contact</a>
                                 </li>
                             </ul>
                         </div>
