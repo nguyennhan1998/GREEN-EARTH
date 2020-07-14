@@ -93,10 +93,7 @@
                                     <a href="#">Pages</a>
                                 </li>
                                 <li class="environment-megamenu-li">
-                                    <a href="#">shop</a>
-                                    <ul class="environment-megamenu">
-
-                                    </ul>
+                                    <a href="{{asset("shop")}}">shop</a>
                                 </li>
                                 <li>
                                     <a href="{{asset("contact")}}">contact</a>

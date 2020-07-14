@@ -185,7 +185,7 @@
 
 
                         <div class="widget widget_cetagories">
-                            <div class="environment-widget-heading"><h2>Cetagories</h2></div>
+                            <div class="environment-widget-heading"><h2>Categories</h2></div>
                             <ul>
                                 <li><a href="404.html">Organic</a></li>
                                 <li><a href="404.html">Ecosystem</a></li>

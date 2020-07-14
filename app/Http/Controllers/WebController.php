@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Product;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -52,5 +53,19 @@ class WebController extends Controller
     public function Contact()
     {
         return view("frontend.contact");
+    }
+
+    public function Shop(){
+        $product = Product::all();
+        return view("frontend.shop",[
+            "product" => $product
+        ]);
+    }
+
+    public function ShopDetail($id){
+        $product = Product::findOrFail($id);
+        return view("frontend.shop-detail",[
+            "product"=>$product
+        ]);
     }
 }

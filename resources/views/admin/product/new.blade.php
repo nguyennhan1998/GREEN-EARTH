@@ -17,11 +17,27 @@
                                         @csrf
                                         <div class="form-group">
                                             <label>Name Product</label>
-                                            <input type="text"  name="name" class="form-control" placeholder="Name...">
+                                            <input type="text"  name="name" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image 1</label>
+                                            <input type="text"  name="image1" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image 2</label>
+                                            <input type="text"  name="image2" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image 3</label>
+                                            <input type="text"  name="image3" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image 4</label>
+                                            <input type="text"  name="image4" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="number"  name="price" class="form-control" placeholder="price...">
+                                            <input type="number"  name="price" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Event ID</label>

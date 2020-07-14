@@ -30,12 +30,20 @@ class ProductController extends Controller
     {
         $request->validate([
             "name" => "required",
+            "image1"=>"required",
+            "image2"=>"required",
+            "image3"=>"required",
+            "image4"=>"required",
             "price" => "required",
             "event_id" => "required",
         ]);
         try {
             Product::create([
                 "name" => $request->get("name"),
+                "image1" => $request->get("image1"),
+                "image2" => $request->get("image2"),
+                "image3" => $request->get("image3"),
+                "image4" => $request->get("image4"),
                 "price" => $request->get("price"),
                 "event_id" => $request->get("event_id"),
 
@@ -63,12 +71,20 @@ class ProductController extends Controller
         $products = Product::findOrFail($id);
         $request->validate([
             "name" => "required",
+            "image1"=>"required",
+            "image2"=>"required",
+            "image3"=>"required",
+            "image4"=>"required",
             "price" => "required",
             "event_id" => "required",
         ]);
         try {
             $products->update([
                 "name" => $request->get("name"),
+                "image1" => $request->get("image1"),
+                "image2" => $request->get("image2"),
+                "image3" => $request->get("image3"),
+                "image4" => $request->get("image4"),
                 "price" => $request->get("price"),
                 "event_id" => $request->get("event_id"),
             ]);
