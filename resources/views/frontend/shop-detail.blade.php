@@ -21,9 +21,9 @@
                                 <small>( 7 Costumer Reviews )</small>
                                 <div class="star-rating"><span class="star-rating-box" style="width:68%"></span></div>
                                 <span class="environment-price-cartbox">
-<del>$ 20.00</del>
-$ 15.00
-</span>
+                                    <del>$ 20.00</del>
+                                    {{$product->__get("price")}}
+                                </span>
                                 <p>Lorem ipsum dolor sit amet, cosectetur adipiscge lit. Vestibulum a nunc dui. Curbitur digniss luctus nisi id euismod.</p>
                                 <a href="#" class="environment-readmore-btn">Add To Cart</a>
                                 <div class="environment-select"><input type="number" name="quantity" min="01" max="10"></div>
