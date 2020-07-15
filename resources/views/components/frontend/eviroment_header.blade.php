@@ -23,6 +23,7 @@
                             <a href="#" class="icon-logo22"></a>
                         </li>
                     </ul>
+
                     <ul class="environment-strip-info">
                         <li>
                             <i class="fa fa-map-marker"></i>
