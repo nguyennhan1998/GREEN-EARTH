@@ -12,3 +12,4 @@ Route::get("/projects-detail","WebController@ProjectsDetail");
 Route::get("/contact","WebController@Contact");
 Route::get("/shop","WebController@Shop");
 Route::get("/shop-detail/{id}","WebController@ShopDetail");
+Route::get("/addtocart","WebController@AddToCart");

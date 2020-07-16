@@ -17,7 +17,7 @@
                                         <th>ID</th>
                                         <th>Title</th>
                                         <th>Description</th>
-                                        <th>Content</th>
+{{--                                        <th>Content</th>--}}
                                         <th>Category ID</th>
                                         <th>Event ID</th>
                                         <th>Edit</th>
@@ -30,11 +30,11 @@
                                             <td>{{$article->__get("id")}}</td>
                                             <td>{{$article->__get("title")}}</td>
                                             <td>{{$article->__get("description")}}</td>
-                                            <td>@php
-                                                    $doc = new DOMDocument();
-                                                    $doc->loadHTML($article->__get("content"));
-                                                 echo $doc->saveHTML();
-                                                @endphp</td>
+{{--                                            <td>@php--}}
+{{--                                                    $doc = new DOMDocument();--}}
+{{--                                                    $doc->loadHTML($article->__get("content"));--}}
+{{--                                                 echo $doc->saveHTML();--}}
+{{--                                                @endphp</td>--}}
                                             <td>{{$article->__get("category_id")}}</td>
                                             <td>{{$article->__get("event_id")}}</td>
                                             <td>

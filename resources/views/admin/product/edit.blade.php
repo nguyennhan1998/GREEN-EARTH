@@ -36,6 +36,10 @@
                                             <input value="{{$products->__get("image4")}}" type="text" name="image4" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
+                                            <label>Qty</label>
+                                            <input value="{{$products->__get("qty")}}" type="number"  name="qty" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
                                             <label>Price</label>
                                             <input value="{{$products->__get("price")}}" type="number"  name="price" class="form-control" placeholder="...">
                                         </div>

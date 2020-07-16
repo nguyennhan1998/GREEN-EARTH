@@ -34,6 +34,7 @@ class ProductController extends Controller
             "image2"=>"required",
             "image3"=>"required",
             "image4"=>"required",
+            "qty"=>"required",
             "price" => "required",
             "event_id" => "required",
         ]);
@@ -44,6 +45,7 @@ class ProductController extends Controller
                 "image2" => $request->get("image2"),
                 "image3" => $request->get("image3"),
                 "image4" => $request->get("image4"),
+                "qty" => $request->get("qty"),
                 "price" => $request->get("price"),
                 "event_id" => $request->get("event_id"),
 
@@ -75,6 +77,7 @@ class ProductController extends Controller
             "image2"=>"required",
             "image3"=>"required",
             "image4"=>"required",
+            "qty"=>"required",
             "price" => "required",
             "event_id" => "required",
         ]);
@@ -85,6 +88,7 @@ class ProductController extends Controller
                 "image2" => $request->get("image2"),
                 "image3" => $request->get("image3"),
                 "image4" => $request->get("image4"),
+                "qty" => $request->get("qty"),
                 "price" => $request->get("price"),
                 "event_id" => $request->get("event_id"),
             ]);

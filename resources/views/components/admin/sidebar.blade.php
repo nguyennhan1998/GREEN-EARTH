@@ -58,13 +58,13 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item  ">
-                <a class="nav-link" href="{{ url('admin/list-article')}}">
+                <a class="nav-link" href="{{ asset('admin/articles/list')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Article</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="{{ url('admin/new-article')}}">
+                <a class="nav-link" href="{{ asset("admin/articles/new")}}">
                     <i class="material-icons">library_books</i>
                     <p>New Article</p>
                 </a>

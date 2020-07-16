@@ -14,6 +14,7 @@ class Product extends Model
         "image2",
         "image3",
         "image4",
+        "qty",
         "price",
         "event_id",
     ];

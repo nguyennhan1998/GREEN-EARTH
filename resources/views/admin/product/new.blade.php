@@ -36,6 +36,10 @@
                                             <input type="text"  name="image4" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
+                                            <label>Quanty</label>
+                                            <input type="number"  name="qty" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="form-group">
                                             <label>Price</label>
                                             <input type="number"  name="price" class="form-control" placeholder="...">
                                         </div>
