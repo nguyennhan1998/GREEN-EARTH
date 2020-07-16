@@ -19,6 +19,7 @@ class UpdateTableProducts extends Migration
             $table->string("image2")->after("image1")->nullable;
             $table->string("image3")->after("image2")->nullable;
             $table->string("image4")->after("image3")->nullable;
+            $table->unsignedBigInteger("qty")->after("image4")->nullable;
         });
     }
 
@@ -35,6 +36,7 @@ class UpdateTableProducts extends Migration
             $table->dropColumn("image2");
             $table->dropColumn("image3");
             $table->dropColumn("image4");
+            $table->dropColumn("qty");
         });
     }
 }

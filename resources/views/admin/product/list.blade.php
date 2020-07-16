@@ -20,6 +20,7 @@
                                         <th>Image2</th>
                                         <th>Image3</th>
                                         <th>Image4</th>
+                                        <th>Quanty</th>
                                         <th>Price</th>
                                         <th>Event ID</th>
                                         <th>Edit</th>
@@ -35,6 +36,7 @@
                                             <td><img src="{{$product->__get('image2')}}" width="50" height="50"/></td>
                                             <td><img src="{{$product->__get('image3')}}" width="50" height="50"/></td>
                                             <td><img src="{{$product->__get('image4')}}" width="50" height="50"/></td>
+                                            <td>{{$product->__get("qty")}}</td>
                                             <td>{{$product->__get("price")}}</td>
                                             <td>{{$product->__get("event_id")}}</td>
                                             <td>

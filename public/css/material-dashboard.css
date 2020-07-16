@@ -378,7 +378,7 @@ template {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid black;
     page-break-inside: avoid;
   }
 
@@ -904,7 +904,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: black;
 }
 
 .blockquote-footer::before {
@@ -937,7 +937,7 @@ mark,
 
 .figure-caption {
   font-size: 90%;
-  color: #6c757d;
+  color: black;
 }
 
 code,
@@ -19552,7 +19552,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .dark-edition {
-  background-color: #1a2035;
+  background-color: white;
 }
 
 .dark-edition .btn,
@@ -20468,7 +20468,7 @@ Copyright (c) 2015 Daniel Eden
 
 .dark-edition .navbar:not([class*="bg-"]) .navbar-brand,
 .dark-edition .navbar:not([class*="bg-"]) .collapse .navbar-nav .nav-item .nav-link {
-  color: #a9afbbd1;
+  color: black;
 }
 
 .dark-edition .navbar[class*="bg-"] .form-control::-moz-placeholder {
@@ -20676,7 +20676,7 @@ Copyright (c) 2015 Daniel Eden
 .dark-edition .table>thead>tr>td,
 .dark-edition .table>tbody>tr>td,
 .dark-edition .table>tfoot>tr>td {
-  color: #8b92a9;
+  color: black;
   border-color: rgba(180, 180, 180, 0.1);
 }
 

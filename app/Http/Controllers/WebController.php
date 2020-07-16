@@ -68,4 +68,8 @@ class WebController extends Controller
             "product"=>$product
         ]);
     }
+
+    public function AddToCart(){
+
+    }
 }
