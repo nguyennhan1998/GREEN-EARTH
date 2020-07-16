@@ -624,6 +624,17 @@ $ 19.00
                 </div>
             </div>
         </div>
-
+        <div class="environment-main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="environment-fancy-title"><h2>Your <span>Feedback</span></h2></div>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=723562798478841&autoLogAppEvents=1" nonce="sbTHuYxo"></script>
+                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="2" data-width=1150 data-colorscheme="light"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
