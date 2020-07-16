@@ -129,7 +129,8 @@
                                     <small>funds collected</small>
                                 </li>
                             </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis in eros etiaculis. Vivamus volutpat hendrerit elementum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis in eros
+                                etiaculis. Vivamus volutpat hendrerit elementum.</p>
                             <div class="clearfix"></div>
                             <a href="donation-page.html" class="environment-donate-btn">Donate Now</a>
                         </div>
@@ -146,12 +147,14 @@
                     <ul class="row">
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img1.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img1.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -159,12 +162,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img2.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img2.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -172,12 +177,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img3.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img3.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -185,12 +192,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img4.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img4.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -198,12 +207,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img5.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img5.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -211,12 +222,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img6.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img6.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -224,12 +237,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img7.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img7.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -237,12 +252,14 @@
                         </li>
                         <li class="col-md-3">
                             <figure>
-                                <a href="project-detail.html"><img src="extra-images/project-gallery-img8.jpg" alt=""></a>
+                                <a href="project-detail.html"><img src="extra-images/project-gallery-img8.jpg"
+                                                                   alt=""></a>
                                 <figcaption>
                                     <span class="environment-top-bottom-border"></span>
                                     <div class="environment-gallery-text">
                                         <h3><a href="project-detail.html">So to deliberately render</a></h3>
-                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus rutm. Ut vitae</p>
+                                        <p>Lorem ipsum dolor sit amet, consecr aipi elit. Ut tibulum lacus in cursus
+                                            rutm. Ut vitae</p>
                                         <span><a href="project-detail.html" class="readmore-btn">READ MORE</a></span>
                                     </div>
                                 </figcaption>
@@ -262,10 +279,13 @@
                         <div class="environment-blog environment-blog-grid">
                             <ul class="row">
                                 <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-1.jpg" alt=""><i class="fa fa-share-square-o"></i></a></figure>
+                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-1.jpg"
+                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
+                                    </figure>
                                     <div class="environment-blog-grid-text">
                                         <h4><a href="blog-detail.html">Phasellus vitae ligula sodales</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus in cursus.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
+                                            in cursus.</p>
                                         <ul class="blog-grid-option">
                                             <li>
                                                 <i class="fa fa-calendar-o"></i>
@@ -283,10 +303,13 @@
                                     </div>
                                 </li>
                                 <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-2.jpg" alt=""><i class="fa fa-share-square-o"></i></a></figure>
+                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-2.jpg"
+                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
+                                    </figure>
                                     <div class="environment-blog-grid-text">
                                         <h4><a href="blog-detail.html">Eco environment green enviro</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus in cursus.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
+                                            in cursus.</p>
                                         <ul class="blog-grid-option">
                                             <li>
                                                 <i class="fa fa-calendar-o"></i>
@@ -304,10 +327,13 @@
                                     </div>
                                 </li>
                                 <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-3.jpg" alt=""><i class="fa fa-share-square-o"></i></a></figure>
+                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-3.jpg"
+                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
+                                    </figure>
                                     <div class="environment-blog-grid-text">
                                         <h4><a href="blog-detail.html">Printing and typesetting</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus in cursus.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
+                                            in cursus.</p>
                                         <ul class="blog-grid-option">
                                             <li>
                                                 <i class="fa fa-calendar-o"></i>
@@ -341,11 +367,13 @@
                             <ul class="row">
                                 <li class="col-md-12">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img1.jpg" alt=""><i class="fa fa-share-square-o"></i></a>
+                                        <a href="event-detail.html"><img src="extra-images/modren-event-img1.jpg"
+                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
                                         <time datetime="2008-02-14 20:00">09<br>FEB</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci quis, fermentu retra in ipsum vitae</a></h3>
+                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
+                                                quis, fermentu retra in ipsum vitae</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
                                                 <i class="fa fa-clock-o"></i>
@@ -358,16 +386,21 @@
                                                 <p>9907 Salford Street , east London, UK</p>
                                             </li>
                                         </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor. Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim et ultricies.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
+                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
+                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
+                                            et ultricies.</p>
                                     </div>
                                 </li>
                                 <li class="col-md-12">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img2.jpg" alt=""><i class="fa fa-share-square-o"></i></a>
+                                        <a href="event-detail.html"><img src="extra-images/modren-event-img2.jpg"
+                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
                                         <time datetime="2008-02-14 20:00">09<br>FEB</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci quis, fermentu retra in ipsum vitae</a></h3>
+                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
+                                                quis, fermentu retra in ipsum vitae</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
                                                 <i class="fa fa-clock-o"></i>
@@ -380,16 +413,21 @@
                                                 <p>9907 Salford Street , east London, UK</p>
                                             </li>
                                         </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor. Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim et ultricies.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
+                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
+                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
+                                            et ultricies.</p>
                                     </div>
                                 </li>
                                 <li class="col-md-12">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img3.jpg" alt=""><i class="fa fa-share-square-o"></i></a>
+                                        <a href="event-detail.html"><img src="extra-images/modren-event-img3.jpg"
+                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
                                         <time datetime="2008-02-14 20:00">09<br>FEB</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci quis, fermentu retra in ipsum vitae</a></h3>
+                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
+                                                quis, fermentu retra in ipsum vitae</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
                                                 <i class="fa fa-clock-o"></i>
@@ -402,7 +440,10 @@
                                                 <p>9907 Salford Street , east London, UK</p>
                                             </li>
                                         </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor. Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim et ultricies.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
+                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
+                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
+                                            et ultricies.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -421,24 +462,34 @@
                     <div class="col-md-6">
                         <div class="environment-section-text">
                             <h2>Our Company is An End-to-End Mid stream At</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing varius diam ac ipsuelit ut Nulla convallis neque</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing varius diam ac ipsuelit ut Nulla
+                                convallis neque</p>
                             <a href="404.html" class="environment-simple-btn">Get A quote <span></span></a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="environment-donate-form">
                             <h2>Make A <span>Donation</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vesbulumla us in cursus rutrum. Ut vitae sagittis felis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vesbulumla us in cursus
+                                rutrum. Ut vitae sagittis felis.</p>
                             <form>
                                 <ul>
                                     <li>
-                                        <input type="text" value="Name*" onblur="if(this.value == '') { this.value ='Name*'; }" onfocus="if(this.value =='Name*') { this.value = ''; }"></li>
+                                        <input type="text" value="Name*"
+                                               onblur="if(this.value == '') { this.value ='Name*'; }"
+                                               onfocus="if(this.value =='Name*') { this.value = ''; }"></li>
                                     <li>
-                                        <input type="text" value="Phone*" onblur="if(this.value == '') { this.value ='Phone*'; }" onfocus="if(this.value =='Phone*') { this.value = ''; }"></li>
+                                        <input type="text" value="Phone*"
+                                               onblur="if(this.value == '') { this.value ='Phone*'; }"
+                                               onfocus="if(this.value =='Phone*') { this.value = ''; }"></li>
                                     <li>
-                                        <input type="text" value="Email*" onblur="if(this.value == '') { this.value ='Email*'; }" onfocus="if(this.value =='Email*') { this.value = ''; }"></li>
+                                        <input type="text" value="Email*"
+                                               onblur="if(this.value == '') { this.value ='Email*'; }"
+                                               onfocus="if(this.value =='Email*') { this.value = ''; }"></li>
                                     <li>
-                                        <input type="text" value="Website*" onblur="if(this.value == '') { this.value ='Website*'; }" onfocus="if(this.value =='Website*') { this.value = ''; }"></li>
+                                        <input type="text" value="Website*"
+                                               onblur="if(this.value == '') { this.value ='Website*'; }"
+                                               onfocus="if(this.value =='Website*') { this.value = ''; }"></li>
                                     <li class="environment-select-form">
                                         <div class="environment-select-two">
                                             <select>
@@ -480,12 +531,14 @@
                             <ul class="row">
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid1.jpg" alt=""></a>
-                                        <figcaption> <a href="cause-detail.html">12 Donors</a> </figcaption>
+                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid1.jpg"
+                                                                         alt=""></a>
+                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
                                         <h5><a href="cause-detail.html">Go Green Movement</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum lacus </p>
+                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
+                                            lacus </p>
                                         <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
@@ -498,12 +551,14 @@
                                 </li>
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid2.jpg" alt=""></a>
-                                        <figcaption> <a href="cause-detail.html">12 Donors</a> </figcaption>
+                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid2.jpg"
+                                                                         alt=""></a>
+                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
                                         <h5><a href="cause-detail.html">Give Them Education</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum lacus </p>
+                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
+                                            lacus </p>
                                         <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
@@ -516,12 +571,14 @@
                                 </li>
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid3.jpg" alt=""></a>
-                                        <figcaption> <a href="cause-detail.html">12 Donors</a> </figcaption>
+                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid3.jpg"
+                                                                         alt=""></a>
+                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
                                         <h5><a href="cause-detail.html">Help In Planting Trees</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum lacus </p>
+                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
+                                            lacus </p>
                                         <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
@@ -534,12 +591,14 @@
                                 </li>
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid4.jpg" alt=""></a>
-                                        <figcaption> <a href="cause-detail.html">12 Donors</a> </figcaption>
+                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid4.jpg"
+                                                                         alt=""></a>
+                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
                                         <h5><a href="cause-detail.html">Go Green Movement</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum lacus </p>
+                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
+                                            lacus </p>
                                         <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
@@ -565,10 +624,12 @@
                         <div class="environment-fancy-title"><h2>Our <span>Shop</span></h2></div>
                         <div class="environment-shop environment-shop-grid shop-grid-slider">
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img1.jpg" alt=""><i class="fa fa-shopping-cart"></i></a></figure>
+                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img1.jpg" alt=""><i
+                                            class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
                                     <h4><a href="shop-detail.html">Black Ninja T-Shirt</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span></div>
+                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                    </div>
                                     <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
@@ -576,10 +637,12 @@ $ 19.00
                                 </div>
                             </div>
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i class="fa fa-shopping-cart"></i></a></figure>
+                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i
+                                            class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
                                     <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span></div>
+                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                    </div>
                                     <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
@@ -587,10 +650,12 @@ $ 19.00
                                 </div>
                             </div>
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img3.jpg" alt=""><i class="fa fa-shopping-cart"></i></a></figure>
+                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img3.jpg" alt=""><i
+                                            class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
                                     <h4><a href="shop-detail.html">Ship Idea T-Shirt</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span></div>
+                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                    </div>
                                     <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
@@ -598,10 +663,12 @@ $ 19.00
                                 </div>
                             </div>
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img4.jpg" alt=""><i class="fa fa-shopping-cart"></i></a></figure>
+                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img4.jpg" alt=""><i
+                                            class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
                                     <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span></div>
+                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                    </div>
                                     <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
@@ -609,10 +676,12 @@ $ 19.00
                                 </div>
                             </div>
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i class="fa fa-shopping-cart"></i></a></figure>
+                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i
+                                            class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
                                     <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span></div>
+                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                    </div>
                                     <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
@@ -630,8 +699,12 @@ $ 19.00
                     <div class="col-md-12">
                         <div class="environment-fancy-title"><h2>Your <span>Feedback</span></h2></div>
                         <div id="fb-root"></div>
-                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=723562798478841&autoLogAppEvents=1" nonce="sbTHuYxo"></script>
-                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="2" data-width=1150 data-colorscheme="light"></div>
+                        <script async defer crossorigin="anonymous"
+                                src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=723562798478841&autoLogAppEvents=1"
+                                nonce="sbTHuYxo"></script>
+                        <div class="fb-comments"
+                             data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                             data-numposts="2" data-width="auto" data-colorscheme="light"></div>
                     </div>
                 </div>
             </div>
