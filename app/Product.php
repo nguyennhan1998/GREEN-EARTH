@@ -19,6 +19,7 @@ class Product extends Model
         "event_id",
     ];
 
+
     public function getImage(){
         if(is_null($this->__get("image1"))){
             return asset("images/image_defauld.png");
