@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Role;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,10 @@ class UserController extends Controller
     public function listUser()
     {
         $this->authorize("list", User::class);
-        $users = User::all();
+
+        $users = User::leftjoin("role_user","users.id","=","role_user.user_id")
+            ->leftjoin("roles","roles.id","=","role_user.user_id")
+            ->select("users.*","roles.name as rolename")->get();
         return view("admin.user.list", [
             "users" => $users,
         ]);
@@ -19,18 +23,24 @@ class UserController extends Controller
 
     public function updateUser(Request $request, $id)
     {
-        $users = User::findOrFail($id);
+//        $users = User::findOrFail($id);
+        $users = User::leftjoin("role_user","users.id","=","role_user.user_id")
+            ->leftjoin("roles","roles.id","=","role_user.user_id")
+            ->select("users.*","roles.name as rolename")->findOrFail($id);
+
         $this->authorize("update",$users,User::class);
         $request->validate([
             "name",
             "email",
             "password",
+            "rolename",
         ]);
         try {
             $users->update([
                 "name" => $request->get("name"),
                 "email" => $request->get("email"),
                 "password" => $request->get("password"),
+                "rolename"=>$request->get("rolename"),
             ]);
         } catch (\Exception $exception) {
             return redirect()->back();
@@ -81,8 +91,11 @@ class UserController extends Controller
 
     public function editUser($id)
     {
-        $user = User::findOrFail($id);
+        $user =User::leftjoin("role_user","users.id","=","role_user.user_id")
+        ->leftjoin("roles","roles.id","=","role_user.user_id")
+        ->select("users.*","roles.name as rolename")->findOrFail($id);
         $this->authorize("edit", $user, User::class);
+
         return view("admin.user.edit", [
             "user" => $user,
         ]);

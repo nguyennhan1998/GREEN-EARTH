@@ -55,7 +55,7 @@ class UserPolicy
      */
     public function delete(User $user,User $model)
     {
-        return $model->__get("id")==Auth::id() && $user->hasPermission("delete_user");
+        return $model->__get("id")!=Auth::id() && $user->hasPermission("delete_user");
     }
     /**
      * Determine whether the user can delete the model.
@@ -66,7 +66,7 @@ class UserPolicy
      * $model->__get("id") == Auth::id() &&
      */
     public function edit(User $user,User $model){
-        return $model->__get("id") == Auth::id() && $user->hasPermission("edit_user");
+        return $model->__get("id") != Auth::id() && $user->hasPermission("edit_user");
     }
     /**
      * Determine whether the user can delete the model.
@@ -77,7 +77,7 @@ class UserPolicy
      */
     public function update(User $user,User $model){
 
-        return $model->__get("id")==Auth::id() && $user->hasPermission("update_user");
+        return $model->__get("id")!=Auth::id() && $user->hasPermission("update_user");
 
     }
 
