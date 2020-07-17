@@ -21,11 +21,22 @@
                                         </div>
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">Email</label>
-                                            <input type="email" name="email" class="form-control" >
+                                            <input type="email" name="email" class="form-control">
                                         </div>
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">password</label>
                                             <input type="password" name="password" class="form-control" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label type="integer" class="bmd-label-floating">give role</label>
+                                            <select>
+                                                <option>
+                                                    Admin event
+                                                </option>
+                                                <option>
+                                                    Admin article
+                                                </option>
+                                            </select>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>
