@@ -17,6 +17,7 @@ class Product extends Model
         "qty",
         "price",
         "event_id",
+
     ];
 
     public function getImage(){
