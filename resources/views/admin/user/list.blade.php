@@ -18,6 +18,7 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>password</th>
+                                        <th>role</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
@@ -29,6 +30,7 @@
                                             <td>{{$user->__get("name")}}</td>
                                             <td>{{$user->__get("email")}}</td>
                                             <td>{{$user->__get("password")}}</td>
+                                            <td>{{$user->__get("rolename")}}</td>
                                             <td>
                                                 <a href="{{url("admin/users/edit/{$user->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                     <div class="ripple-container"></div>

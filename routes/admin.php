@@ -16,7 +16,7 @@ Route::post("/save-category", "CategoryController@saveCategory");
 // Router events
 Route::prefix('events')->group(function () {
     Route::get("/list", "EventController@index");
-    Route::get("/new","EventController@new");
+    Route::get("/new", "EventController@new");
 //    Route::get("/list","EventController@list");
     Route::post("/save", "EventController@save");
     Route::get("/edit/{id}", "EventController@edit");
@@ -62,11 +62,11 @@ Route::prefix('articles')->group(function () {
 
 //Route user
 Route::prefix('users')->group(function () {
-Route::get("/new", "UserController@newUser");
-Route::get("/list", "UserController@listUser");
-Route::get("/edit/{id}", "UserController@editUser");
-Route::post("/save", "UserController@saveUser");
-Route::put("/update/{id}", "UserController@updateUser");
-Route::delete("/delete/{id}", "UserController@deleteUser");
+    Route::get("/new", "UserController@newUser");
+    Route::get("/list", "UserController@listUser");
+    Route::get("/edit/{id}", "UserController@editUser");
+    Route::post("/save", "UserController@saveUser");
+    Route::put("/update/{id}", "UserController@updateUser");
+    Route::delete("/delete/{id}", "UserController@deleteUser");
 });
 

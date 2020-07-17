@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/update-user/{$user->__get("id")}")}}" method="post">
+                                    <form role="form" action="{{url("admin/users/update-user/{$user->__get("id")}")}}" method="post">
                                         @method("PUT")
                                         @csrf
                                         <div class="form-group bmd-form-group">
@@ -27,6 +27,24 @@
                                             <label class="bmd-label-floating">password</label>
                                             <input value="{{$user->__get("password")}}" type="password" name="password" class="form-control" >
                                         </div>
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">give role</label>
+                                            <select name="rolename">
+                                                <option value="admin">
+                                                    Admin
+
+                                                </option>
+                                                <option value="admin_event">
+                                                    Admin event
+                                                </option>
+                                                <option value="admin_article">
+                                                    Admin article
+                                                </option>
+
+                                            </select>
+                                            <input value="{{$user->__get("rolename")}}" type="text" name="password" class="form-control">
+                                        </div>
+
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>
                                 </table>
