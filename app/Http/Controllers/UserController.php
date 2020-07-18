@@ -33,14 +33,12 @@ class UserController extends Controller
             "name",
             "email",
             "password",
-            "rolename",
         ]);
         try {
             $users->update([
                 "name" => $request->get("name"),
                 "email" => $request->get("email"),
                 "password" => $request->get("password"),
-                "rolename"=>$request->get("rolename"),
             ]);
         } catch (\Exception $exception) {
             return redirect()->back();
