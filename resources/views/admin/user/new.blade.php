@@ -30,12 +30,10 @@
                                         <div class="form-group">
                                             <label type="integer" class="bmd-label-floating">give role</label>
                                             <select>
-                                                <option>
-                                                    Admin event
-                                                </option>
-                                                <option>
-                                                    Admin article
-                                                </option>
+                                                @foreach($roles as $role)
+                                                <input type="checkbox" name="checkbox[]" value="{{$role->id}}"/>
+                                                    <label for="role_name">{{$role->name}}</label>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
