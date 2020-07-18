@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("admin/users/update-user/{$user->__get("id")}")}}" method="post">
+                                    <form role="form" action="{{url("admin/users/update/{$user->__get("id")}")}}" method="post">
                                         @method("PUT")
                                         @csrf
                                         <div class="form-group bmd-form-group">
@@ -29,22 +29,14 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="bmd-label-floating">give role</label>
-                                            <select name="rolename">
-                                                <option value="admin">
-                                                    Admin
-
+                                            <select name="role_name">
+                                                @foreach($roles as $role)
+                                                <option value="{{$role->id}}">
+                                                    {{$role->name}}
                                                 </option>
-                                                <option value="admin_event">
-                                                    Admin event
-                                                </option>
-                                                <option value="admin_article">
-                                                    Admin article
-                                                </option>
-
+                                                @endforeach
                                             </select>
-                                            <input value="{{$user->__get("rolename")}}" type="text" name="password" class="form-control">
                                         </div>
-
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>
                                 </table>
