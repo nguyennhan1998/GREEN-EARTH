@@ -68,18 +68,18 @@
             </div>
 
             <div class="flex-c p-b-112">
-                <a href="#" class="login100-social-item">
+                <a href="{{ url('/auth/redirect/facebook') }}" class="login100-social-item">
                     <i class="fa fa-facebook-f"></i>
                 </a>
 
-                <a href="#" class="login100-social-item">
+                <a href="{{ url('/auth/redirect/google') }}" class="login100-social-item">
                     <img src="images/icons/icon-google.png" alt="GOOGLE">
                 </a>
             </div>
 
             <div class="text-center">
-                <a href="#" class="txt2 hov1">
-                    Sign Up
+                <a href="/login" class="txt2 hov1" style=" font-size: 20px">
+                    Sign In
                 </a>
             </div>
         </form>
