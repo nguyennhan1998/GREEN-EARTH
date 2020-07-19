@@ -17,11 +17,11 @@
                                         @csrf
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">Title Category</label>
-                                            <input type="text" class="form-control" name="title">
+                                            <input  style="color:black;"  type="text" class="form-control" name="title">
                                         </div>
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">Url Category</label>
-                                            <input type="text" name="url" class="form-control" >
+                                            <input style="color:black;" type="text" name="url" class="form-control" >
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>

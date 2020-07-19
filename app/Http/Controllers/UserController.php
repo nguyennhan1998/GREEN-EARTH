@@ -16,8 +16,10 @@ class UserController extends Controller
         $this->authorize("list", User::class);
 
         $users = User::leftjoin("role_user", "users.id", "=", "role_user.user_id")
-            ->leftjoin("roles", "roles.id", "=", "role_user.user_id")
-            ->select("users.*", "roles.id as role_id", "roles.name as rolename")->get();
+            ->leftjoin("roles", "roles.id","=", "role_user.user_id")
+            ->select("users.*", "roles.id as role_id","roles.name as rolename")
+            ->get();
+
         return view("admin.user.list", [
             "users" => $users,
         ]);
@@ -121,6 +123,7 @@ class UserController extends Controller
         return view("admin.user.edit", [
             "user" => $user,
             "roles" => $roles,
+
         ]);
     }
 }

@@ -17,25 +17,18 @@
                                         @csrf
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">name</label>
-                                            <input value="{{$user->__get("name")}}" type="text" class="form-control" name="name">
+                                            <input style="color:black;" value="{{$user->__get("name")}}" style="color: black;font-size: 16px" type="text" class="form-control" name="name">
                                         </div>
                                         <div class="form-group bmd-form-group">
                                             <label class="bmd-label-floating">Email</label>
-                                            <input value="{{$user->__get("email")}}" type="email" name="email" class="form-control" >
-                                        </div>
-                                        <div class="form-group bmd-form-group">
-                                            <label class="bmd-label-floating">password</label>
-                                            <input value="{{$user->__get("password")}}" type="password" name="password" class="form-control" >
+                                            <input style="color:black;" value="{{$user->__get("email")}}"  style="color: black;font-size: 16px" type="email" name="email" class="form-control" >
                                         </div>
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">give role</label>
-                                            <select name="role_name">
+                                            <label class="bmd-label-floating">give role</label><br>
                                                 @foreach($roles as $role)
-                                                <option value="{{$role->id}}">
-                                                    {{$role->name}}
-                                                </option>
+                                                    <label for="role_id">{{$role->name}}</label>
+                                                <input type="radio" name="role_name" value="{{$role->id}}" id="role_id">
                                                 @endforeach
-                                            </select>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>

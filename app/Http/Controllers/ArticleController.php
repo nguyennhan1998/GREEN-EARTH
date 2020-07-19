@@ -41,20 +41,20 @@ class ArticleController extends Controller
             "content"=>"required",
             "category_id"=>"required",
             "event_id"=>"required",
-
         ]);
         try {
+
             Article::create([
                 "title"=>$request->get("title"),
                 "description"=>$request->get("description"),
                 "content"=>$request->get("content"),
                 "category_id"=>$request->get("category_id"),
                 "event_id"=>$request->get("event_id"),
-
+                "user_id" => Auth::id()
             ]);
 
         }catch (\Exception $exception){
-//            return $exception->getMessage();
+           return $exception->getMessage();
         }
 //        dd($article);
        return redirect()->to("/admin/articles/list");
@@ -65,11 +65,11 @@ class ArticleController extends Controller
         $article = Article::findOrFail($id);
         $this->authorize('edit',$article, Article::class);
         $categories =Category::all();
-        $event = Event::all();
+        $events = Event::all();
         return view("admin.article.edit",[
             "article" => $article,
             "categories"=>$categories,
-            "event"=>$event
+            "events"=>$events
         ]);
     }
 

@@ -14,3 +14,5 @@ Route::get("/shop","WebController@Shop");
 Route::get("/shop-detail/{id}","WebController@ShopDetail");
 Route::get("/addtocart","WebController@AddToCart");
 Route::get("/image","WebController@Image");
+Route::get("/shopping-cart","WebController@shoppingCart");
+

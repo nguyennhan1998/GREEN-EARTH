@@ -25,4 +25,7 @@ class Product extends Model
         }
         return asset($this->__get("image1"));
     }
+    public function getProductUrl(){
+        return url("/product/{$this->__get("slug")}");
+    }
 }

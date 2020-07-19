@@ -15,13 +15,14 @@
                                     <form role="form" action="{{url("admin/articles/update/{$article->__get("id")}")}}" method="post">
                                         @method("PUT")
                                         @csrf
+
                                         <div class="form-group">
                                             <label>Title</label>
-                                            <input  value="{{$article->__get("title")}}" type="text" name="title" class="form-control" placeholder="...">
+                                            <input style="color:black;" value="{{$article->__get("title")}}" type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input  value="{{$article->__get("description")}}" type="text" name="description" class="form-control" placeholder="...">
+                                            <input style="color:black;" value="{{$article->__get("description")}}" type="text" name="description" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label id="content">Content</label>
@@ -37,15 +38,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Category Id</label>
-                                            <select name="category_id" class="form-control">
+                                            <select style="color:black;" name="category_id" class="form-control">
                                                 @foreach($categories as $category)
-                                                    <option value="{{$category->__get("id")}}">{{$category->__get("title")}}</option>
+                                                    <option style="color:black;" value="{{$category->__get("id")}}">{{$category->__get("title")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label>Event Id</label>
-                                            <select name="event_id" class="form-control">
+                                            <select style="color:black;" name="event_id" class="form-control">
                                                 @foreach($events as $event)
                                                     <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
                                                 @endforeach

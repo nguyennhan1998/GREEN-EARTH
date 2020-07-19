@@ -17,32 +17,32 @@
                                         @csrf
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Name Organize</label>
-                                            <input type="text"  name="name" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="name" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Email Organize</label>
-                                            <input type="email" name="email" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="email" name="email" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Phone Organize</label>
-                                            <input type="number" name="phone" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number" name="phone" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Address Organize</label>
-                                            <input type="text" name="address" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="address" class="form-control" placeholder="...">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleInputFile">Client Id Organize</label>
-                                            <input type="number" name="client_id" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number" name="client_id" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Secret Organize</label>
-                                            <input type="text" name="secret" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="secret" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Team Size Organize</label>
-                                            <input type="number" name="team_size" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number" name="team_size" class="form-control" placeholder="...">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>

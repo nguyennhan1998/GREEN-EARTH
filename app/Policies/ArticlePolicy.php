@@ -6,7 +6,6 @@ use App\Article;
 use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Support\Facades\Auth;
-use const http\Client\Curl\AUTH_ANY;
 
 class ArticlePolicy
 {
@@ -34,8 +33,7 @@ class ArticlePolicy
     {
         return $user->hasPermission("new_article");
     }
-    public function edit(User $user, Article $article)
-    {
+    public function edit(User $user, Article $article) {
         return $article->__get("user_id")==Auth::id() && $user->hasPermission("edit_article");
     }
 
@@ -58,8 +56,8 @@ class ArticlePolicy
      * @return mixed
      */
     public function update(User $user, Article $article)
-    {
-        return $article->__get("user_id")==Auth::id() && $user->hasPermission("update_article");
+    { return true;
+        //return $article->__get("user_id")==Auth::id() && $user->hasPermission("update_article");
     }
 
     /**

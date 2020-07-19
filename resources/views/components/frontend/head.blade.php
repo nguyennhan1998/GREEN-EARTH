@@ -13,6 +13,9 @@
     <link href="{{asset("style.css")}}" rel="stylesheet">
     <link href="{{asset("css/color.css")}}" rel="stylesheet">
     <link href="{{asset("css/responsive.css")}}" rel="stylesheet">
+{{--css shopping-cart    --}}
+    <link href="{{asset("css/style.css")}}" rel="stylesheet">
+{{--   --}}
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
