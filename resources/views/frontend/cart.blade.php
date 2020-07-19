@@ -74,7 +74,6 @@
                     <div class="shoping__checkout">
                         <h5>Cart Total</h5>
                         <ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
                             <li>Subtotal <span>${{$grandTotal}}</span></li>
                             <li>Total <span>${{$grandTotal}}</span></li>
                         </ul>
