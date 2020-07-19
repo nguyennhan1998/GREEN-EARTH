@@ -8,8 +8,10 @@
                         <div class="card-header card-header-primary">
                             <h4 class="card-title mt-0">NEW ARTICLE </h4>
                             <p class="card-category"> ------------------------------------------------- </p>
+
                         </div>
                         <div class="card-body">
+
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <form role="form" action="{{url("/admin/articles/save")}}" method="post">

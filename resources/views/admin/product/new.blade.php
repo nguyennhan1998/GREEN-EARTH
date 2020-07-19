@@ -47,7 +47,7 @@
                                             <label>Event ID</label>
                                             <select style="color:black;" name="event_id" class="form-control">
                                                 @foreach($events as $event)
-                                                    <option value="{{$event->__get("id")}}">{{$event->__get("event_id")}}</option>
+                                                    <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
