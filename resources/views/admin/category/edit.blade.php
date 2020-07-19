@@ -17,11 +17,11 @@
                                         @csrf
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Title Category</label>
-                                            <input  value="{{$category->__get("title")}}" type="text" name="title" class="form-control" placeholder="...">
+                                            <input style="color:black;"  value="{{$category->__get("title")}}" type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputFile">Url Category</label>
-                                            <input value="{{$category->__get("url")}}" name="url" type="text" class="form-control" placeholder="...">
+                                            <input style="color:black;" value="{{$category->__get("url")}}" name="url" type="text" class="form-control" placeholder="...">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>

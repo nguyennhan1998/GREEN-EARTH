@@ -98,7 +98,7 @@ class EventPolicy
      */
     public function restore(User $user, Event $event)
     {
-        //
+
     }
 
     /**

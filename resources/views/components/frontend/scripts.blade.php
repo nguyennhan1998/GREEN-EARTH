@@ -9,4 +9,19 @@
 <script type="text/javascript" src="{{asset("script/counter.js")}}"></script>
 <script type="text/javascript" src="{{asset("https://maps.googleapis.com/maps/api/js")}}"></script>
 <script type="text/javascript" src="{{asset("script/functions.js")}}"></script>
+<script type="text/javascript">
+    function addToCart(productId) {
+        $.ajax({
+            url:"{{url("/cart/add")}}/"+productId,
+            method:"POST",
+            data:{
+                qty: 1,
+                _token:"{{csrf_token()}}"
+            },
+            success: function () {
+                alert("Mua sản phẩm thành công!");
+            }
+        });
+    }
+</script>
 

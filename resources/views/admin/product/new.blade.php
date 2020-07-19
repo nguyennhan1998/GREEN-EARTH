@@ -17,35 +17,35 @@
                                         @csrf
                                         <div class="form-group">
                                             <label>Name Product</label>
-                                            <input type="text"  name="name" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="name" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Image 1</label>
-                                            <input type="text"  name="image1" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="image1" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Image 2</label>
-                                            <input type="text"  name="image2" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="image2" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Image 3</label>
-                                            <input type="text"  name="image3" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="image3" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Image 4</label>
-                                            <input type="text"  name="image4" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text"  name="image4" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Quanty</label>
-                                            <input type="number"  name="qty" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number"  name="qty" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="number"  name="price" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number"  name="price" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Event ID</label>
-                                            <select name="event_id" class="form-control">
+                                            <select style="color:black;" name="event_id" class="form-control">
                                                 @foreach($events as $event)
                                                     <option value="{{$event->__get("id")}}">{{$event->__get("event_id")}}</option>
                                                 @endforeach
