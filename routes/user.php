@@ -13,6 +13,10 @@ Route::get("/contact","WebController@Contact");
 Route::get("/shop","WebController@Shop");
 Route::get("/shop-detail/{id}","WebController@ShopDetail");
 Route::get("/addtocart","WebController@AddToCart");
+<<<<<<< HEAD
 Route::get("/image","WebController@Image");
 Route::get("/shopping-cart","WebController@shoppingCart");
 
+=======
+Route::get("/shopping-cart","WebController@shoppingCart");
+>>>>>>> 195e1dbe3152a8c4df5eca4e16d46cc547ca394b

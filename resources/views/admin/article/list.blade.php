@@ -42,7 +42,11 @@
                                                     <div class="ripple-container"></div></a>
                                             </td>
                                             <td>
+<<<<<<< HEAD
                                                 <form action="{{url("admin/articles/delete/{$article->__get("id")}")}}" method="post">
+=======
+                                                <form action="{{url("admin/users/delete/{$article->__get("id")}")}}" method="post">
+>>>>>>> 195e1dbe3152a8c4df5eca4e16d46cc547ca394b
                                                     @method("DELETE")
                                                     @csrf
                                                     <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>
