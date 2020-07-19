@@ -12,16 +12,16 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">
-                                    <form role="form" action="{{url("/admin/save-article")}}" method="post">
+                                    <form role="form" action="{{url("/admin/articles/save")}}" method="post">
                                         @method("POST")
                                         @csrf
                                         <div class="form-group">
                                             <label>Title</label>
-                                            <input type="text" name="title" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input type="text" name="description" class="form-control" placeholder="...">
+                                            <input style="color:black;"  type="text" name="description" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label id="content">Content</label>
@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Category Id</label>
-                                            <select name="category_id" class="form-control">
+                                            <select style="color:black;"  name="category_id" class="form-control">
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->__get("id")}}">{{$category->__get("title")}}</option>
                                                 @endforeach
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Event Id</label>
-                                            <select name="event_id" class="form-control">
+                                            <select  style="color:black;"  name="event_id" class="form-control">
                                                 @foreach($events as $event)
                                                     <option value="{{$event->__get("id")}}">{{$event->__get("title")}}</option>
                                                 @endforeach

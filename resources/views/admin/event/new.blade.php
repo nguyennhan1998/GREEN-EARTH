@@ -17,19 +17,19 @@
                                         @csrf
                                         <div class="form-group">
                                             <label>Title</label>
-                                            <input type="text" name="title" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="title" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Image</label>
-                                            <input type="text" name="image" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="image" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input type="text" name="description" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="description" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label id="content">Content</label>
-                                            <textarea class="form-control" id="summary-ckeditor" name="content"></textarea>
+                                            <textarea style="color:black;" class="form-control" id="summary-ckeditor" name="content"></textarea>
                                             @include('ckfinder::setup')
 
                                             <script>
@@ -42,19 +42,19 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Start At</label>
-                                            <input  type="text" name="start_at" class="form-control" placeholder="...">
+                                            <input  style="color:black;" type="text" name="start_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>End At</label>
-                                            <input type="text" name="end_at" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="end_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
-                                            <input type="number" name="total_money" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="number" name="total_money" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>
-                                            <select name="organization_id" class="form-control">
+                                            <select style="color:black;" name="organization_id" class="form-control">
                                                 <option value="">Select origaniztions</option>
                                                 @foreach($organizations as $organize)
                                                     <option value="{{$organize->__get("id")}}">{{$organize->__get("name")}}</option>

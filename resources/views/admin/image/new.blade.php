@@ -17,11 +17,11 @@
                                         @csrf
                                         <div class="form-group">
                                             <label for="exampleInputFile">Url Image</label>
-                                            <input type="text" name="name" class="form-control" placeholder="...">
+                                            <input style="color:black;" type="text" name="name" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Article Id</label>
-                                            <select name="article_id" class="form-control">
+                                            <select style="color:black;" name="article_id" class="form-control">
                                                 @foreach($articles as $article)
                                                     <option value="{{$article->__get("id")}}">{{$article->__get("title")}}</option>
                                                 @endforeach
