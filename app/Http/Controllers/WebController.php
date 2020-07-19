@@ -122,9 +122,7 @@ class WebController extends Controller
     }
     public function checkout(){
         return view("frontend.checkout");
-<<<<<<< HEAD
     }
-
 
 
 
@@ -181,9 +179,5 @@ class WebController extends Controller
         return view("frontend.image", [
             "image" => $image
         ]);
-=======
->>>>>>> 195e1dbe3152a8c4df5eca4e16d46cc547ca394b
     }
-
-
 }
