@@ -122,6 +122,9 @@ class WebController extends Controller
     public function checkout(){
         return view("frontend.checkout");
     }
+    public function donate(){
+        return view("frontend.donate");
+    }
 
 
 }

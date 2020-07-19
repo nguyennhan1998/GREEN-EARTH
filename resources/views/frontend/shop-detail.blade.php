@@ -25,7 +25,7 @@
                                     {{$product->__get("price")}}
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, cosectetur adipiscge lit. Vestibulum a nunc dui. Curbitur digniss luctus nisi id euismod.</p>
-                                <a href="#" class="environment-readmore-btn">Add To Cart</a>
+                                <a href="/shopping-cart" class="environment-readmore-btn">Add To Cart</a>
                                 <div class="environment-select"><input type="number" name="quantity" min="01" max="10"></div>
                                 <ul class="environment-shop-Cetagory">
                                     <li>
