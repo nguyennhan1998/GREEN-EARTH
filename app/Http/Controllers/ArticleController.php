@@ -57,7 +57,7 @@ class ArticleController extends Controller
 //            return $exception->getMessage();
         }
 //        dd($article);
-       return redirect()->to("/admin/list-article");
+       return redirect()->to("/admin/articles/list");
     }
 
     public function editArticle($id){
@@ -94,7 +94,7 @@ class ArticleController extends Controller
         }catch (\Exception $exception){
             return redirect()->back();
         }
-        return redirect()->to("/admin/list-article");
+        return redirect()->to("/admin/articles/list");
     }
 
     public function deleteArticle($id){
@@ -105,6 +105,6 @@ class ArticleController extends Controller
         }catch (\Exception $exception){
 
         }
-        return redirect()->to("admin/list-article");
+        return redirect()->to("admin/articles/list");
     }
 }
