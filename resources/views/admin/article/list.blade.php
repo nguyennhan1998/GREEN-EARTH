@@ -9,6 +9,9 @@
                             <h4 class="card-title mt-0">LIST ARTICLE</h4>
                             <p class="card-category">Below is the total list of article</p>
                         </div>
+                        <div class="card-header">
+                            <a href="{{url("/admin/articles/new")}}" class="float-right btn btn-primary">+</a>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-hover">

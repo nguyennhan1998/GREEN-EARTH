@@ -9,7 +9,7 @@ Admin GreenEarth        </a></div>
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li class="nav-item active  ">
-                <a class="nav-link" href="{{"admin"}}">
+                <a class="nav-link" href="{{url("/admin/dashboard")}}">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
@@ -20,18 +20,14 @@ Admin GreenEarth        </a></div>
                     <p>{{Auth::user()->__get("name")}}</p>
                 </a>
             </li>
+{{--            category --}}
             <li class="nav-item  ">
                 <a class="nav-link" href="{{ url('admin/list-category')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Category</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ url('admin/new-category')}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Category</p>
-                </a>
-            </li>
+
 {{--            Organizations--}}
             <li class="nav-item  ">
                 <a class="nav-link" href="{{ url('admin/list-organize')}}">
@@ -39,58 +35,43 @@ Admin GreenEarth        </a></div>
                     <p>List Organize</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ url('admin/new-organize')}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Organize</p>
-                </a>
-            </li>
+            <!--events-->
             <li class="nav-item  ">
                 <a class="nav-link" href="{{asset("admin/events/list")}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Event</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{asset("admin/events/new")}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Event</p>
-                </a>
-            </li>
+            <!---->
+            <!--list articles-->
             <li class="nav-item  ">
                 <a class="nav-link" href="{{ asset('admin/articles/list')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Article</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ asset("admin/articles/new")}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Article</p>
-                </a>
-            </li>
+            <!---->
+{{--            list product--}}
             <li class="nav-item  ">
                 <a class="nav-link" href="{{ url('admin/list-product')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Product</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ url('admin/new-product')}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Product</p>
-                </a>
-            </li>
+           <!---->
+{{--            list image--}}
             <li class="nav-item  ">
                 <a class="nav-link" href="{{ url('admin/list-image')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Image</p>
                 </a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="{{ url('admin/new-image')}}">
-                    <i class="material-icons">library_books</i>
-                    <p>New Image</p>
+           <!---->
+{{--            list users --}}
+            <li class="nav-item  ">
+                <a class="nav-link" href="{{ url('admin/users/list')}}">
+                    <i class="material-icons">content_paste</i>
+                    <p>List Users</p>
                 </a>
             </li>
             <li class="nav-item ">
