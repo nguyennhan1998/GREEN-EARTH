@@ -38,11 +38,11 @@
                                             <td>{{$article->__get("category_id")}}</td>
                                             <td>{{$article->__get("event_id")}}</td>
                                             <td>
-                                                <a href="{{url("admin/edit-article/{$article->__get("id")}")}}" class="btn btn-primary btn-round">Edit
+                                                <a href="{{url("admin/articles/edit/{$article->__get("id")}")}}" class="btn btn-primary btn-round">Edit
                                                     <div class="ripple-container"></div></a>
                                             </td>
                                             <td>
-                                                <form action="{{url("admin/delete-article/{$article->__get("id")}")}}" method="post">
+                                                <form action="{{url("admin/articles/delete/{$article->__get("id")}")}}" method="post">
                                                     @method("DELETE")
                                                     @csrf
                                                     <button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-primary btn-round">Delete<div class="ripple-container"></div></button>

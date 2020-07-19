@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Image;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -72,4 +73,66 @@ class WebController extends Controller
     public function AddToCart(){
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function Image(){
+        $image = Image::all();
+        return view("frontend.image", [
+            "image" => $image
+        ]);
+    }
+
 }
