@@ -3,9 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Events\OrderCreated;
+use App\Image;
+use App\Order;
 use App\Product;
 use Illuminate\Http\Request;
-
+use App\Cart;
+use App\Category;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Psy\Util\Str;
 class WebController extends Controller
 {
     public function Home()
@@ -82,9 +89,9 @@ class WebController extends Controller
         $qty = $request->has("qty")&& (int)$request->get("qty")>0?(int)$request->get("qty"):1;
         $myCart = session()->has("my_cart")&& is_array(session("my_cart"))?session("my_cart"):[];
         $contain = false;
-        foreach ($myCart as $item){
+        foreach ($myCart as $key=>$item){
             if($item["product_id"] == $product->__get("id")){
-                $item["qty"]+= $qty;
+                $myCart[$key]["qty"] += $qty;
                 $contain = true;
                 break;
             }
@@ -119,12 +126,116 @@ class WebController extends Controller
             "grandTotal" => $grandTotal
         ]);
     }
+
     public function checkout(){
-        return view("frontend.checkout");
+        $cart = Cart::where("user_id",Auth::id())
+            ->where("is_checkout",true)
+            ->with("getItems")
+            ->firstOrFail();
+        return view("frontend.checkout",[
+            "cart"=>$cart
+        ]);
+    }
+//public function checkout(){
+//
+//        return view("frontend.checkout");
+//}
+    public function placeOrder(Request $request){
+        $request->validate([
+            "username"=>"required",
+            "address"=>"required",
+            "telephone"=>"required",
+        ]);
+        $cart = Cart::where("user_id",Auth::id())
+            ->where("is_checkout",true)
+            ->with("getItems")
+            ->firstOrFail();
+        $grandTotal = 0;
+        foreach ($cart->getItems as $item){
+            $grandTotal+= $item->pivot->__get("qty")*$item->__get("price");
+        }
+        try{
+            $order = Order::create([
+                "user_id"=>Auth::id(),
+                "username"=>$request->get("username"),
+                "address"=>$request->get("address"),
+                "telephone"=>$request->get("telephone"),
+                "note"=>$request->get("note"),
+                "grand_total"=>$grandTotal,
+                "status"=> Order::PENDING
+            ]);
+            foreach ($cart->getItems as $item){
+                DB::table("orders_products")->insert([
+                    "order_id"=>$order->__get("id"),
+                    "product_id"=>$item->__get("id"),
+                    "price" => $item->__get("price"),
+                    "qty"=> $item->pivot->__get("qty")
+                ]);
+            }
+            event(new OrderCreated($order));
+
+        }catch (\Exception $exception){
+
+        }
+        return redirect()->to("/");
     }
     public function donate(){
         return view("frontend.donate");
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function Image(){
+        $image = Image::all();
+        return view("frontend.image", [
+            "image" => $image
+        ]);
+    }
 }

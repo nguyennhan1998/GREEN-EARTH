@@ -11,4 +11,11 @@ class Image extends Model
         "name",
         "article_id",
     ];
+
+    public function getImage(){
+        if(is_null($this->__get("name"))){
+            return asset("images/image_defauld.png");
+        }
+        return asset($this->__get("name"));
+    }
 }
