@@ -579,6 +579,7 @@ class ComposerStaticInit06e475396b6d822688734aa909113c2f
 
     public static $classMap = array (
         'App\\Article' => __DIR__ . '/../..' . '/app/Article.php',
+        'App\\Cart' => __DIR__ . '/../..' . '/app/Cart.php',
         'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Event' => __DIR__ . '/../..' . '/app/Event.php',
@@ -614,6 +615,7 @@ class ComposerStaticInit06e475396b6d822688734aa909113c2f
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Image' => __DIR__ . '/../..' . '/app/Image.php',
+        'App\\Order' => __DIR__ . '/../..' . '/app/Order.php',
         'App\\Organize' => __DIR__ . '/../..' . '/app/Organize.php',
         'App\\Permission' => __DIR__ . '/../..' . '/app/Permission.php',
         'App\\Policies\\ArticlePolicy' => __DIR__ . '/../..' . '/app/Policies/ArticlePolicy.php',
