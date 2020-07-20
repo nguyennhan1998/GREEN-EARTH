@@ -105,7 +105,7 @@
 
                     <ul class="environment-user-option">
                         <li>
-                            <a href="#" class="environment-cartbtn environment-bgcolor">
+                            <a href="/shopping-cart" class="environment-cartbtn environment-bgcolor">
                                 <i class="fa fa-shopping-cart"></i>
                             </a>
                             <div class="environment-cart-box">

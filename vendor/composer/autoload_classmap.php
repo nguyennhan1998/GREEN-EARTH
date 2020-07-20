@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Article' => $baseDir . '/app/Article.php',
+    'App\\Cart' => $baseDir . '/app/Cart.php',
     'App\\Category' => $baseDir . '/app/Category.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Event' => $baseDir . '/app/Event.php',
@@ -42,6 +43,7 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Image' => $baseDir . '/app/Image.php',
+    'App\\Order' => $baseDir . '/app/Order.php',
     'App\\Organize' => $baseDir . '/app/Organize.php',
     'App\\Permission' => $baseDir . '/app/Permission.php',
     'App\\Policies\\ArticlePolicy' => $baseDir . '/app/Policies/ArticlePolicy.php',
