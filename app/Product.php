@@ -28,4 +28,7 @@ class Product extends Model
     public function getProductUrl(){
         return url("/product/{$this->__get("slug")}");
     }
+    public function getPrice(){
+        return "$".number_format($this->__get("price"));
+    }
 }

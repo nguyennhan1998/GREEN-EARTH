@@ -155,6 +155,14 @@ return [
     |
     */
 
+    'domain' =>env('SESSION_DOMAIN', null),
+
+
+
+
+
+   // Type a message
+
     'domain' => env('SESSION_DOMAIN', null),
 
 

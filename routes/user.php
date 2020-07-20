@@ -16,5 +16,12 @@ Route::get("/addtocart","WebController@AddToCart");
 Route::get("/image","WebController@Image");
 Route::get("/shopping-cart","WebController@shoppingCart");
 Route::get("/donate","WebController@donate");
+Route::get("/donate","WebController@donate");
+Route::post("/cart/add/{product}","WebController@addToCart");
+Route::get("/checkout","WebController@checkout")->middleware("auth");
+Route::post("/placeorder","WebController@placeOrder")->middleware("auth");
+
+
+
 
 
