@@ -39,7 +39,7 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>User Name<span>*</span></p>
-                                        <input type="text" name="username" value="{{\Illuminate\Support\Facades\Auth::user()->name}}""/>
+                                        <input type="text" name="username" value="{{\Illuminate\Support\Facades\Auth::user()->name}}"/>
                                     </div>
                                 </div>
                             </div>
