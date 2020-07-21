@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Auth;
 
 use App\Cart;
@@ -9,34 +10,24 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-/*
-|--------------------------------------------------------------------------
-| Login Controller
-|--------------------------------------------------------------------------
-|
-| This controller handles authenticating users for the application and
-| redirecting them to your home screen. The controller uses a trait
-| to conveniently provide its functionality to your applications.
-|
-*/
-use AuthenticatesUsers;
-/**
-* Where to redirect users after login.
-*
-* @var string
-*/
-protected $redirectTo = RouteServiceProvider::HOME;
-/**
-* Create a new controller instance.
-*
-* @return void
-*/
-public function __construct()
-{
-$this->middleware('guest')->except('logout');
-}
+    /*
+    |--------------------------------------------------------------------------
+    | Login Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles authenticating users for the application and
+    | redirecting them to your home screen. The controller uses a trait
+    | to conveniently provide its functionality to your applications.
+    |
+    */
+    use AuthenticatesUsers;
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = RouteServiceProvider::HOME;
 
-<<<<<<< HEAD
     /**
      * Create a new controller instance.
      *
@@ -46,62 +37,32 @@ $this->middleware('guest')->except('logout');
     {
         $this->middleware('guest')->except('logout');
     }
+
+
     public function authenticated(Request $request, $user)
     {
-        if(Cart::where("user_id",$user->__get("id"))
-            ->where("is_checkout",true)->exists()){
-            $myCart = session()->has("my_cart")&& is_array(session("my_cart"))?session("my_cart"):[];
-            $cart = Cart::where("user_id",$user->__get("id"))
-                ->where("is_checkout",true)->first();
-            $items=  $cart->getItems;
-            foreach ($items as $item){
+        if (Cart::where("user_id", $user->__get("id"))
+            ->where("is_checkout", true)->exists()) {
+            $myCart = session()->has("my_cart") && is_array(session("my_cart")) ? session("my_cart") : [];
+            $cart = Cart::where("user_id", $user->__get("id"))
+                ->where("is_checkout", true)->first();
+            $items = $cart->getItems;
+            foreach ($items as $item) {
                 $contain = false;
-                foreach ($myCart as $key=>$c){
-                    if($c["product_id"] == $item->__get("id")){
-                        $myCart[$key]["qty"]+=$item->pivot->__get("qty");
+                foreach ($myCart as $key => $c) {
+                    if ($c["product_id"] == $item->__get("id")) {
+                        $myCart[$key]["qty"] += $item->pivot->__get("qty");
                         $contain = true;
                     }
                 }
-                if(!$contain){
+                if (!$contain) {
                     $myCart[] = [
-                        "product_id"=> $item->__get("id"),
-                        "qty"=> $item->pivot->__get("qty")
+                        "product_id" => $item->__get("id"),
+                        "qty" => $item->pivot->__get("qty")
                     ];
                 }
             }
-            session(["my_cart"=>$myCart]);
+            session(["my_cart" => $myCart]);
         }
     }
-=======
-/**
-* @param Request $request
-* @param $user
-*/
-public function authenticated(Request $request, $user)
-{
-if(Cart::where("user_id",$user->__get("id"))
-->where("is_checkout",true)->exists()){
-$myCart = session()->has("my_cart")&& is_array(session("my_cart"))?session("my_cart"):[];
-$cart = Cart::where("user_id",$user->__get("id"))
-->where("is_checkout",true)->first();
-$items=  $cart->getItems;
-foreach ($items as $item){
-$contain = false;
-foreach ($myCart as $key=>$c){
-if($c["product_id"] == $item->__get("id")){
-$myCart[$key]["qty"]+=$item->pivot->__get("qty");
-$contain = true;
-}
-}
-if(!$contain){
-$myCart[] = [
-"product_id"=> $item->__get("id"),
-"qty"=> $item->pivot->__get("qty")
-];
-}
-}
-session(["my_cart"=>$myCart]);
-}
-}
->>>>>>> 44c525f4598f0781600dd52a181af4da8ccadff7
 }
