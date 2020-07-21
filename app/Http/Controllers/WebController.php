@@ -153,7 +153,8 @@ class WebController extends Controller
         ]);
     }
     public function checkout(){
-        $cart = Cart::where("is_checkout","=",true)
+        $cart = Cart::where("user_id",Auth::id())
+            ->where("is_checkout","=",true)
             ->with("getItems")
             ->firstOrFail();
         return view("frontend.checkout",[
