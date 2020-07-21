@@ -28,7 +28,24 @@ class Product extends Model
     public function getProductUrl(){
         return url("/product/{$this->__get("slug")}");
     }
+
     public function getPrice(){
-        return "$".number_format($this->__get("price"));
+        return "$".number_format($this->__get("price"),2);
+    }
+    public function Category(){
+        return $this->belongsTo("\App\Category","category_id");// tra ve 1 object
+    }
+
+    public function Brand(){
+        return $this->belongsTo("\App\Brand");
+    }
+
+    public function toArray()
+    {
+        return  [
+            "id"=>$this->__get("id"),
+            "name"=>$this->__get("product_name"),
+            "image"=> $this->getImage()
+        ];
     }
 }

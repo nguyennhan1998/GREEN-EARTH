@@ -1,7 +1,4 @@
 <?php
-
-namespace App\Providers;
-
 use App\Events\OrderCreated;
 use App\Listeners\CleanCart;
 use Illuminate\Auth\Events\Registered;
@@ -34,7 +31,5 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
-        //
     }
 }

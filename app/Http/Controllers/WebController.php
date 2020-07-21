@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
-use App\Events\OrderCreated;
 use App\Image;
-use App\Order;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Cart;
@@ -13,6 +11,9 @@ use App\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Psy\Util\Str;
+use App\Events\OrderCreated;
+use App\Order;
+
 class WebController extends Controller
 {
     public function Home()
@@ -85,14 +86,32 @@ class WebController extends Controller
             'product'=> $product
         ]);
     }
-    public function addToCart(Product $product,Request $request){
+    public function AddToCart(Product $product,Request $request){
         $qty = $request->has("qty")&& (int)$request->get("qty")>0?(int)$request->get("qty"):1;
         $myCart = session()->has("my_cart")&& is_array(session("my_cart"))?session("my_cart"):[];
         $contain = false;
+        if(Auth::check()){
+            if(Cart::where("user_id",Auth::id())->where("is_checkout",true)->exists()){
+                $cart = Cart::where("user_id",Auth::id())->where("is_checkout",true)->first();
+            }else{
+
+                $cart = Cart::create([
+                    "product_id"=>$request->get("id"),
+                    "user_id"=> Auth::id(),
+                    "is_checkout"=>true
+                ]);
+
+            }
+        }
         foreach ($myCart as $key=>$item){
             if($item["product_id"] == $product->__get("id")){
                 $myCart[$key]["qty"] += $qty;
                 $contain = true;
+                if(Auth::check()) {
+                    DB::table("cart_product")->where("cart_id", $cart->__get("id"))
+                        ->where("product_id", $item["product_id"])
+                        ->update(["qty" => $myCart[$key]["qty"]]);
+                }
                 break;
             }
         }
@@ -101,6 +120,13 @@ class WebController extends Controller
                 "product_id" => $product->__get("id"),
                 "qty" => $qty
             ];
+            if(Auth::check()) {
+                DB::table("cart_product")->insert([
+                    "qty" => $qty,
+                    "cart_id" => $cart->__get("id"),
+                    "product_id" => $product->__get("id")
+                ]);
+            }
         }
         session(["my_cart"=>$myCart]);
         return redirect()->to("/shopping-cart");
@@ -126,20 +152,15 @@ class WebController extends Controller
             "grandTotal" => $grandTotal
         ]);
     }
-
     public function checkout(){
-        $cart = Cart::where("user_id",Auth::id())
-            ->where("is_checkout",true)
+        $cart = Cart::where("is_checkout","=",true)
             ->with("getItems")
             ->firstOrFail();
         return view("frontend.checkout",[
             "cart"=>$cart
         ]);
     }
-//public function checkout(){
-//
-//        return view("frontend.checkout");
-//}
+
     public function placeOrder(Request $request){
         $request->validate([
             "username"=>"required",

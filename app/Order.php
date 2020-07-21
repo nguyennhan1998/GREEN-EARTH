@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $table = "Orders";
+
     protected $fillable = [
         "user_id",
         "grand_total",
@@ -16,6 +17,8 @@ class Order extends Model
         "note",
         "status"
     ];
+
+    public const PENDING = 0;
     public const PROCESS = 1;
     public const SHIPPING = 2;
     public const COMPLETE = 3;
