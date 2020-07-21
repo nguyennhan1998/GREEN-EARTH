@@ -1,4 +1,6 @@
 <?php
+
+namespace App\Providers;
 use App\Events\OrderCreated;
 use App\Listeners\CleanCart;
 use Illuminate\Auth\Events\Registered;
@@ -21,7 +23,6 @@ class EventServiceProvider extends ServiceProvider
             CleanCart::class
         ]
     ];
-
 
     /**
      * Register any events for your application.
