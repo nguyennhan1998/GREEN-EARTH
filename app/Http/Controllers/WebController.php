@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Psy\Util\Str;
 use App\Events\OrderCreated;
+use Illuminate\Support\Facades\Mail;
 use App\Order;
 
 class WebController extends Controller
@@ -172,6 +173,7 @@ class WebController extends Controller
             ->where("is_checkout",true)
             ->with("getItems")
             ->firstOrFail();
+
         $grandTotal = 0;
         foreach ($cart->getItems as $item){
             $grandTotal+= $item->pivot->__get("qty")*$item->__get("price");
@@ -194,12 +196,17 @@ class WebController extends Controller
                     "qty"=> $item->pivot->__get("qty")
                 ]);
             }
+            $currentUser = Auth::user();
+            $order = Order::where("user_id", Auth::id())->firstOrFail();
+            Mail::send('mail.checkout-form',["cart" => $cart->getItems,"user" => $currentUser,"order" => $order],function ($message){
+                $message->to(Auth::user()->__get("email"),Auth::user()->__get("name"))->subject('Green-Earth Order Detail'.Auth::user()->__get("name"));
+            });
             event(new OrderCreated($order));
-
         }catch (\Exception $exception){
+            return redirect()->to("/")->with('message', 'Send Mail Failer!');;
 
         }
-        return redirect()->to("/");
+        return redirect()->to("/")->with('message', 'Send Mail Successfully!');;
     }
     public function donate(){
         return view("frontend.donate");

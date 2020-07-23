@@ -1,5 +1,22 @@
 @extends("frontend.layout")
 @section("content")
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Images</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="environment-main-content">
 
         <div class="environment-main-section">

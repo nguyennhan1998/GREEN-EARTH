@@ -5,7 +5,7 @@
 <body>
 <div class="environment-main-wrapper">
     <x-frontend.eviroment_header/>
-    <x-frontend.environment_banner/>
+{{--    <x-frontend.environment_banner/>--}}
     @yield("content")
 
 

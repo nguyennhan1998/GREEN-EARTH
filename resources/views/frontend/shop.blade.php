@@ -1,5 +1,21 @@
 @extends("frontend.layout")
 @section("content")
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Shop</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Shop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="environment-main-wrapper">
 
@@ -24,7 +40,7 @@
                                                                                style="width:68%"></span></div>
                                                 <span class="environment-price-cartbox">
                                                     <del>$ 20.00</del>
-                                                    {{$p->__get("price")}}
+                                                    {{$p->getPrice()}}
                                                 </span>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibul a
                                                     nunc dui. Cu rabitur dignissim luctus nisi id euismod. Donec

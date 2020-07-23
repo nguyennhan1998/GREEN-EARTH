@@ -16,5 +16,8 @@ Route::post("/cart/add/{product}","WebController@AddToCart");
 Route::get("/image","WebController@Image");
 Route::get("/shopping-cart","WebController@shoppingCart");
 Route::get("/donate","WebController@donate");
-Route::get("/checkout","WebController@checkout");
-Route::post("/checkout","WebController@placeOrder");
+Route::get("/checkout","WebController@checkout")->middleware('auth');
+Route::post("/checkout","WebController@placeOrder")->middleware('auth');
+Route::get("/formcheckout",function (){
+   return view("mail.checkout-form");
+});

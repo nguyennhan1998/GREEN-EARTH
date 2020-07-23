@@ -2,6 +2,23 @@
 
 @section("content")
     <!-- Breadcrumb Section Begin -->
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Checkout</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Check out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
             <div class="row">

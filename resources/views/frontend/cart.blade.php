@@ -1,6 +1,22 @@
 @extends("frontend.layout")
 @section("content")
 
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Shopping cart</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Shopping cart</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Shoping Cart Section Begin -->
     <section class="shoping-cart spad">

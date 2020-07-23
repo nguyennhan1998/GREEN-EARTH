@@ -1,5 +1,22 @@
 @extends("frontend.layout")
 @section("content")
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Shopping detail</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Shopping detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="environment-main-content">
         <div class="environment-main-section">
             <div class="container">
@@ -22,11 +39,11 @@
                                 <div class="star-rating"><span class="star-rating-box" style="width:68%"></span></div>
                                 <span class="environment-price-cartbox">
                                     <del>$ 20.00</del>
-                                    {{$product->__get("price")}}
+                                    {{$product->getPrice()}}
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, cosectetur adipiscge lit. Vestibulum a nunc dui. Curbitur digniss luctus nisi id euismod.</p>
                                 <button  onclick="addToCart({{$product->__get("id")}});" class="environment-readmore-btn">Add To Cart</button>
-                                <div class="environment-select"><input type="number" name="quantity" min="01" max="10"></div>
+                                <div class="environment-select"><input type="number" name="qty" min="01" max="10"></div>
                                 <ul class="environment-shop-Cetagory">
                                     <li>
                                         Cetagory :

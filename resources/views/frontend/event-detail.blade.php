@@ -1,5 +1,21 @@
 @extends("frontend.layout")
 @section("content")
+    <div class="environment-subheader">
+        <span class="subheader-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Event detail</h1>
+                </div>
+                <div class="col-md-12">
+                    <ul class="environment-breadcrumb">
+                        <li><a href="/">Homepage</a></li>
+                        <li class="active">Event detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="environment-main-content">
 
@@ -7,15 +23,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
+                        <figure class="environment-event-thumb"><img src="extra-images/event-detail-img.jpg" alt=""></figure>
+                        <div class="environment-countdown">
+                            <div id="environment-countdown"></div>
+                        </div>
                         <div class="environment-rich-editor environment-event-richeditor">
-                            <h1><a href="#">{{$event->__get("title")}}</a></h1>
-                            <td>
-                                @php
-                                    $doc = new DOMDocument();
-                                    $doc->loadHTML($event->__get("content"));
-                                 echo $doc->saveHTML();
-                                @endphp
-                            </td>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luctus nisi id euismod. Don ec tincidunt diam vel nibh euismod tempus.</p>
+                            <ul class="event-detail-option">
+                                <li>
+                                    Date:
+                                    <time datetime="2008-02-14 20:00">16 Feb 2017 - 20 Feb 2017</time>
+                                </li>
+                                <li>
+                                    Organizer:
+                                    <p>John Henry</p>
+                                </li>
+                                <li>
+                                    Location:
+                                    <p>Salford road, east London, UK</p>
+                                </li>
+                            </ul>
+                            <div class="environment-section-heading"><h2><span>Event Description</span></h2></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purus nulla, at rhoncus elit non. Ut luct ac sagittis porttitor Suspendisse at orci ac us libero at laore ncus. Praesent fermentum lacus at nulla hendrerit facilisis. Ut ips us, mollis non solli citu ac sagittis porttitor.</p>
+                            <p>Phasellus lobortis mattis dolor ac laoreet. Pellentesque feugiat scelerisque libero, et conllis cidunt at. Aen ac sagittis porttitor Suspendisse at orci ac ean inn luctus, felis in, luctus elit.</p>
+                            <blockquote>Phasellus vitae ligula sodales, auctor orci quis, fermentm velit. Ut eu velit varius, ultrices eros in, fa ucibus arcu. Ut eget vestibulum odio, id ullamcorper arcu.</blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purusla, at rhoncus elit non. Ut luct ac sagittis porttitor. Su spendisse at orci ac us libero at laore ncus. Praesent fermentum l at nulla hendrerit facilisis. Ut ips us, mollis non sollicitudin quis, lacinia a tellus.</p>
                         </div>
                         <div class="environment-section-heading"><h2><span>Event Location</span></h2></div>
                         <div class="environment-event-map">
@@ -25,19 +57,19 @@
                             <ul>
                                 <li>
                                     <div class="environment-prev-post">
-                                        <figure><a href="#"><img src="{{asset("extra-images/post-img1.jpg")}}" alt=""></a></figure>
+                                        <figure><a href="404.html"><img src="extra-images/post-img1.jpg" alt=""></a></figure>
                                         <div class="environment-prev-artical">
-                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="#" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
+                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="404.html" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="environment-next-post">
-                                        <figure><a href="#"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a></figure>
+                                        <figure><a href="404.html"><img src="extra-images/post-img2.jpg" alt=""></a></figure>
                                         <div class="environment-next-artical">
-                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="#" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
+                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="404.html" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -47,9 +79,9 @@
                             <div class="environment-post-tags">
                                 <div class="environment-tags">
                                     <span>Tags:</span>
-                                    <a href="#">Energy</a>
-                                    <a href="#">Animals</a>
-                                    <a href="#">Help</a>
+                                    <a href="404.html">Energy</a>
+                                    <a href="404.html">Animals</a>
+                                    <a href="404.html">Help</a>
                                 </div>
                                 <div class="environment-blog-social">
                                     <ul>
@@ -76,9 +108,72 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-5">
-                                    <img src="{{asset("extra-images/organizer-img.jpg")}}" alt="" class="event-detail-img">
+                                    <img src="extra-images/organizer-img.jpg" alt="" class="event-detail-img">
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="environment-event environment-related-event">
+                            <div class="environment-section-heading"><h2><span>Related Event</span></h2></div>
+                            <ul class="row">
+                                <li class="col-md-4">
+                                    <figure>
+                                        <a href="event-detail.html"><img src="extra-images/event-related-img1.jpg" alt=""></a>
+                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>
+                                    </figure>
+                                    <div class="environment-related-event-text">
+                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
+                                        <ul class="environment-large-option">
+                                            <li>
+                                                Organizer:
+                                                <a href="event-detail.html">G. David</a>
+                                            </li>
+                                            <li>
+                                                Time:
+                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="col-md-4">
+                                    <figure>
+                                        <a href="event-detail.html"><img src="extra-images/event-related-img2.jpg" alt=""></a>
+                                        <time datetime="2008-02-14 20:00">22<br>MAY</time>
+                                    </figure>
+                                    <div class="environment-related-event-text">
+                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
+                                        <ul class="environment-large-option">
+                                            <li>
+                                                Organizer:
+                                                <a href="event-detail.html">G. David</a>
+                                            </li>
+                                            <li>
+                                                Time:
+                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="col-md-4">
+                                    <figure>
+                                        <a href="event-detail.html"><img src="extra-images/event-related-img3.jpg" alt=""></a>
+                                        <time datetime="2008-02-14 20:00">21<br>AUG</time>
+                                    </figure>
+                                    <div class="environment-related-event-text">
+                                        <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
+                                        <ul class="environment-large-option">
+                                            <li>
+                                                Organizer:
+                                                <a href="event-detail.html">G. David</a>
+                                            </li>
+                                            <li>
+                                                Time:
+                                                <time datetime="2008-02-14 20:00">12:00 AM</time>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
@@ -185,7 +280,7 @@
 
 
                         <div class="widget widget_cetagories">
-                            <div class="environment-widget-heading"><h2>Categories</h2></div>
+                            <div class="environment-widget-heading"><h2>Cetagories</h2></div>
                             <ul>
                                 <li><a href="404.html">Organic</a></li>
                                 <li><a href="404.html">Ecosystem</a></li>
@@ -199,22 +294,7 @@
                 </div>
             </div>
         </div>
-        <div class="environment-main-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="environment-fancy-title"><h2>Your <span>Feedback</span></h2></div>
-                        <div id="fb-root"></div>
-                        <script async defer crossorigin="anonymous"
-                                src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=723562798478841&autoLogAppEvents=1"
-                                nonce="sbTHuYxo"></script>
-                        <div class="fb-comments"
-                             data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
-                             data-numposts="2" data-width="auto" data-colorscheme="light"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
 @endsection
