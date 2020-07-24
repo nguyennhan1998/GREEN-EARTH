@@ -68,5 +68,6 @@ Route::prefix('users')->group(function () {
     Route::post("/save", "UserController@saveUser");
     Route::put("/update/{id}", "UserController@updateUser");
     Route::delete("/delete/{id}", "UserController@deleteUser");
+    Route::delete("/delete/{id}", "UserController@downPermisson");
 });
 

@@ -24,11 +24,18 @@
                                             <input style="color:black;" value="{{$user->__get("email")}}"  style="color: black;font-size: 16px" type="email" name="email" class="form-control" >
                                         </div>
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">give role</label><br>
-                                                @foreach($roles as $role)
-                                                    <label for="role_id">{{$role->name}}</label>
+                                            <label class="bmd-label-floating text-capitalize">give permission</label><br>
+                                            @foreach($roles as $role)
+                                                <label for="role_id">{{$role->name}}</label>
                                                 <input type="radio" name="role_name" value="{{$role->id}}" id="role_id">
-                                                @endforeach
+                                            @endforeach
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating text-capitalize">disable permission</label><br>
+                                            @foreach($roles as $role)
+                                                <label for="role_id">{{$role->name}}</label>
+                                                <input type="radio" name="role_delete" value="{{$role->id}}" id="role_id">
+                                            @endforeach
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-round">Submit</button>
                                     </form>
