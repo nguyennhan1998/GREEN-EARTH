@@ -113,6 +113,120 @@ class DatabaseSeeder extends Seeder
             ['permission_id'=> 11,'role_id'=> 4],
             ['permission_id'=> 12,'role_id'=> 4],
         ]);
+        DB::table('organizations')->insert([
+//            [
+//                'name'=>'',
+//                 'email'=>'',
+//                 'phone'=>'',
+//                 'address'=>'',
+//                 'client_id'=>'',
+//                 'secret'=>'',
+//                 'team_size'=>'',
+//
+//            ]
+            [
+                'name'=>'nhan nguyen',
+                'email'=>'nguyennhanlovermyself@gmail.com',
+                'phone'=>'0393910646',
+                'address'=>'Ha Noi',
+                'client_id'=>'12355',
+                'secret'=>'1',
+                'team_size'=>'12',
+
+            ]
+        ]);
+        DB::table('events')->insert([
+//            [
+//                'title'=>'',
+//                'image'=>'',
+//                'description'=>'',
+//                'content'=>'',
+//                'start_at'=>'',
+//                'end_at'=>'',
+//                'total_money'=>'',
+//                'organization_id'=>'',
+//                'user_id'
+//            ]
+            [
+                'title'=>'sự kiện bảo về môi trường biển',
+                'image'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'description'=>'đây là sự kiện gây quỹ có quy mô lớn với sự tài trợ ',
+                'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'total_money'=>'200000',
+                'organization_id'=>'1',
+                'user_id'=>'1'
+            ],
+            [
+                'title'=>'sự kiện bảo về môi trường biển',
+                'image'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'description'=>'đây là sự kiện gây quỹ có quy mô lớn với sự tài trợ ',
+                'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'total_money'=>'200000',
+                'organization_id'=>'1',
+                'user_id'=>'1'
+            ],
+            [
+                'title'=>'sự kiện bảo về môi trường biển',
+                'image'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'description'=>'đây là sự kiện gây quỹ có quy mô lớn với sự tài trợ ',
+                'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'total_money'=>'200000',
+                'organization_id'=>'1',
+                'user_id'=>'1'
+            ],
+            [
+                'title'=>'sự kiện bảo về môi trường biển',
+                'image'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'description'=>'đây là sự kiện gây quỹ có quy mô lớn với sự tài trợ ',
+                'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'total_money'=>'200000',
+                'organization_id'=>'1',
+                'user_id'=>'1'
+            ],
+            [
+                'title'=>'sự kiện bảo về môi trường biển',
+                'image'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'description'=>'đây là sự kiện gây quỹ có quy mô lớn với sự tài trợ ',
+                'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'total_money'=>'200000',
+                'organization_id'=>'1',
+                'user_id'=>'1'
+            ],
+
+
+
+        ]);
+        DB::table('products')->insert([
+            ['name'=>'vanh ngao',
+                'image1'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'image2'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'image3'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'image4'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
+                'qty'=>10,
+                'price'=>20,
+                'event_id'=>1,
+                ],
+                ['name'=>'linh ngao',
+                    'image1'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
+                    'image2'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
+                    'image3'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
+                    'image4'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
+                    'qty'=>10,
+                    'price'=>20,
+                    'event_id'=>1,
+                ],
+                ]
+        );
 
     }
 }

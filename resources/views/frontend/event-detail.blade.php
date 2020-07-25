@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <figure class="environment-event-thumb"><img src="extra-images/event-detail-img.jpg" alt=""></figure>
+                        <figure class="environment-event-thumb"><img src="{{$event->getImage()}}" alt=""></figure>
                         <div class="environment-countdown">
                             <div id="environment-countdown"></div>
                         </div>
@@ -32,15 +32,26 @@
                             <ul class="event-detail-option">
                                 <li>
                                     Date:
-                                    <time datetime="2008-02-14 20:00">16 Feb 2017 - 20 Feb 2017</time>
+                                    <time datetime="2018-02-14 20:00">
+                                    @php $start_at = strtotime($event->__get("start_at"));
+
+                                            $datestart = date('Y-m-d',$start_at);
+
+
+                                            $end_at=strtotime($event->__get("end_at"));
+                                            $dateend=date('Y-m-d',$end_at);
+
+                                    @endphp
+                                        {{$datestart}} - {{$dateend}}
+                                    </time>
                                 </li>
                                 <li>
                                     Organizer:
-                                    <p>John Henry</p>
+                                    <p>{{$event->Organize->__get("name")}}</p>
                                 </li>
                                 <li>
                                     Location:
-                                    <p>Salford road, east London, UK</p>
+                                    <p>{{$event->Organize->__get("address")}}</p>
                                 </li>
                             </ul>
                             <div class="environment-section-heading"><h2><span>Event Description</span></h2></div>
@@ -66,7 +77,7 @@
                                 </li>
                                 <li>
                                     <div class="environment-next-post">
-                                        <figure><a href="404.html"><img src="extra-images/post-img2.jpg" alt=""></a></figure>
+                                        <figure><a href="404.html"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a></figure>
                                         <div class="environment-next-artical">
                                             <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
                                             <a href="404.html" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
@@ -108,7 +119,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-5">
-                                    <img src="extra-images/organizer-img.jpg" alt="" class="event-detail-img">
+                                    <img src="{{asset("extra-images/organizer-img.jpg")}}" alt="" class="event-detail-img">
                                 </div>
                             </div>
                         </div>
@@ -118,7 +129,7 @@
                             <ul class="row">
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img1.jpg" alt=""></a>
+                                        <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img1.jpg")}}" alt=""></a>
                                         <time datetime="2008-02-14 20:00">12<br>FEB</time>
                                     </figure>
                                     <div class="environment-related-event-text">
@@ -137,7 +148,7 @@
                                 </li>
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img2.jpg" alt=""></a>
+                                        <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img2.jpg")}}" alt=""></a>
                                         <time datetime="2008-02-14 20:00">22<br>MAY</time>
                                     </figure>
                                     <div class="environment-related-event-text">
@@ -156,7 +167,7 @@
                                 </li>
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/event-related-img3.jpg" alt=""></a>
+                                        <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img3.jpg")}}" alt=""></a>
                                         <time datetime="2008-02-14 20:00">21<br>AUG</time>
                                     </figure>
                                     <div class="environment-related-event-text">
@@ -194,7 +205,7 @@
                             <div class="environment-widget-heading"><h2>Recent Blogs</h2></div>
                             <ul>
                                 <li>
-                                    <figure><a href="#"><img src="extra-images/widget-post-img1.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <figure><a href="#"><img src="{{asset("extra-images/widget-post-img1.jpg")}}" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
                                     <div class="environment-recentpost">
                                         <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
                                         <ul class="widget-post">
@@ -204,7 +215,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <figure><a href="#"><img src="extra-images/widget-post-img2.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <figure><a href="#"><img src="{{asset("extra-images/widget-post-img2.jpg")}}" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
                                     <div class="environment-recentpost">
                                         <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
                                         <ul class="widget-post">
@@ -214,7 +225,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <figure><a href="#"><img src="extra-images/widget-post-img3.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <figure><a href="#"><img src="{{asset("extra-images/widget-post-img3.jpg")}}" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
                                     <div class="environment-recentpost">
                                         <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
                                         <ul class="widget-post">
@@ -269,12 +280,12 @@
                         <div class="widget widget_gallery">
                             <div class="environment-widget-heading"><h2>Our Gallery</h2></div>
                             <ul>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img1.jpg" class="fancybox"><img src="extra-images/widget-gallery-img1.jpg" alt=""></a></li>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img2.jpg" class="fancybox"><img src="extra-images/widget-gallery-img2.jpg" alt=""></a></li>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img3.jpg" class="fancybox"><img src="extra-images/widget-gallery-img3.jpg" alt=""></a></li>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img4.jpg" class="fancybox"><img src="extra-images/widget-gallery-img4.jpg" alt=""></a></li>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img5.jpg" class="fancybox"><img src="extra-images/widget-gallery-img5.jpg" alt=""></a></li>
-                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img6.jpg" class="fancybox"><img src="extra-images/widget-gallery-img6.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img1.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img1.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img2.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img2.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img3.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img3.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img4.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img4.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img5.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img5.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img6.jpg")}}" class="fancybox"><img src="extra-images/widget-gallery-img6.jpg" alt=""></a></li>
                             </ul>
                         </div>
 

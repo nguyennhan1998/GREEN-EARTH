@@ -16,4 +16,7 @@ class Organize extends Model
         "secret",
         "team_size",
     ];
+    public function Event(){
+        return $this->hasMany("\App\Event");
+    }
 }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="{{"home"}}" class="environment-logo">
+                <a href="/home" class="environment-logo">
                     <img src="{{asset("images/logo/unnamed.gif")}}" alt="">
                 </a>
             </div>
@@ -103,56 +103,74 @@
                         </div>
                     </nav>
 
+                    @php
+                        $myCart1 = session()->has("my_cart")?session("my_cart"):[];
+                        $count_item  = count($myCart1);
+                        $productIds = [];
+                        foreach ($myCart1 as $item){
+                            $productIds[] = $item["product_id"];
+                        }
+                        $grandTotal = 0;
+                        $products = \App\Product::find($productIds);
+                        foreach ($products as $p){
+                            foreach ($myCart1 as $item){
+                                if($p->__get("id") == $item["product_id"])
+                                    $grandTotal += ($p->__get("price")*$item["qty"]);
+                            }
+                        }
+                    @endphp
                     <ul class="environment-user-option">
                         <li>
                             <a href="/shopping-cart" class="environment-cartbtn environment-bgcolor">
                                 <i class="fa fa-shopping-cart"></i>
                             </a>
                             <div class="environment-cart-box">
-                                <h2>You have 3 items in the cart</h2>
+                                <h2>You have {{$count_item}} items in the cart</h2>
                                 <ul>
+                                    @foreach($products as $p)
                                     <li>
                                         <figure>
                                             <a href="#">
-                                                <img src="extra-images/cartbox-1.jpg" alt="">
+                                                <img src="{{$p->getImage()}}" alt="">
                                             </a>
                                         </figure>
                                         <div class="environment-cartbox-text">
                                             <h6>
-                                                <a href="#">Key Management Model The 60+ Models</a>
+                                                <a href="#">{{$p->__get("name")}}</a>
                                             </h6>
                                             <div class="environment-rating">
                                                 <span class="environment-rating-box" style="width:80%"></span>
                                             </div>
                                             <span class="environment-cartbox-price environment-color">
-                                                        $35.99
+                                                        {{$p->getPrice()}}
                                                         <small>$43.00</small>
                                                     </span>
                                         </div>
                                     </li>
-                                    <li>
-                                        <figure>
-                                            <a href="#">
-                                                <img src="extra-images/cartbox-2.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="environment-cartbox-text">
-                                            <h6>
-                                                <a href="#">Pyramid Principle: Logic Writing &amp; Thinking</a>
-                                            </h6>
-                                            <div class="environment-rating">
-                                                <span class="environment-rating-box" style="width:100%"></span>
-                                            </div>
-                                            <span class="environment-cartbox-price environment-color">$21.00</span>
-                                        </div>
-                                    </li>
+                                    @endforeach
+{{--                                    <li>--}}
+{{--                                        <figure>--}}
+{{--                                            <a href="#">--}}
+{{--                                                <img src="{{asset("extra-images/cartbox-2.jpg")}}" alt="">--}}
+{{--                                            </a>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="environment-cartbox-text">--}}
+{{--                                            <h6>--}}
+{{--                                                <a href="#">Pyramid Principle: Logic Writing &amp; Thinking</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="environment-rating">--}}
+{{--                                                <span class="environment-rating-box" style="width:100%"></span>--}}
+{{--                                            </div>--}}
+{{--                                            <span class="environment-cartbox-price environment-color">$21.00</span>--}}
+{{--                                        </div>--}}
+{{--                                    </li>--}}
                                 </ul>
                                 <h5>
                                     Subtotal
-                                    <span class="environment-color">$1343</span>
+                                    <span class="environment-color">${{$grandTotal}}</span>
                                 </h5>
                                 <div class="environment-cart-link">
-                                    <a href="#" class="environment-cartbox-btn environment-bgcolorhover">
+                                    <a href="/checkout" class="environment-cartbox-btn environment-bgcolorhover">
                                         <i class="flaticon-tool"></i>
                                         Go to Checkout
                                     </a>

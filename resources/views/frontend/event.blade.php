@@ -28,15 +28,15 @@
                                 @foreach($events as $event)
                                 <li class="col-md-6">
                                     <figure>
-                                        <a href="#"><img src="{{$event->getImage()}}" alt=""><i class="fa fa-search-plus"></i></a>
+                                        <a href="{{"/event-detail/{$event->__get('id')}"}}"><img src="{{$event->getImage()}}" alt=""><i class="fa fa-search-plus"></i></a>
 {{--                                        <time datetime="2008-02-14 20:00">12<br>FEB</time>--}}
                                     </figure>
                                     <div class="environment-event-grid-text">
-                                        <h5><a href="#">{{$event->__get("title")}}</a></h5>
+                                        <h5><a href="/event-detail/{$event->__get('id')}">{{$event->__get("title")}}</a></h5>
                                         <ul class="environment-large-option">
                                             <li>
-                                                Start At:
-                                                <p>{{$event->__get("start_at")}}</p>
+                                                Location :
+                                                <p>{{$event->Organize->__get("address")}}</p>
                                             </li>
                                             <li>
                                                 End At:

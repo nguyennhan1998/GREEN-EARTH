@@ -34,7 +34,7 @@ class WebController extends Controller
 
     public function Event()
     {
-        $events = Event::all();
+        $events = Event::with("Organize")->paginate(20);
         return view('frontend.event',[
             'events'=>$events,
         ]);
@@ -43,7 +43,7 @@ class WebController extends Controller
 
     public function EventDetail($id)
     {
-        $event = Event::findOrFail($id);
+        $event = Event::with("Organize")->findOrFail($id);
         return view("frontend.event-detail",[
             'event'=>$event,
         ]);
