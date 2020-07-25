@@ -154,7 +154,7 @@ class DatabaseSeeder extends Seeder
                 'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
                 'start_at'=>'2020-07-24 10:20:44',
                 'end_at'=>'2020-07-24 10:20:44',
-                'total_money'=>'200000',
+                'target_money'=>'200000',
                 'organization_id'=>'1',
                 'user_id'=>'1'
             ],
@@ -165,7 +165,7 @@ class DatabaseSeeder extends Seeder
                 'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
                 'start_at'=>'2020-07-24 10:20:44',
                 'end_at'=>'2020-07-24 10:20:44',
-                'total_money'=>'200000',
+                'target_money'=>'200000',
                 'organization_id'=>'1',
                 'user_id'=>'1'
             ],
@@ -176,7 +176,7 @@ class DatabaseSeeder extends Seeder
                 'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
                 'start_at'=>'2020-07-24 10:20:44',
                 'end_at'=>'2020-07-24 10:20:44',
-                'total_money'=>'200000',
+                'target_money'=>'200000',
                 'organization_id'=>'1',
                 'user_id'=>'1'
             ],
@@ -187,7 +187,7 @@ class DatabaseSeeder extends Seeder
                 'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
                 'start_at'=>'2020-07-24 10:20:44',
                 'end_at'=>'2020-07-24 10:20:44',
-                'total_money'=>'200000',
+                'target_money'=>'200000',
                 'organization_id'=>'1',
                 'user_id'=>'1'
             ],
@@ -198,7 +198,7 @@ class DatabaseSeeder extends Seeder
                 'content'=>'sự kiện được diễn ra tại trung tâm hội nghị quốc gia',
                 'start_at'=>'2020-07-24 10:20:44',
                 'end_at'=>'2020-07-24 10:20:44',
-                'total_money'=>'200000',
+                'target_money'=>'200000',
                 'organization_id'=>'1',
                 'user_id'=>'1'
             ],
@@ -213,7 +213,7 @@ class DatabaseSeeder extends Seeder
                 'image3'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
                 'image4'=>'https://www.crushpixel.com/static13/preview2/green-earth-concept-with-leavesecology-1185970.jpg',
                 'qty'=>10,
-                'price'=>20,
+                'price'=>20000,
                 'event_id'=>1,
                 ],
                 ['name'=>'linh ngao',
@@ -222,7 +222,7 @@ class DatabaseSeeder extends Seeder
                     'image3'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
                     'image4'=>'https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg',
                     'qty'=>10,
-                    'price'=>20,
+                    'price'=>20000,
                     'event_id'=>1,
                 ],
                 ]

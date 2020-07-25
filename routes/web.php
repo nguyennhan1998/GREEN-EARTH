@@ -20,4 +20,6 @@ Route::any('/ckfinder/browser', '\CKSource\CKFinderBridge\Controller\CKFinderCon
 //facebook
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+Route::get("/create-payment","PaymentController@create");
+Route::get("/return-vnpay","PaymentController@return");
 

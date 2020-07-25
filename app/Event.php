@@ -15,7 +15,8 @@ class Event extends Model
         "content",
         "start_at",
         "end_at",
-        "total_money",
+        "raiser_money",
+        "target_money",
         "organization_id",
         "user_id"
     ];
@@ -33,5 +34,9 @@ class Event extends Model
     public function Organize(){
         return $this->belongsTo("\App\Organize","organization_id");
     }
+    public function UserEvent(){
+        return $this->belongsTo("\App\UserEvent");
+    }
+
 
 }

@@ -28,37 +28,37 @@
                             <ul>
                                 <li class="current">
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 10.00</span></h4>
+                                        <h4>Donate: <span><input type="radio" class="form-control" name="donatevalue" value="60"></span><span>$ 10.00</span></h4>
                                         <p>Pack 1 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 20.00</span></h4>
+                                        <h4>Donate: <span><input type="radio" class="form-control" name="donatevalue" value="60"></span><span>$ 20.00</span></h4>
                                         <p>Pack 2 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 30.00</span></h4>
+                                        <h4>Donate: <span><input type="radio" class="form-control" name="donatevalue" value="60"></span><span>$ 30.00</span></h4>
                                         <p>Pack 3 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 40.00</span></h4>
+                                        <h4>Donate: <span><input type="radio" class="form-control" name="donatevalue" value="60"></span><span>$ 40.00</span></h4>
                                         <p>Pack 4 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 50.00</span></h4>
+                                        <h4>Donate:<span><input type="radio" class="form-control" name="donatevalue" value="60"></span> <span>$ 50.00</span></h4>
                                         <p>Pack 5 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="donation-wrap">
-                                        <h4>Donate: <span>$ 60.00</span></h4>
+                                        <h4>Donate: <span><input type="radio" class="form-control" name="donatevalue" value="60"></span><span>$60.00</span></h4>
                                         <p>Pack 6 : 3 Books And 3 Pencils</p>
                                     </div>
                                 </li>
@@ -117,64 +117,20 @@
                                 <ul>
                                     <li><p>Personal Info:</p></li>
                                     <li>
-                                        <input type="text" value="First Name*" onblur="if(this.value == '') { this.value ='First Name*'; }" onfocus="if(this.value =='First Name*') { this.value = ''; }">
+                                        <input type="text" value="Name*">
                                         <i class="fa fa-user"></i>
                                     </li>
                                     <li>
-                                        <input type="text" value="Lats Name*" onblur="if(this.value == '') { this.value ='Lats Name*'; }" onfocus="if(this.value =='Lats Name*') { this.value = ''; }">
-                                        <i class="fa fa-user"></i>
-                                    </li>
-                                    <li>
-                                        <input type="text" value="Email*" onblur="if(this.value == '') { this.value ='Email*'; }" onfocus="if(this.value =='Email*') { this.value = ''; }">
+                                        <input type="text" value="Email*">
                                         <i class="fa fa-envelope"></i>
                                     </li>
                                     <li>
-                                        <input type="text" value="Phone*" onblur="if(this.value == '') { this.value ='Phone*'; }" onfocus="if(this.value =='Phone*') { this.value = ''; }">
+                                        <input type="text" value="address*">
+                                        <i class="fa fa-address-book-o"></i>
+                                    </li>
+                                    <li>
+                                        <input type="text" value="Phone*">
                                         <i class="fa fa-phone"></i>
-                                    </li>
-                                    <li><p>Address:</p></li>
-                                    <li>
-                                        <div class="environment-select-two">
-                                            <select>
-                                                <option value="">Country*</option>
-                                                <option value="pakistan">counter name</option>
-                                                <option value="india">counter name</option>
-                                                <option value="usa">counter name</option>
-                                                <option value="student">counter name</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="environment-select-two">
-                                            <select>
-                                                <option value="">State*</option>
-                                                <option value="pakistan">state name</option>
-                                                <option value="india">state name</option>
-                                                <option value="usa">state name</option>
-                                                <option value="student">state name</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="environment-select-two">
-                                            <select>
-                                                <option value="">City*</option>
-                                                <option value="pakistan">city name</option>
-                                                <option value="india">city name</option>
-                                                <option value="usa">city name</option>
-                                                <option value="student">city name</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li><p>Card Info:</p></li>
-                                    <li>
-                                        <input type="text" value="Card Number*" onblur="if(this.value == '') { this.value ='Card Number*'; }" onfocus="if(this.value =='Card Number*') { this.value = ''; }">
-                                    </li>
-                                    <li>
-                                        <input type="text" value="Street Address*" onblur="if(this.value == '') { this.value ='Street Address*'; }" onfocus="if(this.value =='Street Address*') { this.value = ''; }">
-                                    </li>
-                                    <li>
-                                        <input type="text" value="DD / MM / YYYY" onblur="if(this.value == '') { this.value ='DD / MM / YYYY'; }" onfocus="if(this.value =='DD / MM / YYYY') { this.value = ''; }">
                                     </li>
                                     <li><label><input type="submit" value="Submit"></label></li>
                                 </ul>

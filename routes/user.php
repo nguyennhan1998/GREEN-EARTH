@@ -21,3 +21,6 @@ Route::post("/checkout","WebController@placeOrder")->middleware('auth');
 Route::get("/formcheckout",function (){
    return view("mail.checkout-form");
 });
+Route::post("/save-money/{id}","EventController@saveMoney");
+Route::get("/return-greenearth","PaymentController@returnPayment");
+Route::get("/return-payment","PaymentController@returnPayment2");
