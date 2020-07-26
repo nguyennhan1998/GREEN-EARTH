@@ -104,7 +104,7 @@
                                                 <div class="environment-section-heading"><h2>
                                                         <span>Enter Custom Amount</span></h2></div>
                                                 <div class="environment-add-amount">
-                                                    <input type="text" name="donatevaluecustom">
+                                                    <input type="text" name="donatevaluecustom" placeholder="enter ...">
                                                 </div>
                                             </li>
                                             <div>
@@ -128,7 +128,7 @@
                                                             <i class="fa fa-phone"></i>
                                                         </li>
                                                     </ul>
-                                                    <button type="submit">submit</button>
+                                                    <button type="submit" class="btn btn-primary btn-round">submit</button>
                                                 </div>
                                             </div>
                                         </ul>
