@@ -35,16 +35,16 @@ class EventController extends Controller
     public function save(Request $request)
     {
         $this->authorize("save", Event::class);
-//        $request->validate([
-//            "title"=>"required",
-//            "image"=>"required",
-//            "description"=>"required",
-//            "content"=>"required",
-//            "start_at"=>"required",
-//            "end_at"=>"required",
-//            "total_money"=>"required",
-//            "organization_id"=>"required"
-//        ]);
+        $request->validate([
+            "title"=>"required",
+            "image"=>"required",
+            "description"=>"required",
+            "content"=>"required",
+            "start_at"=>"required",
+            "end_at"=>"required",
+            "total_money"=>"required",
+            "organization_id"=>"required"
+        ]);
         try {
             Event::create([
                 "title" => $request->get("title"),
@@ -59,9 +59,9 @@ class EventController extends Controller
             ]);
 
         } catch (\Exception $exception) {
-            dd($exception->getMessage());
+//            dd($exception->getMessage());
         }
-//       return redirect()->to("/admin/events/list");
+       return redirect()->to("/admin/events/list");
     }
 
     public function edit($id)
@@ -88,9 +88,6 @@ class EventController extends Controller
             "end_at" => "required",
             "total_money" => "required",
             "organization_id" => "required"
-            // a thi ko de sua
-            // ma day la event tui em donate o trong event luon ah van anh nhin cai database bon e ne
-            // dang call voi ai ko thi sky chat hoi kho
         ]);
         try {
             $event->update([

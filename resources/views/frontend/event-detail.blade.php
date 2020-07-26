@@ -27,14 +27,13 @@
                         <div class="environment-countdown">
                             <div id="environment-countdown"></div>
                         </div>
-                        < class="environment-rich-editor environment-event-richeditor">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur
-                                dignissim luctus nisi id euismod. Don ec tincidunt diam vel nibh euismod tempus.</p>
-                            <ul class="event-detail-option">
-                                <li>
-                                    Date:
-                                    <time datetime="2018-02-14 20:00">
-                                        @php $start_at = strtotime($event->__get("start_at"));
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur
+                            dignissim luctus nisi id euismod. Don ec tincidunt diam vel nibh euismod tempus.</p>
+                        <ul class="event-detail-option">
+                            <li>
+                                Date:
+                                <time datetime="2018-02-14 20:00">
+                                    @php $start_at = strtotime($event->__get("start_at"));
 
                                             $datestart = date('Y-m-d',$start_at);
 
@@ -42,27 +41,30 @@
                                             $end_at=strtotime($event->__get("end_at"));
                                             $dateend=date('Y-m-d',$end_at);
 
-                                        @endphp
-                                        {{$datestart}} - {{$dateend}}
-                                    </time>
-                                </li>
-                                <li>
-                                    Organizer:
-                                    <p>{{$event->Organize->__get("name")}}</p>
-                                </li>
-                                <li>
-                                    Location:
-                                    <p>{{$event->Organize->__get("address")}}</p>
-                                </li>
-                            </ul>
-                            <div class="environment-section-heading"><h2><span>Event Description</span></h2></div>
-                                @php
-                                    $doc = new DOMDocument();
-                                    $doc->loadHTML($event->__get("content"));
+                                    @endphp
+                                    {{$datestart}} - {{$dateend}}
+                                </time>
+                            </li>
+                            <li>
+                                Organizer:
+                                <p>{{$event->Organize->__get("name")}}</p>
+                            </li>
+                            <li>
+                                Location:
+                                <p>{{$event->Organize->__get("address")}}</p>
+                            </li>
+                        </ul>
+                        <div class="environment-section-heading"><h2><span>Event Description</span></h2></div>
+                            @php
+                            if ($event->__get("content")!=null) {
+                                $doc = new DOMDocument();
+                                $doc->loadHTML($event->__get("content"));
                                  echo $doc->saveHTML();
-                                @endphp
+                            } else {
+                            echo "no content";
+                            }
+                            @endphp
 
-                        </div>
                         <div class="environment-section-heading"><h2><span>Event Location</span></h2></div>
                         <div class="environment-event-map">
                             <div id="map"></div>
@@ -80,22 +82,22 @@
                                         <ul>
                                             <li class="current"><span><input type="radio" name="sotienungho"
                                                                              value="10000"></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 1:</b> 10,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 1:</b> 10,000 VNĐ</span>
                                             </li>
                                             <li><span><input type="radio" name="sotienungho" value="20000" required></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 2:</b> 20,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 2:</b> 20,000 VNĐ</span>
                                             </li>
                                             <li><span><input type="radio" name="sotienungho" value="50000" required></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 3:</b> 50,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 3:</b> 50,000 VNĐ</span>
                                             </li>
                                             <li><span><input type="radio" name="sotienungho" value="100000" required></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 4:</b> 100,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 4:</b> 100,000 VNĐ</span>
                                             </li>
                                             <li><span><input type="radio" name="sotienungho" value="200000" required></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 5:</b> 200,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 5:</b> 200,000 VNĐ</span>
                                             </li>
                                             <li><span><input type="radio" name="sotienungho" value="500000" required></span><span
-                                                    style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 6:</b> 500,000 VNĐ</span>
+                                                        style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 6:</b> 500,000 VNĐ</span>
                                             </li>
 
                                             <li class="add-amount">
@@ -152,309 +154,198 @@
                                                 <span class="color">Goal $ {{$event->__get("target_money")}} <span>
 </span></span>
                                                 <span>Raised $ {{$event->__get("raiser_money")}}</span>
-                                                @endif
+                                            @endif
 
 
                                             @php
-                                            $f=$event->__get("target_money");
-                                            $s=$event->__get("raiser_money");
-                                            $percent=($s/$f)*100;
-                                            if($percent>100){
-                                                $percent=100;
+                                                $f=$event->__get("target_money");
+                                                $s=$event->__get("raiser_money");
+                                                $percent=($s/$f)*100;
+                                                if($percent>100){
+                                                    $percent=100;
 
-                                            }
+                                                }
                                             @endphp
 
-                                                <div class="sonny_progressbar" data-width="{{$percent}}"><p class="title"></p>
-                                                    <div class="bar-container "
-                                                         style="background-color:#3f3932;height:8px;"><span
+                                            <div class="sonny_progressbar" data-width="{{$percent}}"><p class="title"></p>
+                                                <div class="bar-container "
+                                                     style="background-color:#3f3932;height:8px;"><span
                                                             class="backgroundBar"></span><span class="targetBar"
                                                                                                style="width:25%;background-color:#CCC;"></span><span
                                                             class="bar"
                                                             style="background-color: rgb(156, 201, 0); opacity: 1; width: {{$percent}}%;"><small>{{$percent}}</small></span>
-                                                    </div>
                                                 </div>
+                                            </div>
 
                                         </div>
                                     </section>
                                 </li>
                             </ul>
                         </div>
+                        <div class="environment-prenxt-post">
+                            <ul>
+                                <li>
+                                    <div class="environment-prev-post">
+                                        <figure><a href="404.html"><img src="extra-images/post-img1.jpg" alt=""></a></figure>
+                                        <div class="environment-prev-artical">
+                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="404.html" class="environment-post-arrow"><i class="fa fa-angle-left"></i>
+                                                Previous Post</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="environment-next-post">
+                                        <figure><a href="404.html"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a>
+                                        </figure>
+                                        <div class="environment-next-artical">
+                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="404.html" class="environment-post-arrow">Next Post <i
+                                                        class="fa fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                    </div>
-
-
-                </div>
-
-
-            </div>
-            <div class="environment-prenxt-post">
-                <ul>
-                    <li>
-                        <div class="environment-prev-post">
-                            <figure><a href="404.html"><img src="extra-images/post-img1.jpg" alt=""></a></figure>
-                            <div class="environment-prev-artical">
-                                <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                <a href="404.html" class="environment-post-arrow"><i class="fa fa-angle-left"></i>
-                                    Previous Post</a>
+                        <div class="environment-tag-wrap">
+                            <div class="environment-post-tags">
+                                <div class="environment-tags">
+                                    <span>Tags:</span>
+                                    <a href="404.html">Energy</a>
+                                    <a href="404.html">Animals</a>
+                                    <a href="404.html">Help</a>
+                                </div>
+                                <div class="environment-blog-social">
+                                    <ul>
+                                        <li><span>Share:</span></li>
+                                        <li><a href="https://www.facebook.com/" class="icon-facebook2"></a></li>
+                                        <li><a href="https://twitter.com/login" class="icon-social43"></a></li>
+                                        <li><a href="https://pk.linkedin.com/" class="icon-linkedin"></a></li>
+                                        <li><a href="https://plus.google.com/" class="icon-google-plus2"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="environment-next-post">
-                            <figure><a href="404.html"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a>
-                            </figure>
-                            <div class="environment-next-artical">
-                                <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                <a href="404.html" class="environment-post-arrow">Next Post <i
-                                        class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
 
-            <div class="environment-tag-wrap">
-                <div class="environment-post-tags">
-                    <div class="environment-tags">
-                        <span>Tags:</span>
-                        <a href="404.html">Energy</a>
-                        <a href="404.html">Animals</a>
-                        <a href="404.html">Help</a>
-                    </div>
-                    <div class="environment-blog-social">
-                        <ul>
-                            <li><span>Share:</span></li>
-                            <li><a href="https://www.facebook.com/" class="icon-facebook2"></a></li>
-                            <li><a href="https://twitter.com/login" class="icon-social43"></a></li>
-                            <li><a href="https://pk.linkedin.com/" class="icon-linkedin"></a></li>
-                            <li><a href="https://plus.google.com/" class="icon-google-plus2"></a></li>
-                        </ul>
-                    </div>
+                    <aside class="col-md-3">
+
+                        <div class="widget widget_search">
+                            <form>
+                                <input type="text" value="Search" onblur="if(this.value == '') { this.value ='Search'; }" onfocus="if(this.value =='Search') { this.value = ''; }">
+                                <label>
+                                    <input type="submit" value="">
+                                </label>
+                            </form>
+                        </div>
+
+
+                        <div class="widget widget_recent_blog">
+                            <div class="environment-widget-heading"><h2>Recent Blogs</h2></div>
+                            <ul>
+                                <li>
+                                    <figure><a href="#"><img src="extra-images/widget-post-img1.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <div class="environment-recentpost">
+                                        <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
+                                        <ul class="widget-post">
+                                            <li><time datetime="2008-02-14 20:00">20 Feb 2017 | </time></li>
+                                            <li><a href="#"> by John Billy</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure><a href="#"><img src="extra-images/widget-post-img2.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <div class="environment-recentpost">
+                                        <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
+                                        <ul class="widget-post">
+                                            <li><time datetime="2008-02-14 20:00">20 Feb 2017 | </time></li>
+                                            <li><a href="#"> by John Billy</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure><a href="#"><img src="extra-images/widget-post-img3.jpg" alt=""></a> <a href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a> </figure>
+                                    <div class="environment-recentpost">
+                                        <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
+                                        <ul class="widget-post">
+                                            <li><time datetime="2008-02-14 20:00">20 Feb 2017 | </time></li>
+                                            <li><a href="#"> by John Billy</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="widget widget_events">
+                            <div class="environment-widget-heading"><h2>Upcoming Events</h2></div>
+                            <ul>
+                                <li>
+                                    <time datetime="2008-02-14 20:00">20 FEB</time>
+                                    <div class="environment-event-text">
+                                        <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
+                                        <span>Salford road, east London, UK</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2008-02-14 20:00">10 MAY</time>
+                                    <div class="environment-event-text">
+                                        <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
+                                        <span>Salford road, east London, UK</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2008-02-14 20:00">07 AUG</time>
+                                    <div class="environment-event-text">
+                                        <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
+                                        <span>Salford road, east London, UK</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="widget widget_archive">
+                            <div class="environment-widget-heading"><h2>Calender Archives</h2></div>
+                            <ul>
+                                <li><a href="404.html">13 February 2017</a></li>
+                                <li><a href="404.html">07 March 2017</a></li>
+                                <li><a href="404.html">21 August 2017</a></li>
+                                <li><a href="404.html">19 December 2017</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="widget widget_gallery">
+                            <div class="environment-widget-heading"><h2>Our Gallery</h2></div>
+                            <ul>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img1.jpg" class="fancybox"><img src="extra-images/widget-gallery-img1.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img2.jpg" class="fancybox"><img src="extra-images/widget-gallery-img2.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img3.jpg" class="fancybox"><img src="extra-images/widget-gallery-img3.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img4.jpg" class="fancybox"><img src="extra-images/widget-gallery-img4.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img5.jpg" class="fancybox"><img src="extra-images/widget-gallery-img5.jpg" alt=""></a></li>
+                                <li><a data-fancybox-group="group" href="extra-images/widget-gallery-img6.jpg" class="fancybox"><img src="extra-images/widget-gallery-img6.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="widget widget_cetagories">
+                            <div class="environment-widget-heading"><h2>Cetagories</h2></div>
+                            <ul>
+                                <li><a href="404.html">Organic</a></li>
+                                <li><a href="404.html">Ecosystem</a></li>
+                                <li><a href="404.html">Recycling</a></li>
+                                <li><a href="404.html">Environmental</a></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+
                 </div>
             </div>
-            <div class="environment-event-organizer">
-                <div class="environment-section-heading"><h2><span>Event Organizer</span></h2></div>
-                <p>Praesent mattis sapien nec lorem dictum, eget euismod sem egestas. Fusce facilisis fermentum justo
-                    sit amet semper. Aliquam aliquet vel felis ac pellentesque. Mauris blandit nec purus sed viverra.
-                    Vestibulum a sem in nisi efficitur cursus.</p>
-                <div class="row">
-                    <div class="col-md-7">
-                        <ul class="environment-list-style-one">
-                            <li>Phasellus eu tincidunt orci, eu laoreet justo. Vivamus nec</li>
-                            <li>Narturient montes, nascetur ridiculus mus. Interdum.</li>
-                            <li>Ut porta arcu diam, a congue dui placerat eget.</li>
-                            <li>Quisque fermentum turpis turpis, at vulputate enim phar.</li>
-                            <li>Vestibulum venenatis pulvinar ipsum nec efficitur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="{{asset("extra-images/organizer-img.jpg")}}" alt="" class="event-detail-img">
-                    </div>
-                </div>
-            </div>
-
-            <div class="environment-event environment-related-event">
-                <div class="environment-section-heading"><h2><span>Related Event</span></h2></div>
-                <ul class="row">
-                    <li class="col-md-4">
-                        <figure>
-                            <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img1.jpg")}}"
-                                                             alt=""></a>
-                            <time datetime="2008-02-14 20:00">12<br>FEB</time>
-                        </figure>
-                        <div class="environment-related-event-text">
-                            <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                            <ul class="environment-large-option">
-                                <li>
-                                    Organizer:
-                                    <a href="event-detail.html">G. David</a>
-                                </li>
-                                <li>
-                                    Time:
-                                    <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <figure>
-                            <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img2.jpg")}}"
-                                                             alt=""></a>
-                            <time datetime="2008-02-14 20:00">22<br>MAY</time>
-                        </figure>
-                        <div class="environment-related-event-text">
-                            <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                            <ul class="environment-large-option">
-                                <li>
-                                    Organizer:
-                                    <a href="event-detail.html">G. David</a>
-                                </li>
-                                <li>
-                                    Time:
-                                    <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <figure>
-                            <a href="event-detail.html"><img src="{{asset("extra-images/event-related-img3.jpg")}}"
-                                                             alt=""></a>
-                            <time datetime="2008-02-14 20:00">21<br>AUG</time>
-                        </figure>
-                        <div class="environment-related-event-text">
-                            <h5><a href="event-detail.html">Praesent mattis sapien nec lorem dictum eget</a></h5>
-                            <ul class="environment-large-option">
-                                <li>
-                                    Organizer:
-                                    <a href="event-detail.html">G. David</a>
-                                </li>
-                                <li>
-                                    Time:
-                                    <time datetime="2008-02-14 20:00">12:00 AM</time>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
         </div>
 
-        <aside class="col-md-3">
-
-            <div class="widget widget_search">
-                <form>
-                    <input type="text" value="Search" onblur="if(this.value == '') { this.value ='Search'; }"
-                           onfocus="if(this.value =='Search') { this.value = ''; }">
-                    <label>
-                        <input type="submit" value="">
-                    </label>
-                </form>
-            </div>
-
-
-            <div class="widget widget_recent_blog">
-                <div class="environment-widget-heading"><h2>Recent Blogs</h2></div>
-                <ul>
-                    <li>
-                        <figure><a href="#"><img src="{{asset("extra-images/widget-post-img1.jpg")}}" alt=""></a> <a
-                                href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a>
-                        </figure>
-                        <div class="environment-recentpost">
-                            <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
-                            <ul class="widget-post">
-                                <li>
-                                    <time datetime="2008-02-14 20:00">20 Feb 2017 |</time>
-                                </li>
-                                <li><a href="#"> by John Billy</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <figure><a href="#"><img src="{{asset("extra-images/widget-post-img2.jpg")}}" alt=""></a> <a
-                                href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a>
-                        </figure>
-                        <div class="environment-recentpost">
-                            <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
-                            <ul class="widget-post">
-                                <li>
-                                    <time datetime="2008-02-14 20:00">20 Feb 2017 |</time>
-                                </li>
-                                <li><a href="#"> by John Billy</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <figure><a href="#"><img src="{{asset("extra-images/widget-post-img3.jpg")}}" alt=""></a> <a
-                                href="#" class="environment-post-hover"><i class="fa fa-angle-double-right"></i></a>
-                        </figure>
-                        <div class="environment-recentpost">
-                            <h6><a href="#">Ut eget vestibulum odi id ullamcorper arcu</a></h6>
-                            <ul class="widget-post">
-                                <li>
-                                    <time datetime="2008-02-14 20:00">20 Feb 2017 |</time>
-                                </li>
-                                <li><a href="#"> by John Billy</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="widget widget_events">
-                <div class="environment-widget-heading"><h2>Upcoming Events</h2></div>
-                <ul>
-                    <li>
-                        <time datetime="2008-02-14 20:00">20 FEB</time>
-                        <div class="environment-event-text">
-                            <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
-                            <span>Salford road, east London, UK</span>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2008-02-14 20:00">10 MAY</time>
-                        <div class="environment-event-text">
-                            <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
-                            <span>Salford road, east London, UK</span>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2008-02-14 20:00">07 AUG</time>
-                        <div class="environment-event-text">
-                            <h6><a href="event-detail.html">Suspendisse imperdi et risus vitae nunc</a></h6>
-                            <span>Salford road, east London, UK</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="widget widget_archive">
-                <div class="environment-widget-heading"><h2>Calender Archives</h2></div>
-                <ul>
-                    <li><a href="404.html">13 February 2017</a></li>
-                    <li><a href="404.html">07 March 2017</a></li>
-                    <li><a href="404.html">21 August 2017</a></li>
-                    <li><a href="404.html">19 December 2017</a></li>
-                </ul>
-            </div>
-
-
-            <div class="widget widget_gallery">
-                <div class="environment-widget-heading"><h2>Our Gallery</h2></div>
-                <ul>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img1.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img1.jpg" alt=""></a></li>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img2.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img2.jpg" alt=""></a></li>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img3.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img3.jpg" alt=""></a></li>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img4.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img4.jpg" alt=""></a></li>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img5.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img5.jpg" alt=""></a></li>
-                    <li><a data-fancybox-group="group" href="{{asset("extra-images/widget-gallery-img6.jpg")}}"
-                           class="fancybox"><img src="extra-images/widget-gallery-img6.jpg" alt=""></a></li>
-                </ul>
-            </div>
-
-
-            <div class="widget widget_cetagories">
-                <div class="environment-widget-heading"><h2>Cetagories</h2></div>
-                <ul>
-                    <li><a href="404.html">Organic</a></li>
-                    <li><a href="404.html">Ecosystem</a></li>
-                    <li><a href="404.html">Recycling</a></li>
-                    <li><a href="404.html">Environmental</a></li>
-                </ul>
-            </div>
-
-        </aside>
-
     </div>
-
 
 @endsection
