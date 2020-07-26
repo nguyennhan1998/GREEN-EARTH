@@ -499,86 +499,39 @@
                         <div class="environment-fancy-title"><h2>Our Recent <span>Causes</span></h2></div>
                         <div class="environment-cause environment-cause-simplegrid">
                             <ul class="row">
+                                @foreach($donates as $donate)
+                                    @php
+                                        $f=$donate->__get("target_money");
+                                        $s=$donate->__get("raiser_money");
+                                        $percent=($s/$f)*100;
+                                        if($percent>100){
+                                            $percent=100;
+
+                                        }
+                                        if($percent<4){
+                                            $percent=7;
+                                        }
+                                    @endphp
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid1.jpg"
+                                        <a href="cause-detail.html"><img src="{{$donate->getImage()}}"
                                                                          alt=""></a>
                                         <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
-                                        <h5><a href="cause-detail.html">Go Green Movement</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
-                                            lacus </p>
+                                        <h5><a href="cause-detail.html">{{$donate->__get("title")}}</a></h5>
+                                        <p>{{$donate->__get("description")}} </p>
                                         <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
-                                        <div class="progressbar1" data-width="63" data-target="63"></div>
+                                        <div class="progressbar1" data-width="{{$percent}}" data-target="{{$percent}}"></div>
                                     </div>
                                     <div class="cause-simplegrid-bottom">
-                                        <span>Raised $ 2750</span>
-                                        <span>Goal $ 5000</span>
+                                        <span>Raised $ {{$donate->__get("raiser_money")}}</span>
+                                        <span>Goal $ {{$donate->__get("target_money")}}</span>
                                     </div>
                                 </li>
-                                <li class="col-md-3">
-                                    <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid2.jpg"
-                                                                         alt=""></a>
-                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
-                                    </figure>
-                                    <section>
-                                        <h5><a href="cause-detail.html">Give Them Education</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
-                                            lacus </p>
-                                        <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
-                                    </section>
-                                    <div class="skillst">
-                                        <div class="progressbar1" data-width="63" data-target="63"></div>
-                                    </div>
-                                    <div class="cause-simplegrid-bottom">
-                                        <span>Raised $ 2750</span>
-                                        <span>Goal $ 5000</span>
-                                    </div>
-                                </li>
-                                <li class="col-md-3">
-                                    <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid3.jpg"
-                                                                         alt=""></a>
-                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
-                                    </figure>
-                                    <section>
-                                        <h5><a href="cause-detail.html">Help In Planting Trees</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
-                                            lacus </p>
-                                        <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
-                                    </section>
-                                    <div class="skillst">
-                                        <div class="progressbar1" data-width="63" data-target="63"></div>
-                                    </div>
-                                    <div class="cause-simplegrid-bottom">
-                                        <span>Raised $ 2750</span>
-                                        <span>Goal $ 5000</span>
-                                    </div>
-                                </li>
-                                <li class="col-md-3">
-                                    <figure>
-                                        <a href="cause-detail.html"><img src="extra-images/cause-simple-grid4.jpg"
-                                                                         alt=""></a>
-                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
-                                    </figure>
-                                    <section>
-                                        <h5><a href="cause-detail.html">Go Green Movement</a></h5>
-                                        <p>Lorem ipsum dolor sit amet hk consectetur adipiscin elita de vestibulum
-                                            lacus </p>
-                                        <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
-                                    </section>
-                                    <div class="skillst">
-                                        <div class="progressbar1" data-width="63" data-target="63"></div>
-                                    </div>
-                                    <div class="cause-simplegrid-bottom">
-                                        <span>Raised $ 2750</span>
-                                        <span>Goal $ 5000</span>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -593,11 +546,12 @@
                     <div class="col-md-12">
                         <div class="environment-fancy-title"><h2>Our <span>Shop</span></h2></div>
                         <div class="environment-shop environment-shop-grid shop-grid-slider">
+                            @foreach($products as $product)
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img1.jpg" alt=""><i
+                                <figure><a href="shop-detail.html"><img src="{{$product->getImage()}}" alt=""><i
                                             class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">Black Ninja T-Shirt</a></h4>
+                                    <h4><a href="shop-detail.html">{{$product->__get("name")}}</a></h4>
                                     <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
                                     </div>
                                     <span class="environment-shop-cartbox">
@@ -606,58 +560,8 @@ $ 19.00
 </span>
                                 </div>
                             </div>
-                            <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i
-                                            class="fa fa-shopping-cart"></i></a></figure>
-                                <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
-                                    </div>
-                                    <span class="environment-shop-cartbox">
-<del>$30.00</del>
-$ 19.00
-</span>
-                                </div>
-                            </div>
-                            <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img3.jpg" alt=""><i
-                                            class="fa fa-shopping-cart"></i></a></figure>
-                                <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">Ship Idea T-Shirt</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
-                                    </div>
-                                    <span class="environment-shop-cartbox">
-<del>$30.00</del>
-$ 19.00
-</span>
-                                </div>
-                            </div>
-                            <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img4.jpg" alt=""><i
-                                            class="fa fa-shopping-cart"></i></a></figure>
-                                <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
-                                    </div>
-                                    <span class="environment-shop-cartbox">
-<del>$30.00</del>
-$ 19.00
-</span>
-                                </div>
-                            </div>
-                            <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="extra-images/shop-grid-img2.jpg" alt=""><i
-                                            class="fa fa-shopping-cart"></i></a></figure>
-                                <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">Ship Idea Card</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
-                                    </div>
-                                    <span class="environment-shop-cartbox">
-<del>$30.00</del>
-$ 19.00
-</span>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Donate;
 use App\Event;
 use App\User;
 use App\Image;
@@ -24,9 +25,13 @@ class WebController extends Controller
     {
         $articles =Article::with("User")->get();
         $events = Event::with("Organize")->paginate(3);
+        $donates=Donate::with("Organize")->paginate(4);
+        $products=Product::all();
         return view("frontend.home", [
             "articles" => $articles,
             "events"=>$events,
+            "donates"=>$donates,
+            "products"=>$products,
         ]);
     }
 

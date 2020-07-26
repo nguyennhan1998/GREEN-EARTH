@@ -233,8 +233,7 @@ class DatabaseSeeder extends Seeder
             ['title'=>'sbd',
                 'url'=>'nguyennhanfsadfaovemyself@gmail.com',
             ]
-                ]
-        );
+                ]);
         DB::table('articles')->insert([
             ['title'=>'nhannguyen',
                 'description'=>'Bảo vệ môi trường là điều rất quan trọng trong cuộc sống. Chúng ta biết ',
@@ -249,8 +248,33 @@ class DatabaseSeeder extends Seeder
                 'category_id'=>1,
 
                 'user_id'=>1]
-                ]
+                ]);
+        DB::table('donates')->insert([
+            ['title'=>'nhannguyen',
+                'image'=>'https://cdn.downtoearth.org.in/library/large/2019-04-22/0.13179200_1555918149_gettyimages-960189734.jpg',
+                'description'=>'vanh an shit',
+                'content'=>"hisdadkhfasldfhlashdkfhakshdflkashkdf",
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'target_money'=>200000,
+                'organization_id'=>1],
+            ['title'=>'linhmai',
+                'image'=>'https://cdn.downtoearth.org.in/library/large/2019-04-22/0.13179200_1555918149_gettyimages-960189734.jpg',
+                'description'=>'vanh an shit',
+                'content'=>"hisdadkhfasldfhlashdkfhakshdflkashkdfsadfas",
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'target_money'=>200000,
+                'organization_id'=>1],
+            ['title'=>'vanhnguyen',
+                'image'=>'https://cdn.downtoearth.org.in/library/large/2019-04-22/0.13179200_1555918149_gettyimages-960189734.jpg',
+                'description'=>'vanh an shit',
+                'content'=>"hisdadkhfasldfhlashdkfhakshdflkashkdfjdkafjka",
+                'start_at'=>'2020-07-24 10:20:44',
+                'end_at'=>'2020-07-24 10:20:44',
+                'target_money'=>200000,
+                'organization_id'=>1]
 
-     );
+        ]);
     }
 }

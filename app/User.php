@@ -51,4 +51,7 @@ public function UserEvent(){
 public function Article(){
     return $this->hasMany(Article::class);
 }
+public function Donate(){
+    return $this->hasMany(Donate::class);
+}
 }
