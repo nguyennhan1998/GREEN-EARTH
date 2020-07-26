@@ -293,9 +293,7 @@ address {
 .environment-logo {
     float: left;
     width: 220px;
-    /*margin: 46px 0 45px*/
-    margin-bottom: 4px;
-    margin-top: 25px;
+    margin: 46px 0 45px
 }
 
 .environment-top-strip {
@@ -1603,9 +1601,6 @@ address {
     margin: 0 0 23px;
     line-height: 24px
 }
-.environment-blog-grid-text a:hover{
-    color:#9cc900;
-}
 
 .blog-grid-option {
     float: left;
@@ -1751,9 +1746,6 @@ address {
     width: 3px;
     height: 100%;
     z-index: 1
-}
-.environment-modren-event-text a:hover{
-    color:#656565;
 }
 
 .environment-modren-event-text h3 {
@@ -3864,7 +3856,7 @@ blockquote:after {
     width: 50%
 }
 
-.comment-respond > form > p > i {
+.comment-respond form p i {
     position: absolute;
     right: 42px;
     bottom: 18px;
@@ -5046,7 +5038,7 @@ blockquote:after {
     position: relative
 }
 
-.environment-contact-form > form > ul > li > i {
+.environment-contact-form form ul li i {
     color: #a8a8a8;
     position: absolute;
     font-size: 12px;
@@ -5429,7 +5421,7 @@ blockquote:after {
 
 .event-detail-option li {
     float: left;
-    margin: 0 20px 10px 0;
+    margin: 0 30px 10px 0;
     list-style: none;
     font-size: 16px;
     color: #666;
@@ -6952,71 +6944,4 @@ blockquote:after {
     margin: 0 0 30px;
     line-height: 24px;
     color: #555
-}
-
-.output_message {
-    float: left;
-    width: 80%;
-    padding-left: 20px;
-    color: #1b1b1b
-}
-
-.success-msg, .spam-error-msg, .error-msg {
-    float: left;
-    padding: 5px 0 4px 40px;
-    width: 100%;
-    font-style: normal;
-    border-radius: 4px;
-    background: #d4fecc;
-    color: #5a974f;
-    position: relative
-}
-
-.full-input .success-msg, .spam-error-msg, .error-msg {
-    padding: 4px 0 3px 40px
-}
-
-.spam-error-msg {
-    background: #fefccb;
-    color: #8f9031
-}
-
-.error-msg {
-    background-color: red;
-    color: #fff
-}
-
-.success-msg > i, .spam-error-msg > i, .error-msg > i {
-    position: absolute;
-    left: 15px;
-    top: 7px;
-    color: #5a974f;
-    font-size: 16px;
-    margin-top: 4px
-}
-
-.full-input .success-msg > i, .spam-error-msg > i, .error-msg > i {
-    margin-top: 3px
-}
-
-.spam-error-msg > i {
-    color: #8f9031
-}
-
-.error-msg > i {
-    color: #fff
-}
-
-.widget_contact_form .output_message {
-    width: 100%;
-    padding: 10px 0 0
-}
-
-.environment-contact-form form ul li label, .comment-respond form p input[type=submit] {
-    float: left
-}
-
-.comment-respond form p.form-full {
-    float: left;
-    width: 100%
 }

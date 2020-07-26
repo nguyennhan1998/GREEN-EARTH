@@ -77,15 +77,7 @@
                                     <a href="{{asset("event")}}">EVENTS</a>
                                 </li>
                                 <li>
-                                    <a href="{{asset("projects")}}">Projects</a>
-                                    <ul class="environment-dropdown-menu">
-
-
-                                        <li>
-                                            <a href="{{asset("projects-detail")}}">Project Detail</a>
-
-                                        </li>
-                                    </ul>
+                                    <a href="{{asset("shop")}}">products</a>
                                 </li>
                                 <li>
                                     <a href="{{asset("blog")}}">Blogs</a>
@@ -94,7 +86,7 @@
                                     <a href="#">Pages</a>
                                 </li>
                                 <li class="environment-megamenu-li">
-                                    <a href="{{asset("shop")}}">shop</a>
+                                    <a href="{{asset("shopping-cart")}}">shop</a>
                                 </li>
                                 <li>
                                     <a href="{{asset("contact")}}">contact</a>

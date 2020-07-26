@@ -48,7 +48,7 @@
                         <li>
                             <figure>
                                 <a href="blog-detail.html">
-                                    <img src="extra-images/widget-latest-news-1.jpg" alt="">
+                                    <img src="{{asset("extra-images/widget-latest-news-1.jpg")}}" alt="">
                                 </a>
                             </figure>
                             <section>
@@ -61,7 +61,7 @@
                         <li>
                             <figure>
                                 <a href="blog-detail.html">
-                                    <img src="extra-images/widget-latest-news-1.jpg" alt="">
+                                    <img src="{{asset("extra-images/widget-latest-news-1.jpg")}}" alt="">
                                 </a>
                             </figure>
                             <section>
@@ -110,33 +110,33 @@
                     </div>
                     <ul>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-1.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-1.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-1.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-1.jpg")}}" alt="">
                             </a>
                         </li>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-2.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-2.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-2.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-2.jpg")}}" alt="">
                             </a>
                         </li>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-3.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-3.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-3.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-3.jpg")}}" alt="">
                             </a>
                         </li>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-4.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-4.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-4.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-4.jpg")}}" alt="">
                             </a>
                         </li>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-5.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-5.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-5.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-5.jpg")}}" alt="">
                             </a>
                         </li>
                         <li>
-                            <a data-fancybox-group="group" href="extra-images/gallery-widget-6.jpg" class="fancybox">
-                                <img src="extra-images/gallery-widget-6.jpg" alt="">
+                            <a data-fancybox-group="group" href="{{asset("extra-images/gallery-widget-6.jpg")}}" class="fancybox">
+                                <img src="{{asset("extra-images/gallery-widget-6.jpg")}}" alt="">
                             </a>
                         </li>
                     </ul>

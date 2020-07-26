@@ -19,7 +19,7 @@ class CreateTableEvents extends Migration
             $table->string("image")->nullable();
             $table->string("description");
             $table->string("slug")->nullable();
-            $table->string("content");
+            $table->string("content")->nullable();
             $table->dateTime("start_at");
             $table->dateTime("end_at");
             $table->integer("target_money");

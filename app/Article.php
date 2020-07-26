@@ -29,6 +29,6 @@ class Article extends Model
         return $this->belongsTo("App\User", "user_id");
     }
     public function getArticleUrl(){
-        return url("/shop-detail/{$this->__get("slug")}");
+        return url("/blog-detail/{$this->__get("slug")}");
     }
 }

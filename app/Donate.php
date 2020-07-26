@@ -32,4 +32,7 @@ class Donate extends Model
     public function User(){
         return $this->belongsTo("App\User", "user_id");
     }
+    public function getDonateUrl(){
+        return url("/donate-detail/{$this->__get("slug")}");
+    }
 }

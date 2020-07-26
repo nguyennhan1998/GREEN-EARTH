@@ -24,7 +24,7 @@ class WebController extends Controller
     public function Home()
     {
 
-        $articles =Article::with("User")->get();
+        $articles =Article::with("User")->paginate(3);
         $events = Event::with("Organize")->paginate(3);
         $donates=Donate::with("Organize")->paginate(4);
         $products=Product::all();
@@ -46,6 +46,12 @@ class WebController extends Controller
             $p->save();
             //$p->update(["slug"=>$slug.$p->__get("id");
         }
+        foreach ($donates as $p) {
+            $slug = \Illuminate\Support\Str::slug($p->__get("title"));
+            $p->slug = $slug = $slug . $p->__get("id");
+            $p->save();
+            //$p->update(["slug"=>$slug.$p->__get("id");
+        }
         return view("frontend.home", [
             "articles" => $articles,
             "events"=>$events,
@@ -53,17 +59,22 @@ class WebController extends Controller
             "products"=>$products,
         ]);
     }
-
     public function Blog()
     {
-        return view("frontend.blog");
+       $articles =Article::with("User")->get();
+        return view("frontend.blog",
+        ["articles"=>$articles]);
     }
+    public function blogDetail(Article $article){
+        return view("frontend.blog-detail", [
+            'article' => $article,
+        ]);
 
+    }
     public function AboutUs()
     {
         return view("frontend.about");
     }
-
     public function Event()
     {
         $events = Event::with("Organize")->paginate(20);
@@ -72,7 +83,6 @@ class WebController extends Controller
         ]);
 
     }
-
     public function EventDetail(Event $event)
     {
 //        $event = Event::with("Organize")->findOrFail($events);
@@ -80,22 +90,52 @@ class WebController extends Controller
             'event' => $event,
         ]);
     }
+    public function donate(Request $request)
+    {
+        $mydonate = UserEvent::with("User")->with("Event")->get();
+//        $request->validate([
+//            "username"=>'required',
+//            "address"=>"required",
+//            "email"=>"required",
+//            "phone"=>"required",
+//
+//        ]);
+        $event = Event::where("user_id", Auth::id())->get();
+//        try{
+//            $userevent=UserEvent::create([
 
+//                "user_id"=>Auth::id(),
+//                "event_id"=>$request->$mydonate->get("event_id"),
+//                "money_supporting"=>$request->get("money_supporting"),
+//            ]);
+//        }catch (\Exception $exception){
+//            return redirect()->to("/");
+//        }
+
+        return view("frontend.donate",
+            [
+                "mydonate" => $mydonate
+            ]);
+    }
+    public function donateDetail(Donate $donate)
+    {
+//        $event = Event::with("Organize")->findOrFail($events);
+        return view("frontend.donate-detail", [
+            'donate' => $donate,
+        ]);
+    }
     public function Projects()
     {
         return view("frontend.projects");
     }
-
     public function ProjectsDetail()
     {
         return view("frontend.projects-detail");
     }
-
     public function Contact()
     {
         return view("frontend.contact");
     }
-
     public function Shop()
     {
         $product = Product::all();
@@ -103,14 +143,12 @@ class WebController extends Controller
             "product" => $product
         ]);
     }
-
     public function ShopDetail(Product $product)
     {
         return view("frontend.shop-detail", [
             "product" => $product
         ]);
     }
-
     public function product(Product $product)
     {
         if (!session()->has("view_count_{$product->__get("id")}")) {
@@ -121,7 +159,6 @@ class WebController extends Controller
             'product' => $product
         ]);
     }
-
     public function AddToCart(Product $product, Request $request)
     {
         $qty = $request->has("qty") && (int)$request->get("qty") > 0 ? (int)$request->get("qty") : 1;
@@ -168,7 +205,6 @@ class WebController extends Controller
         session(["my_cart" => $myCart]);
         return redirect()->to("/shopping-cart");
     }
-
     public function shoppingCart()
     {
         $myCart = session()->has("my_cart") && is_array(session("my_cart")) ? session("my_cart") : [];
@@ -191,7 +227,6 @@ class WebController extends Controller
             "grandTotal" => $grandTotal
         ]);
     }
-
     public function checkout()
     {
         $cart = Cart::where("user_id", Auth::id())
@@ -202,7 +237,6 @@ class WebController extends Controller
             "cart" => $cart
         ]);
     }
-
     public function placeOrder(Request $request)
     {
         $request->validate([
@@ -299,36 +333,6 @@ class WebController extends Controller
         }
         return redirect($vnp_Url);
     }
-
-    public function donate(Request $request)
-    {
-        $mydonate = UserEvent::with("User")->with("Event")->get();
-//        $request->validate([
-//            "username"=>'required',
-//            "address"=>"required",
-//            "email"=>"required",
-//            "phone"=>"required",
-//
-//        ]);
-        $event = Event::where("user_id", Auth::id())->get();
-//        try{
-//            $userevent=UserEvent::create([
-
-//                "user_id"=>Auth::id(),
-//                "event_id"=>$request->$mydonate->get("event_id"),
-//                "money_supporting"=>$request->get("money_supporting"),
-//            ]);
-//        }catch (\Exception $exception){
-//            return redirect()->to("/");
-//        }
-
-        return view("frontend.donate",
-            [
-                "mydonate" => $mydonate
-            ]);
-    }
-
-
     public function Image()
     {
         $image = Image::all();
