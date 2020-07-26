@@ -45,11 +45,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label>End At</label>
-                                            <input style="color:black;" value="{{$event->__get("start_at")}}" type="date" name="end_at" class="form-control" placeholder="...">
+                                            <input style="color:black;" value="{{$event->__get("end_at")}}" type="date" name="end_at" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Total Money</label>
-                                            <input  style="color:black;" value="{{$event->__get("total_money")}}" type="number" name="total_money" class="form-control" placeholder="...">
+                                            <input  style="color:black;" value="{{$event->__get("target_money")}}" type="number" name="target_money" class="form-control" placeholder="...">
                                         </div>
                                         <div class="form-group">
                                             <label>Organization Id</label>

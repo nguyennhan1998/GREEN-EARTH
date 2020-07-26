@@ -118,7 +118,7 @@
     <style>
 
         .primary{
-            background: #17bebb;
+            background: #9cc900;
         }
         .bg_white{
             background: #ffffff;
@@ -143,7 +143,7 @@
         }
         .btn.btn-primary{
             border-radius: 5px;
-            background: #17bebb;
+            background: #9cc900;
             color: #ffffff;
         }
         .btn.btn-white{
@@ -185,7 +185,7 @@
         }
 
         a{
-            color: #17bebb;
+            color: #9cc900;
         }
 
         table{
@@ -196,7 +196,7 @@
             margin: 0;
         }
         .logo h1 a{
-            color: #17bebb;
+            color: #9cc900;
             font-size: 24px;
             font-weight: 700;
             font-family: 'Work Sans', sans-serif;
@@ -345,7 +345,7 @@
                         @php $total += $grandTotal @endphp
                     <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
                         <td valign="middle" width="25%" style="text-align:left; padding: 0 2.5em;">
-                            <img src="{{$item->__get("image")}}" width="70px" height="70px"/>
+                            <img src="{{$item->__get("image1")}}" width="70px" height="70px"/>
                         </td>
                         <td valign="middle" width="25%" style="text-align:left; padding: 0 2.5em;">
                             <div class="product-entry">

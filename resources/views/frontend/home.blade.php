@@ -19,7 +19,8 @@
                             </h1>
                             <p>Environmental protection is the protection of the natural environment of individuals,
                                 organizations and the government. Its goal is to preserve the existing natural
-                                resources and environment and, if possible, to repair damage and create the opposite trend.
+                                resources and environment and, if possible, to repair damage and create the opposite
+                                trend.
                             </p>
                             <a href="#" class="environment-bgcolor">Get A Quote</a>
                         </div>
@@ -39,7 +40,8 @@
                                 What We HAve
                                 <span>In Common</span>
                             </h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ven eros et iaculis. Vivamus volutpat hendrerit elementum.Integerl ultrices vestibulum leo eu.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ven eros et iaculis.
+                                Vivamus volutpat hendrerit elementum.Integerl ultrices vestibulum leo eu.</p>
                             <a href="#" class="environment-bgcolor">Get A Quote</a>
                         </div>
                         <div class="banner-thumb">
@@ -51,9 +53,6 @@
         </div>
 
     </div>
-
-
-
     <div class="environment-main-content">
 
         <div class="environment-main-section environment-minus-margin">
@@ -331,39 +330,41 @@
                         <div class="environment-blog environment-blog-grid">
                             <ul class="row">
                                 @foreach($articles as $article)
-                                <li class="col-md-4">
-                                    <figure><a href="{{$article->getArticleUrl()}}"><img src="{{$article->getImage()}}"
-                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
-                                    </figure>
-                                    <div class="environment-blog-grid-text">
-                                        <h4><a  href="{{$article->getArticleUrl()}}">{{$article->__get("title")}}</a></h4>
-                                        <p>{{$article->__get("description")}}</p>
-                                        <ul class="blog-grid-option">
-                                            <li>
-                                                <i class="fa fa-calendar-o"></i>
-                                                <time>
-                                                    @php $start_at = strtotime($article->__get("created_at"));
+                                    <li class="col-md-4">
+                                        <figure><a href="{{$article->getArticleUrl()}}"><img
+                                                    src="{{$article->getImage()}}"
+                                                    alt=""><i class="fa fa-share-square-o"></i></a>
+                                        </figure>
+                                        <div class="environment-blog-grid-text">
+                                            <h4><a href="{{$article->getArticleUrl()}}">{{$article->__get("title")}}</a>
+                                            </h4>
+                                            <p>{{$article->__get("description")}}</p>
+                                            <ul class="blog-grid-option">
+                                                <li>
+                                                    <i class="fa fa-calendar-o"></i>
+                                                    <time>
+                                                        @php $start_at = strtotime($article->__get("created_at"));
                                             $datestart = date('Y-m-d',$start_at);
 
 
-                                                    @endphp
-                                                    {{$datestart}}
-{{--                                                <p></p>--}}
-                                                </time>
+                                                        @endphp
+                                                        {{$datestart}}
+                                                        {{--                                                <p></p>--}}
+                                                    </time>
 
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-comments"></i>
-                                                <a href="#">320</a>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user"></i>
-                                                <a href="#">By {{$article->User->__get("name")}}</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                    @endforeach
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-comments"></i>
+                                                    <a href="#">320</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-user"></i>
+                                                    <a href="#">By {{$article->User->__get("name")}}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                @endforeach
 
                             </ul>
                         </div>
@@ -381,41 +382,44 @@
                         <div class="environment-event environment-modren-event">
                             <ul class="row">
                                 @foreach($events as $event)
-                                <li class="col-md-12">
-                                    <figure>
-                                        @php $start_at = strtotime($event->__get("start_at"));
+                                    @php $start_at = strtotime($event->__get("start_at"));
                                                      $datestart = date('g:i A',$start_at);
                                                      $end_at = strtotime($event->__get("end_at"));
                                                      $dateend = date('g:i A',$end_at);
                                                      $mydate=date("d M",$end_at);
 
-                                        @endphp
-                                        <a href="{{$event->getEventUrl()}}"><img src="{{$event->getImage()}}"
-                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
-                                        <time datetime="2008-02-14 20:00">{{$mydate}}</time>
-                                    </figure>
-                                    <div class="environment-modren-event-text">
-{{--                                        --}}
-                                        <h3><a href="{{$event->getEventUrl()}}">{{$event->__get("title")}}</a></h3>
-                                        <ul class="environment-event-option">
-                                            <li>
-                                                <i class="fa fa-clock-o"></i>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">
+                                    @endphp
+                                    <li class="col-md-12">
+                                        <figure>
+                                            <a href="{{$event->getEventUrl()}}"><img src="{{$event->getImage()}}"
+                                                                                     alt=""><i
+                                                    class="fa fa-share-square-o"></i></a>
+                                            <time datetime="2008-02-14 20:00">{{$mydate}}</time>
+                                        </figure>
+                                        <div class="environment-modren-event-text">
+                                            {{--                                        --}}
+                                            <h3><a href="{{$event->getEventUrl()}}">{{$event->__get("title")}}</a></h3>
+                                            <ul class="environment-event-option">
+                                                <li>
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Time:
+                                                    <time datetime="2008-02-14 20:00">
 
-                                                    {{$datestart}} - {{$dateend}}</time>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-map-marker"></i>
-                                                Location :
-                                                <p>{{$event->Organize->__get("address")}}</p>
-                                            </li>
-                                        </ul>
-                                        <p>{{$event->__get("description")}}</p>
-                                    </div>
-                                </li>
+                                                        {{$datestart}} - {{$dateend}}</time>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    Location :
+                                                    <p>{{$event->Organize->__get("address")}}</p>
+                                                </li>
+                                            </ul>
+                                            <p>{{$event->__get("description")}}</p>
+                                        </div>
+                                    </li>
                                 @endforeach
+
                             </ul>
+                            <a href="#" class="modren-event-btn">More Events</a>
                         </div>
                     </div>
                 </div>
@@ -510,25 +514,28 @@
                                             $percent=7;
                                         }
                                     @endphp
-                                <li class="col-md-3">
-                                    <figure>
-                                        <a href="{{$donate->getDonateUrl()}}"><img src="{{$donate->getImage()}}"
-                                                                         alt=""></a>
-                                        <figcaption><a href="{{$donate->getDonateUrl()}}">12 Donors</a></figcaption>
-                                    </figure>
-                                    <section>
-                                        <h5><a href="{{$donate->getDonateUrl()}}">{{$donate->__get("title")}}</a></h5>
-                                        <p>{{$donate->__get("description")}} </p>
-                                        <a href="{{$donate->getDonateUrl()}}" class="environment-fancy-btn">Read More<span></span></a>
-                                    </section>
-                                    <div class="skillst">
-                                        <div class="progressbar1" data-width="{{$percent}}" data-target="{{$percent}}"></div>
-                                    </div>
-                                    <div class="cause-simplegrid-bottom">
-                                        <span>Raised $ {{$donate->__get("raiser_money")}}</span>
-                                        <span>Goal $ {{$donate->__get("target_money")}}</span>
-                                    </div>
-                                </li>
+                                    <li class="col-md-3">
+                                        <figure>
+                                            <a href="{{$donate->getDonateUrl()}}"><img src="{{$donate->getImage()}}"
+                                                                                       alt=""></a>
+                                            <figcaption><a href="{{$donate->getDonateUrl()}}">12 Donors</a></figcaption>
+                                        </figure>
+                                        <section>
+                                            <h5><a href="{{$donate->getDonateUrl()}}">{{$donate->__get("title")}}</a>
+                                            </h5>
+                                            <p>{{$donate->__get("description")}} </p>
+                                            <a href="{{$donate->getDonateUrl()}}" class="environment-fancy-btn">Read
+                                                More<span></span></a>
+                                        </section>
+                                        <div class="skillst">
+                                            <div class="progressbar1" data-width="{{$percent}}"
+                                                 data-target="{{$percent}}"></div>
+                                        </div>
+                                        <div class="cause-simplegrid-bottom">
+                                            <span>Raised $ {{$donate->__get("raiser_money")}}</span>
+                                            <span>Goal $ {{$donate->__get("target_money")}}</span>
+                                        </div>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -545,19 +552,20 @@
                         <div class="environment-fancy-title"><h2>Our <span>Shop</span></h2></div>
                         <div class="environment-shop environment-shop-grid shop-grid-slider">
                             @foreach($products as $product)
-                            <div class="environment-shop-border">
-                                <figure><a href="{{$product->getProductUrl()}}"><img src="{{$product->getImage()}}" alt=""><i
-                                            class="fa fa-shopping-cart"></i></a></figure>
-                                <div class="environment-shop-grid-text">
-                                    <h4><a href="{{$product->getProductUrl()}}">{{$product->__get("name")}}</a></h4>
-                                    <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
-                                    </div>
-                                    <span class="environment-shop-cartbox">
+                                <div class="environment-shop-border">
+                                    <figure><a href="{{$product->getProductUrl()}}"><img src="{{$product->getImage()}}"
+                                                                                         alt=""><i
+                                                class="fa fa-shopping-cart"></i></a></figure>
+                                    <div class="environment-shop-grid-text">
+                                        <h4><a href="{{$product->getProductUrl()}}">{{$product->__get("name")}}</a></h4>
+                                        <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
+                                        </div>
+                                        <span class="environment-shop-cartbox">
 <del>$30.00</del>
 $ 19.00
 </span>
+                                    </div>
                                 </div>
-                            </div>
                             @endforeach
 
                         </div>

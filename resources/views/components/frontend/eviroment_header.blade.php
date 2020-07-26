@@ -83,7 +83,7 @@
                                     <a href="{{asset("blog")}}">Blogs</a>
                                 </li>
                                 <li class="environment-megamenu-li">
-                                    <a href="#">Pages</a>
+                                    <a href="{{asset("donate-page")}}">Pages</a>
                                 </li>
                                 <li class="environment-megamenu-li">
                                     <a href="{{asset("shopping-cart")}}">shop</a>

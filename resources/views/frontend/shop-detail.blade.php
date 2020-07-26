@@ -16,7 +16,9 @@
             </div>
         </div>
     </div>
-
+    <form method="POST" action="{{url("/cart/add/{$product->__get("id")}")}}">
+        @method("POST")
+        @csrf
     <div class="environment-main-content">
         <div class="environment-main-section">
             <div class="container">
@@ -43,7 +45,7 @@
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, cosectetur adipiscge lit. Vestibulum a nunc dui. Curbitur digniss luctus nisi id euismod.</p>
                                 <button  onclick="addToCart({{$product->__get("id")}});" class="environment-readmore-btn">Add To Cart</button>
-                                <div class="environment-select"><input type="number" name="qty" min="01" max="10"></div>
+                                <div class="environment-select"><input value="1" type="number" name="qty" min="1" max="10"></div>
                                 <ul class="environment-shop-Cetagory">
                                     <li>
                                         Cetagory :
@@ -135,4 +137,6 @@
             </div>
         </div>
     </div>
+    </form>
+
 @endsection

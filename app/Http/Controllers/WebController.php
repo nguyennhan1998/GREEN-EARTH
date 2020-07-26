@@ -21,6 +21,9 @@ use App\Order;
 
 class WebController extends Controller
 {
+    public function test(){
+        return view("mail.checkout-form");
+    }
     public function Home()
     {
 
@@ -116,6 +119,12 @@ class WebController extends Controller
             [
                 "mydonate" => $mydonate
             ]);
+    }
+    public function donatePage(Request $request){
+        $donates=Donate::with("User")->paginate(8);
+        return view("frontend.donate-page",[
+            "donates"=>$donates,
+        ]);
     }
     public function donateDetail(Donate $donate)
     {

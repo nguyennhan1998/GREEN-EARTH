@@ -15,7 +15,7 @@ Admin GreenEarth        </a></div>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./user.html">
+                <a class="nav-link" href="#">
                     <i class="material-icons">person</i>
                     <p>{{Auth::user()->__get("name")}}</p>
                 </a>
@@ -75,24 +75,6 @@ Admin GreenEarth        </a></div>
                 <a class="nav-link" href="{{ url('admin/users/list')}}">
                     <i class="material-icons">content_paste</i>
                     <p>List Users</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="./icons.html">
-                    <i class="material-icons">bubble_chart</i>
-                    <p>Icons</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="./map.html">
-                    <i class="material-icons">location_ons</i>
-                    <p>Maps</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="./notifications.html">
-                    <i class="material-icons">notifications</i>
-                    <p>Notifications</p>
                 </a>
             </li>
             <!-- <li class="nav-item active-pro ">
