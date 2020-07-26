@@ -1752,6 +1752,9 @@ address {
     height: 100%;
     z-index: 1
 }
+.environment-modren-event-text a:hover{
+    color:#656565;
+}
 
 .environment-modren-event-text h3 {
     display: block;
