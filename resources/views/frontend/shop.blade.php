@@ -30,11 +30,11 @@
                                     @foreach($product as $p)
                                     <li class="col-md-12">
                                         <div class="environment-shop-list-wrap">
-                                            <figure><a href="{{"/shop-detail/{$p->__get('id')}"}}"><img
+                                            <figure><a href="{{$p->getProductUrl()}}"><img
                                                             src="{{$p->getImage()}}" alt=""><i
                                                             class="fa fa-link"></i></a></figure>
                                             <section>
-                                                <h5><a href="{{"/shop-detail/{$p->__get('id')}"}}">{{$p->__get("name")}}</a></h5>
+                                                <h5><a href="{{$p->getProductUrl()}}">{{$p->__get("name")}}</a></h5>
                                                 <small>( 7 Costumer Reviews )</small>
                                                 <div class="star-rating"><span class="star-rating-box"
                                                                                style="width:68%"></span></div>
@@ -46,7 +46,7 @@
                                                     nunc dui. Cu rabitur dignissim luctus nisi id euismod. Donec
                                                     tincidunt diam nibh euismodte mpus rutrum sapien posuere
                                                     vehicula</p>
-                                                <a href="{{"/shop-detail/{$p->__get('id')}"}}" class="environment-readmore-btn">Read
+                                                <a href="{{$p->getProductUrl()}}" class="environment-readmore-btn">Read
                                                     More</a>
                                             </section>
                                         </div>

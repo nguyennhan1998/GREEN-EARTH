@@ -332,11 +332,11 @@
                             <ul class="row">
                                 @foreach($articles as $article)
                                 <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-1.jpg"
+                                    <figure><a href="{{$article->getArticleUrl()}}"><img src="{{$article->getImage()}}"
                                                                             alt=""><i class="fa fa-share-square-o"></i></a>
                                     </figure>
                                     <div class="environment-blog-grid-text">
-                                        <h4><a  href="blog-detail.html">{{$article->__get("title")}}</a></h4>
+                                        <h4><a  href="{{$article->getArticleUrl()}}">{{$article->__get("title")}}</a></h4>
                                         <p>{{$article->__get("description")}}</p>
                                         <ul class="blog-grid-option">
                                             <li>
@@ -390,13 +390,13 @@
                                                      $mydate=date("d M",$end_at);
 
                                         @endphp
-                                        <a href="event-detail.html"><img src="{{$event->getImage()}}"
+                                        <a href="{{$event->getEventUrl()}}"><img src="{{$event->getImage()}}"
                                                                          alt=""><i class="fa fa-share-square-o"></i></a>
                                         <time datetime="2008-02-14 20:00">{{$mydate}}</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
 {{--                                        --}}
-                                        <h3><a href="event-detail.html">{{$event->__get("title")}}</a></h3>
+                                        <h3><a href="{{$event->getEventUrl()}}">{{$event->__get("title")}}</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
                                                 <i class="fa fa-clock-o"></i>
@@ -417,7 +417,7 @@
                                 @endforeach
 
                             </ul>
-                            <a href="event-detail.html" class="modren-event-btn">More Events</a>
+                            <a href="{{$event->getEventUrl()}}" class="modren-event-btn">More Events</a>
                         </div>
                     </div>
                 </div>
@@ -548,10 +548,10 @@
                         <div class="environment-shop environment-shop-grid shop-grid-slider">
                             @foreach($products as $product)
                             <div class="environment-shop-border">
-                                <figure><a href="shop-detail.html"><img src="{{$product->getImage()}}" alt=""><i
+                                <figure><a href="{{$product->getProductUrl()}}"><img src="{{$product->getImage()}}" alt=""><i
                                             class="fa fa-shopping-cart"></i></a></figure>
                                 <div class="environment-shop-grid-text">
-                                    <h4><a href="shop-detail.html">{{$product->__get("name")}}</a></h4>
+                                    <h4><a href="{{$product->getProductUrl()}}">{{$product->__get("name")}}</a></h4>
                                     <div class="star-rating"><span class="star-rating-box" style="width:58%"></span>
                                     </div>
                                     <span class="environment-shop-cartbox">

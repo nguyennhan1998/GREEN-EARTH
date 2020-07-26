@@ -236,14 +236,16 @@ class DatabaseSeeder extends Seeder
                 ]);
         DB::table('articles')->insert([
             ['title'=>'nhannguyen',
+                'image'=>'https://file.tinnhac.com/resize/600x-/2019/12/10/20191210162440-f698.jpg',
                 'description'=>'Bảo vệ môi trường là điều rất quan trọng trong cuộc sống. Chúng ta biết ',
                 'category_id'=>1,
                 'user_id'=>1],
             ['title'=>'vanhnguyen',
-                'description'=>'Bảo vệ môi trường là những hoạt động giữ cho môi trường trong lành, sạch đẹp,  ',
+                'image'=>'https://file.tinnhac.com/resize/600x-/2019/12/10/20191210162440-f698.jpg',                'description'=>'Bảo vệ môi trường là những hoạt động giữ cho môi trường trong lành, sạch đẹp,  ',
                 'category_id'=>1,
                 'user_id'=>1],
             ['title'=>'mailinhnguyen',
+                'image'=>'https://file.tinnhac.com/resize/600x-/2019/12/10/20191210162440-f698.jpg',
                 'description'=>'Cây xanh hấp thụ khí carbon dioxide, ọi sinh vật sống. ',
                 'category_id'=>1,
 
