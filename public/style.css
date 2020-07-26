@@ -121,14 +121,14 @@ label {
 }
 
 button {
-    border: none
+    border: black;
 }
 
 textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
-    background-color: #f2f2f2;
+    background-color: white;
     border: none;
     box-sizing: border-box;
-    color: #aaa9a9;
+    color: black;
     display: inline-block;
     font-size: 13px;
     height: 30px;
@@ -5183,7 +5183,7 @@ blockquote:after {
 
 .environment-add-amount input[type=text] {
     height: 40px;
-    color: #a8a8a8;
+    color: black;
     font-size: 12px;
     padding: 2px 20px 3px;
     background-color: #f3f3f3;
