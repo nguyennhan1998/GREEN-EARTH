@@ -40,7 +40,7 @@
                             </div>
                             <span class="color">Goal: ${{$donate->__get("target_money")}}</span>
                             <span>Raised: $ {{$donate->__get("raiser_money")}} /</span>
-                            <a href="{{"/donate"}}" class="environment-plan-btn">Donate Now</a>
+
                         </div>
                         <div class="environment-section-heading"><h2><span>Cause Description</span></h2></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purus nulla, at rhoncus elit non. Ut luct ac sagittis porttitor Suspendisse at orci ac us libero at laore ncus. Praesent fermentum lacus at nulla hendrerit facilisis. Ut ips us, mollis non solli citu ac sagittis porttitor.</p>
@@ -63,6 +63,69 @@
                                     <li><a href="https://plus.google.com/" class="icon-google-plus2"></a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="environment-donation-section">
+                            <form action="{{url("/save-money/{$donate->id}")}}" method="post">
+                                @method("POST")
+                                @csrf
+                                <div class="environment-section-heading"><h2><span>Select Donation Amount</span>
+                                    </h2></div>
+                                <ul>
+                                    <li class="current"><span><input type="radio" name="sotienungho"
+                                                                     value="10000"></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 1:</b> 10,000 VNĐ</span>
+                                    </li>
+                                    <li><span><input type="radio" name="sotienungho" value="20000" required></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 2:</b> 20,000 VNĐ</span>
+                                    </li>
+                                    <li><span><input type="radio" name="sotienungho" value="50000" required></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 3:</b> 50,000 VNĐ</span>
+                                    </li>
+                                    <li><span><input type="radio" name="sotienungho" value="100000" required></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 4:</b> 100,000 VNĐ</span>
+                                    </li>
+                                    <li><span><input type="radio" name="sotienungho" value="200000" required></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 5:</b> 200,000 VNĐ</span>
+                                    </li>
+                                    <li><span><input type="radio" name="sotienungho" value="500000" required></span><span
+                                            style="padding-left: 20px;font-size: 18px;color: #2c2a28;font-family: 'Helvetica Neue',Sans-Serif"><b>Mức 6:</b> 500,000 VNĐ</span>
+                                    </li>
+
+                                    <li class="add-amount">
+                                        <div class="environment-section-heading"><h2>
+                                                <span>Enter Custom Amount</span></h2></div>
+                                        <div class="environment-add-amount">
+                                            <input type="text" name="donatevaluecustom">
+                                        </div>
+                                    </li>
+                                    <div>
+                                        <div class="environment-Donation-form">
+                                            <ul>
+                                                <li><p>Personal Info:</p></li>
+                                                <li>
+                                                    <input type="text" name="name">
+                                                    <i class="fa fa-user"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="email">
+                                                    <i class="fa fa-envelope"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="address">
+                                                    <i class="fa fa-address-book-o"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="phone">
+                                                    <i class="fa fa-phone"></i>
+                                                </li>
+                                            </ul>
+                                            <button  class="environment-plan-btn" type="submit"> Donate Now</button>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </form>
                         </div>
                     </div>
                     <div class="environment-prenxt-post">

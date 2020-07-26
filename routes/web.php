@@ -23,3 +23,5 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 Route::get("/create-payment","PaymentController@create");
 Route::get("/return-vnpay","PaymentController@return");
 
+Route::get('/search', "FeatureAjaxController@getSearch");
+Route::post('/search', "HomeController@postSearch");

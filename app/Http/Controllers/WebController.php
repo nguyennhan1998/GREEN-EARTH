@@ -96,6 +96,7 @@ class WebController extends Controller
     public function donate(Request $request)
     {
         $mydonate = UserEvent::with("User")->with("Event")->get();
+        $mydonate2=UserDonate::with("User")->with("Donate")->get();
 //        $request->validate([
 //            "username"=>'required',
 //            "address"=>"required",
@@ -104,6 +105,7 @@ class WebController extends Controller
 //
 //        ]);
         $event = Event::where("user_id", Auth::id())->get();
+        $donate=Donate::where("user_id",Auth::id()->get());
 //        try{
 //            $userevent=UserEvent::create([
 
@@ -117,7 +119,8 @@ class WebController extends Controller
 
         return view("frontend.donate",
             [
-                "mydonate" => $mydonate
+                "mydonate" => $mydonate,
+                "mydonate2"=>$mydonate2,
             ]);
     }
     public function donatePage(Request $request){
@@ -348,5 +351,8 @@ class WebController extends Controller
         return view("frontend.image", [
             "image" => $image
         ]);
+    }
+    public function search(){
+
     }
 }

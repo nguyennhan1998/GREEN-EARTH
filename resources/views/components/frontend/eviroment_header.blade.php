@@ -94,6 +94,25 @@
                             </ul>
                         </div>
                     </nav>
+                    <div>
+                        <form action="{{url("/search")}}" method="post">
+                            @method("POST")
+                            @csrf
+                            <input id="search" class="form-control" placeholder="Search..." name="search" type="text" style="border: 1px solid greenyellow">
+                        </form>
+                        <div class="table__search" style="display: none">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
 
                     @php
                         $myCart1 = session()->has("my_cart")?session("my_cart"):[];
@@ -170,16 +189,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="environment-search-btn environment-bgcolor">
-                                <i class="fa fa-search"></i>
-                            </a>
-                            <form class="environment-search-popup">
-                                <input value="Search Key Word"
-                                       onblur="if(this.value == '') { this.value ='Search Key Word'; }"
-                                       onfocus="if(this.value =='Search Key Word') { this.value = ''; }" type="text">
-                                <input value="" type="submit">
-                                <i class="fa fa-search"></i>
-                            </form>
+
                         </li>
                     </ul>
                 </div>
