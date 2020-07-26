@@ -415,9 +415,7 @@
                                     </div>
                                 </li>
                                 @endforeach
-
                             </ul>
-                            <a href="{{$event->getEventUrl()}}" class="modren-event-btn">More Events</a>
                         </div>
                     </div>
                 </div>
