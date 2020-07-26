@@ -514,14 +514,14 @@
                                     @endphp
                                 <li class="col-md-3">
                                     <figure>
-                                        <a href="cause-detail.html"><img src="{{$donate->getImage()}}"
+                                        <a href="{{$donate->getDonateUrl()}}"><img src="{{$donate->getImage()}}"
                                                                          alt=""></a>
-                                        <figcaption><a href="cause-detail.html">12 Donors</a></figcaption>
+                                        <figcaption><a href="{{$donate->getDonateUrl()}}">12 Donors</a></figcaption>
                                     </figure>
                                     <section>
-                                        <h5><a href="cause-detail.html">{{$donate->__get("title")}}</a></h5>
+                                        <h5><a href="{{$donate->getDonateUrl()}}">{{$donate->__get("title")}}</a></h5>
                                         <p>{{$donate->__get("description")}} </p>
-                                        <a href="cause-detail.html" class="environment-fancy-btn">Read More<span></span></a>
+                                        <a href="{{$donate->getDonateUrl()}}" class="environment-fancy-btn">Read More<span></span></a>
                                     </section>
                                     <div class="skillst">
                                         <div class="progressbar1" data-width="{{$percent}}" data-target="{{$percent}}"></div>
