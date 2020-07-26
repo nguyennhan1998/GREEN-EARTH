@@ -343,12 +343,13 @@
                                                 <i class="fa fa-calendar-o"></i>
                                                 <time>
                                                     @php $start_at = strtotime($article->__get("created_at"));
-
                                             $datestart = date('Y-m-d',$start_at);
 
 
                                                     @endphp
-                                                    {{$datestart}}</time>
+                                                    {{$datestart}}
+{{--                                                <p></p>--}}
+                                                </time>
 
                                             </li>
                                             <li>
@@ -394,6 +395,7 @@
                                         <time datetime="2008-02-14 20:00">{{$mydate}}</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
+{{--                                        --}}
                                         <h3><a href="event-detail.html">{{$event->__get("title")}}</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
