@@ -27,7 +27,7 @@
                         <div class="environment-countdown">
                             <div id="environment-countdown"></div>
                         </div>
-                        <div class="environment-rich-editor environment-event-richeditor">
+                        < class="environment-rich-editor environment-event-richeditor">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur
                                 dignissim luctus nisi id euismod. Don ec tincidunt diam vel nibh euismod tempus.</p>
                             <ul class="event-detail-option">
@@ -56,20 +56,12 @@
                                 </li>
                             </ul>
                             <div class="environment-section-heading"><h2><span>Event Description</span></h2></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purus nulla, at
-                                rhoncus elit non. Ut luct ac sagittis porttitor Suspendisse at orci ac us libero at
-                                laore ncus. Praesent fermentum lacus at nulla hendrerit facilisis. Ut ips us, mollis non
-                                solli citu ac sagittis porttitor.</p>
-                            <p>Phasellus lobortis mattis dolor ac laoreet. Pellentesque feugiat scelerisque libero, et
-                                conllis cidunt at. Aen ac sagittis porttitor Suspendisse at orci ac ean inn luctus,
-                                felis in, luctus elit.</p>
-                            <blockquote>Phasellus vitae ligula sodales, auctor orci quis, fermentm velit. Ut eu velit
-                                varius, ultrices eros in, fa ucibus arcu. Ut eget vestibulum odio, id ullamcorper arcu.
-                            </blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purusla, at rhoncus
-                                elit non. Ut luct ac sagittis porttitor. Su spendisse at orci ac us libero at laore
-                                ncus. Praesent fermentum l at nulla hendrerit facilisis. Ut ips us, mollis non
-                                sollicitudin quis, lacinia a tellus.</p>
+                                @php
+                                    $doc = new DOMDocument();
+                                    $doc->loadHTML($event->__get("content"));
+                                 echo $doc->saveHTML();
+                                @endphp
+
                         </div>
                         <div class="environment-section-heading"><h2><span>Event Location</span></h2></div>
                         <div class="environment-event-map">
@@ -135,12 +127,13 @@
                                                         </li>
                                                     </ul>
                                                     <button type="submit">submit</button>
+                                                </div>
+                                            </div>
+                                        </ul>
                                     </form>
                                 </div>
                             </div>
 
-
-                            </ul>
                         </div>
                         <div class="environment-cause environment-related-cause">
                             <ul class="row">
@@ -462,9 +455,6 @@
         </aside>
 
     </div>
-    </div>
-    </div>
 
-    </div>
 
 @endsection
