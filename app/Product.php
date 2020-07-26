@@ -26,9 +26,8 @@ class Product extends Model
         return asset($this->__get("image1"));
     }
     public function getProductUrl(){
-        return url("/product/{$this->__get("slug")}");
+        return url("/shop-detail/{$this->__get("slug")}");
     }
-
     public function getPrice(){
         return "$".number_format($this->__get("price"),2);
     }

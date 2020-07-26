@@ -41,6 +41,9 @@ class Event extends Model
     public function Article(){
         return $this->hasMany("\App\Article");
     }
+    public function getEventUrl(){
+        return url("/event-detail/{$this->__get("slug")}");
+    }
 
 
 }

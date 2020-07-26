@@ -23,10 +23,29 @@ class WebController extends Controller
 {
     public function Home()
     {
+
         $articles =Article::with("User")->get();
         $events = Event::with("Organize")->paginate(3);
         $donates=Donate::with("Organize")->paginate(4);
         $products=Product::all();
+        foreach ($products as $p) {
+            $slug = \Illuminate\Support\Str::slug($p->__get("product_name"));
+            $p->slug = $slug = $slug . $p->__get("id");
+            $p->save();
+            //$p->update(["slug"=>$slug.$p->__get("id");
+        }
+        foreach ($articles as $p) {
+            $slug = \Illuminate\Support\Str::slug($p->__get("title"));
+            $p->slug = $slug = $slug . $p->__get("id");
+            $p->save();
+            //$p->update(["slug"=>$slug.$p->__get("id");
+        }
+        foreach ($events as $p) {
+            $slug = \Illuminate\Support\Str::slug($p->__get("title"));
+            $p->slug = $slug = $slug . $p->__get("id");
+            $p->save();
+            //$p->update(["slug"=>$slug.$p->__get("id");
+        }
         return view("frontend.home", [
             "articles" => $articles,
             "events"=>$events,
@@ -54,9 +73,9 @@ class WebController extends Controller
 
     }
 
-    public function EventDetail($id)
+    public function EventDetail(Event $event)
     {
-        $event = Event::with("Organize")->findOrFail($id);
+//        $event = Event::with("Organize")->findOrFail($events);
         return view("frontend.event-detail", [
             'event' => $event,
         ]);
@@ -85,9 +104,8 @@ class WebController extends Controller
         ]);
     }
 
-    public function ShopDetail($id)
+    public function ShopDetail(Product $product)
     {
-        $product = Product::findOrFail($id);
         return view("frontend.shop-detail", [
             "product" => $product
         ]);
