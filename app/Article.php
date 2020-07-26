@@ -11,8 +11,14 @@ class Article extends Model
         'title',
         'description',
         'content',
+        'view_count',
         'category_id',
-        'event_id',
         'user_id'
     ];
+    public function Category(){
+        return $this->belongsTo("App\Category","category_id");
+    }
+    public function User(){
+        return $this->belongsTo("App\User", "user_id");
+    }
 }

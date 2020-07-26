@@ -12,4 +12,7 @@ class Category extends Model
         "title",
         "url",
     ];
+    public function Article(){
+        return $this->hasMany("\App\Article");
+    }
 }

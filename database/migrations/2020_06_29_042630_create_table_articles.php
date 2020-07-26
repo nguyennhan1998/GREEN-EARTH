@@ -17,13 +17,12 @@ class CreateTableArticles extends Migration
             $table->id();
             $table->string("title");
             $table->string("description");
-            $table->string("content");
+            $table->string("content")->nullable();
             $table->unsignedBigInteger("user_id");
             $table->unsignedBigInteger("category_id");
-            $table->unsignedBigInteger("event_id");
+            $table->unsignedBigInteger("view_count")->default(0);
             $table->timestamps();
             $table->foreign("category_id")->references("id")->on("categories");
-            $table->foreign("event_id")->references("id")->on("events");
             $table->foreign("user_id")->references("id")->on("users");
         });
     }

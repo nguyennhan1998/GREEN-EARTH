@@ -330,78 +330,40 @@
                         <div class="environment-fancy-title"><h2>Latest <span> News</span></h2></div>
                         <div class="environment-blog environment-blog-grid">
                             <ul class="row">
+                                @foreach($articles as $article)
                                 <li class="col-md-4">
                                     <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-1.jpg"
                                                                             alt=""><i class="fa fa-share-square-o"></i></a>
                                     </figure>
                                     <div class="environment-blog-grid-text">
-                                        <h4><a href="blog-detail.html">Phasellus vitae ligula sodales</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
-                                            in cursus.</p>
+                                        <h4><a  href="blog-detail.html">{{$article->__get("title")}}</a></h4>
+                                        <p>{{$article->__get("description")}}</p>
                                         <ul class="blog-grid-option">
                                             <li>
                                                 <i class="fa fa-calendar-o"></i>
-                                                <time datetime="2008-02-14 20:00">12 Feb 2017</time>
+                                                <time>
+                                                    @php $start_at = strtotime($article->__get("created_at"));
+
+                                            $datestart = date('Y-m-d',$start_at);
+
+
+                                                    @endphp
+                                                    {{$datestart}}</time>
+
                                             </li>
                                             <li>
                                                 <i class="fa fa-comments"></i>
-                                                <a href="404.html">320</a>
+                                                <a href="#">320</a>
                                             </li>
                                             <li>
                                                 <i class="fa fa-user"></i>
-                                                <a href="404.html">By John W.Jack</a>
+                                                <a href="#">By {{$article->User->__get("name")}}</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-2.jpg"
-                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
-                                    </figure>
-                                    <div class="environment-blog-grid-text">
-                                        <h4><a href="blog-detail.html">Eco environment green enviro</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
-                                            in cursus.</p>
-                                        <ul class="blog-grid-option">
-                                            <li>
-                                                <i class="fa fa-calendar-o"></i>
-                                                <time datetime="2008-02-14 20:00">12 Feb 2017</time>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-comments"></i>
-                                                <a href="404.html">320</a>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user"></i>
-                                                <a href="404.html">By John W.Jack</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="extra-images/blog-grid-img-3.jpg"
-                                                                            alt=""><i class="fa fa-share-square-o"></i></a>
-                                    </figure>
-                                    <div class="environment-blog-grid-text">
-                                        <h4><a href="blog-detail.html">Printing and typesetting</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Ut vestibulum lacus
-                                            in cursus.</p>
-                                        <ul class="blog-grid-option">
-                                            <li>
-                                                <i class="fa fa-calendar-o"></i>
-                                                <time datetime="2008-02-14 20:00">12 Feb 2017</time>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-comments"></i>
-                                                <a href="404.html">320</a>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user"></i>
-                                                <a href="404.html">By John W.Jack</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                    @endforeach
+
                             </ul>
                         </div>
                     </div>
@@ -417,87 +379,41 @@
                         <div class="environment-fancy-title"><h2>Upcoming <span>Events</span></h2></div>
                         <div class="environment-event environment-modren-event">
                             <ul class="row">
+                                @foreach($events as $event)
                                 <li class="col-md-12">
                                     <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img1.jpg"
+                                        @php $start_at = strtotime($event->__get("start_at"));
+                                                     $datestart = date('g:i A',$start_at);
+                                                     $end_at = strtotime($event->__get("end_at"));
+                                                     $dateend = date('g:i A',$end_at);
+                                                     $mydate=date("d M",$end_at);
+
+                                        @endphp
+                                        <a href="event-detail.html"><img src="{{$event->getImage()}}"
                                                                          alt=""><i class="fa fa-share-square-o"></i></a>
-                                        <time datetime="2008-02-14 20:00">09<br>FEB</time>
+                                        <time datetime="2008-02-14 20:00">{{$mydate}}</time>
                                     </figure>
                                     <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
-                                                quis, fermentu retra in ipsum vitae</a></h3>
+                                        <h3><a href="event-detail.html">{{$event->__get("title")}}</a></h3>
                                         <ul class="environment-event-option">
                                             <li>
                                                 <i class="fa fa-clock-o"></i>
                                                 Time:
-                                                <time datetime="2008-02-14 20:00">09:00 am - 02:00 pm</time>
+                                                <time datetime="2008-02-14 20:00">
+
+                                                    {{$datestart}} - {{$dateend}}</time>
                                             </li>
                                             <li>
                                                 <i class="fa fa-map-marker"></i>
                                                 Location :
-                                                <p>9907 Salford Street , east London, UK</p>
+                                                <p>{{$event->Organize->__get("address")}}</p>
                                             </li>
                                         </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
-                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
-                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
-                                            et ultricies.</p>
+                                        <p>{{$event->__get("description")}}</p>
                                     </div>
                                 </li>
-                                <li class="col-md-12">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img2.jpg"
-                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
-                                        <time datetime="2008-02-14 20:00">09<br>FEB</time>
-                                    </figure>
-                                    <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
-                                                quis, fermentu retra in ipsum vitae</a></h3>
-                                        <ul class="environment-event-option">
-                                            <li>
-                                                <i class="fa fa-clock-o"></i>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">09:00 am - 02:00 pm</time>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-map-marker"></i>
-                                                Location :
-                                                <p>9907 Salford Street , east London, UK</p>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
-                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
-                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
-                                            et ultricies.</p>
-                                    </div>
-                                </li>
-                                <li class="col-md-12">
-                                    <figure>
-                                        <a href="event-detail.html"><img src="extra-images/modren-event-img3.jpg"
-                                                                         alt=""><i class="fa fa-share-square-o"></i></a>
-                                        <time datetime="2008-02-14 20:00">09<br>FEB</time>
-                                    </figure>
-                                    <div class="environment-modren-event-text">
-                                        <h3><a href="event-detail.html">Phasellus vitae ligula sodales, auctor orci
-                                                quis, fermentu retra in ipsum vitae</a></h3>
-                                        <ul class="environment-event-option">
-                                            <li>
-                                                <i class="fa fa-clock-o"></i>
-                                                Time:
-                                                <time datetime="2008-02-14 20:00">09:00 am - 02:00 pm</time>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-map-marker"></i>
-                                                Location :
-                                                <p>9907 Salford Street , east London, UK</p>
-                                            </li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lacus
-                                            in cursus rutru tis felis. Nulla convallis neque ac sagittis porttitor.
-                                            Suspendisse at orci ac diam tinciduntd et ligula. Cras sollicitudin eu enim
-                                            et ultricies.</p>
-                                    </div>
-                                </li>
+                                @endforeach
+
                             </ul>
                             <a href="event-detail.html" class="modren-event-btn">More Events</a>
                         </div>

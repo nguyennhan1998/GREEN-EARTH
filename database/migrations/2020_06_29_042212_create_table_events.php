@@ -22,6 +22,7 @@ class CreateTableEvents extends Migration
             $table->dateTime("start_at");
             $table->dateTime("end_at");
             $table->integer("target_money");
+            $table->unsignedBigInteger("view_count")->default(0);
             $table->unsignedBigInteger("organization_id");
             $table->timestamps();
             $table->foreign("organization_id")->references("id")->on("organizations");

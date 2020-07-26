@@ -1603,6 +1603,9 @@ address {
     margin: 0 0 23px;
     line-height: 24px
 }
+.environment-blog-grid-text a:hover{
+    color:#9cc900;
+}
 
 .blog-grid-option {
     float: left;

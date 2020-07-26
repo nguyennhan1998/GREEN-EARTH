@@ -15,6 +15,7 @@ class Event extends Model
         "content",
         "start_at",
         "end_at",
+        "view_count",
         "raiser_money",
         "target_money",
         "organization_id",
@@ -36,6 +37,9 @@ class Event extends Model
     }
     public function UserEvent(){
         return $this->belongsTo("\App\UserEvent");
+    }
+    public function Article(){
+        return $this->hasMany("\App\Article");
     }
 
 

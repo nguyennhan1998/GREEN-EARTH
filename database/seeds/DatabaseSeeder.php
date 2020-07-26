@@ -225,8 +225,31 @@ class DatabaseSeeder extends Seeder
                     'price'=>20000,
                     'event_id'=>1,
                 ],
+                ]);
+        DB::table('categories')->insert([
+            ['title'=>'nguyennhan',
+            'url'=>'nguyennhanlovemyself@gmail.com',
+            ],
+            ['title'=>'sbd',
+                'url'=>'nguyennhanfsadfaovemyself@gmail.com',
+            ]
                 ]
         );
+        DB::table('articles')->insert([
+            ['title'=>'nhannguyen',
+                'description'=>'Bảo vệ môi trường là điều rất quan trọng trong cuộc sống. Chúng ta biết ',
+                'category_id'=>1,
+                'user_id'=>1],
+            ['title'=>'vanhnguyen',
+                'description'=>'Bảo vệ môi trường là những hoạt động giữ cho môi trường trong lành, sạch đẹp,  ',
+                'category_id'=>1,
+                'user_id'=>1],
+            ['title'=>'mailinhnguyen',
+                'description'=>'Cây xanh hấp thụ khí carbon dioxide, ọi sinh vật sống. ',
+                'category_id'=>1,
 
+                'user_id'=>1]
+                ]
+     );
     }
 }

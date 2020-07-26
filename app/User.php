@@ -48,4 +48,7 @@ return $this->belongsToMany(Role::class);
 public function UserEvent(){
     return $this->belongsTo("UserEvent");
 }
+public function Article(){
+    return $this->hasMany(Article::class);
+}
 }

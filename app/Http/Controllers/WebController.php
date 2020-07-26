@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Event;
+use App\User;
 use App\Image;
 use App\Product;
 use App\UserEvent;
@@ -20,7 +22,12 @@ class WebController extends Controller
 {
     public function Home()
     {
-        return view("frontend.home");
+        $articles =Article::with("User")->get();
+        $events = Event::with("Organize")->paginate(3);
+        return view("frontend.home", [
+            "articles" => $articles,
+            "events"=>$events,
+        ]);
     }
 
     public function Blog()
@@ -218,7 +225,7 @@ class WebController extends Controller
             $vnp_TxnRef = date("YmdHis"); //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
             $vnp_OrderInfo = $currentUser . " Ủng Hộ Event GreenEarth";
             $vnp_OrderType = 'billpayment';
-            $vnp_Amount = $grandTotal* 100;
+            $vnp_Amount = $grandTotal * 100;
             $vnp_Locale = 'vn';
             $vnp_IpAddr = request()->ip();
 
