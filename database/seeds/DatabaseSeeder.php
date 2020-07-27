@@ -137,9 +137,9 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('events')->insert([
             [
-                'title' => 'Praesent mattis sapien nec lorem dictu eget massa sit amet',
+                'title' => 'Phong trào chống rác thải nhựa lan tỏa tại nhiều tỉnh thành trên cả nước',
                 'image' => 'https://upanh.vn/images/2020/07/26/modren-event-img1723ebb44b6ce6d02.jpg',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod.',
+                'description' => 'Thời gian gần đây, đi đâu chúng ta cũng dễ dàng bắt gặp những hành động: Từ thay đổi thói quan sử dụng chai thủy tinh',
                 'start_at' => '2020-07-26 06:00:35',
                 'end_at' => '2020-07-30 23:00:00',
                 'target_money' => '20000',
@@ -147,9 +147,9 @@ class DatabaseSeeder extends Seeder
                 'user_id' => 1
             ],
             [
-                'title' => 'Praesent mattis sapien nec lorem dictu eget massa sit amet',
+                'title' => 'Hội nghị đánh giá kết quả hai năm triển khai thực hiện Nghị quyết ',
                 'image' => 'https://upanh.vn/images/2020/07/26/modren-event-img24ad10bb5c4b2a04a.jpg',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod.',
+                'description' => 'Ngày 18/6, tại TP. Hồ Chí Minh, Thủ tướng Nguyễn Xuân Phúc đã chủ trì Hội nghị đánh giá kết quả hai năm triển khai',
                 'start_at' => '2020-07-26 06:00:35',
                 'end_at' => '2020-08-30 23:00:00',
                 'target_money' => '30000',
@@ -157,9 +157,9 @@ class DatabaseSeeder extends Seeder
                 'user_id'=>1
             ],
             [
-                'title' => 'Praesent mattis sapien nec lorem dictu eget massa sit amet',
+                'title' => 'Cháy rừng ở Miền Trung gây hậu quả nặng nề',
                 'image' => 'https://upanh.vn/images/2020/07/26/modren-event-img3cde3085bdea4090c.jpg',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod.',
+                'description' => 'Tính đến ngày 2/7, các vụ cháy rừng ở miền Trung cơ bản đã được giập tắt nhờ sự nỗ lực bền bỉ chống giặc hỏa của hàng chục nghìn con người',
                 'start_at' => '2020-07-26 06:00:00',
                 'end_at' => '2020-09-30 23:00:00',
                 'target_money' => '40000',
@@ -167,18 +167,18 @@ class DatabaseSeeder extends Seeder
                 'user_id'=>1
             ],
             [
-                'title' => 'Praesent mattis sapien nec lorem dictu eget massa sit amet',
+                'title' => 'Mực nước sông Mê Kông xuống thấp nhất trong 100 năm qua',
                 'image' => 'https://upanh.vn/images/2020/07/26/modren-event-img466190e70d77ba498.jpg',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod.',
+                'description' => 'Trong lúc tình trạng khô hạn vẫn tiếp diễn, mực nước sông Mê Kông giảm khoảng 10-20cm mỗi ngày.',
                 'start_at' => '2020-07-26 06:00:00',
                 'end_at' => '2020-10-30 23:00:00',
                 'target_money' => '50000',
                 'organization_id' => 1,
                 'user_id'=>1
             ], [
-                'title' => 'Praesent mattis sapien nec lorem dictu eget massa sit amet',
+                'title' => 'Cháy kinh hoàng ở Nhà máy bóng đèn, phích nước Rạng Đông',
                 'image' => 'https://upanh.vn/images/2020/07/26/modren-event-img562cf08782d03b09d.jpg',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur dignissim luc tus nisi id euismod.',
+                'description' => 'vụ cháy lớn bùng phát và khói đen bao trùm khu xưởng gần 6000m2 của Công ty cổ phần Bóng đèn Phích nước Rạng Đông. Ngọn lửa lan sang khu dân cư, ',
                 'start_at' => '2020-07-26 06:00:00',
                 'end_at' => '2020-10-30 23:00:00',
                 'target_money' => '40000',
