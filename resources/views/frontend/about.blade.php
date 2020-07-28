@@ -25,13 +25,15 @@
                     <div class="col-md-7">
                         <div class="environment-section-title"><h2>Our <span>Vision</span></h2></div>
                         <div class="environment-aboutus-text">
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a nunc dui. Curabitur
-                                digniss luctus nisi id euismod. Donec tincidunt diam vel nibh euismod tempus. Donec
-                                imperdiet rutru sapien posuere vehicula.</p>
-                            <p>Phasellus eu tincidunt orci, eu laoreet justo. Vivamus nec justo non nulla aliquam
-                                blandit. Cum so ciis natoque penatibus et magnis dis parturient montes, nascetur
-                                ridiculus mus. Interdum et ma suada fames ac ante ipsum primis in faucibus. </p>
+                            <h4>Green Earth </h4>
+                            <p>Mục tiêu của Việt Nam Sạch & Xanh (VNSVX) là nâng cao nhận thức về vấn đề rác và xả rác bừa bãi ở Việt Nam.  Chúng tôi hiểu rằng, trong khi có nhiều vấn đề khác tác động đến môi trường, chúng tôi tập trung vào vấn nạn xả rác bởi tin rằng đây là yếu tố cơ bản nhất dẫn đến những vấn đề môi trường khác và là nền tảng trong chương trình giáo dục về bảo vệ môi trường. Chúng tôi tự hỏi rằng: “Làm sao để có thể giáo dục cộng đồng về những chủ đề như biến đổi khí hậu, phát triển bền vững, tái chế và năng lượng tái tạo trong khi ngay việc vứt rác đúng nơi quy định nhiều người vẫn chưa làm được?”</p>
+
+                            <p>Bắt đầu từ năm 2013, chương trình đầu tiên của chúng tôi – Ruy Băng Xanh – đã chiến thắng Cuộc thi quốc tế Youth4Asia 2015 (Tuổi trẻ vì Châu Á) – được tài trợ bởi Ngân Hàng Phát Triển Châu Á (ADB) – khi chúng tôi làm việc với 15 trường đại học tại Việt Nam và kêu gọi được 40.000 lời cam kết không xả rác từ cộng đồng. VNSVX vô cùng vinh hạnh khi được giới thiệu Ruy Băng Xanh tới Bộ trưởng Môi Trường của các nước trong Khu vực sông Mêkong Mở rộng ở Myanmar và một lần nữa, vào năm 2016 tại Hội Thảo Thanh niên Châu Á ở Philippines.</p>
+
+                                <p>Tháng 4 năm 2015, chúng tôi triển khai chương trình thứ hai – Dọn rác vì Cộng Đồng (Community Clean Up) ở Đảo Phú Quốc. Từ đó trở đi, tổ chức đã phát triển chương trình này đến Hà Nội, Tp. Hồ Chí Minh, Hội An, Huế và Cần Thơ và đã kết hợp với hơn 50 tổ chức cùng tham gia.
+
+                                Năm 2016, VNSVX phát triển những nhân vật cho Biệt Đội Rùa Xanh – một chiến dịch mới dành cho trẻ em. Chúng tôi tâm đắc rằng những nhân vật gần gũi này sẽ giáo dục trẻ em về tác hại của việc xả rác. Đối tác của tổ chức trong những nỗ lực này là Trung tâm Truyền Thông và Thiết kế của Đại học RMIT, gồm các bạn sinh viên đã thiết kế hình tượng cho Biệt Đội và trường Quốc Tế Nam Sài Gòn, nơi mà các bé học sinh tiểu học và cấp 2 đã sáng tạo nên những trò chơi thú vị dựa trên các nhân vật của Biệt Đội Rùa Xanh.</p>
+
                             <div class="enviroment-services-strip">
                                 <ul class="row">
                                     <li class="col-md-4">

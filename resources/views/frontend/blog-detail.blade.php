@@ -24,16 +24,16 @@
                     <div class="col-md-9">
                         <figure class="environment-postthumb"><img src="{{asset("extra-images/blog-detail-img.jpg")}}" alt=""></figure>
                         <div class="environment-rich-editor">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purus nulla, at rhoncus elit non. Ut luct ac sagittis porttitor Suspendisse at orci ac us libero at laore ncus. Praesent fermentum lacus at nulla hendrerit facilisis. Ut ips us, mollis non solli citu ac sagittis porttitor.</p>
-                            <p>Phasellus lobortis mattis dolor ac laoreet. Pellentesque feugiat scelerisque libero, et conllis cidunt at. Aen ac sagittis porttitor Suspendisse at orci ac ean inn luctus, felis in, luctus elit.</p>
+                            <p>Ngày Trái Đất là sự kiện diễn ra hàng năm nhằm hướng tới một “Việt Nam không rác”. Mục tiêu sau cùng của chúng tôi là làm nên những biến đổi trong ý thức tập thể của người Việt Nam về việc xả rác bừa bãi bằng cách giáo dục và chủ động trong việc bảo vệ đất nước khỏi rác thải.</p>
+                            <p>Diễn ra ít nhất ở năm 5 thành phố khắp Việt Nam là Thành phố Hồ Chí Minh, Hà Nội, Phú Quốc, Hội An và Huế. Tất cả tình nguyện viên (bao gồm các công ty, trường học, tổ chức xã hội và cá nhân) sẽ được cung cấp áo thun của Việt Nam Sạch & Xanh với logo của các tổ chức đồng hành, nhằm tạo nên một thông điệp thống nhất trong cộng đồng về việc giữ gìn Việt Nam sạch đẹp và không còn rác.</p>
                             <blockquote>Phasellus vitae ligula sodales, auctor orci quis, fermentm velit. Ut eu velit varius, ultrices eros in, fa ucibus arcu. Ut eget vestibulum odio, id ullamcorper arcu.</blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purusla, at rhoncus elit non. Ut luct ac sagittis porttitor. Su spendisse at orci ac us libero at laore ncus. Praesent fermentum l at nulla hendrerit facilisis. Ut ips us, mollis non sollicitudin quis, lacinia a tellus.</p>
+                            <p>Chúng tôi đề ra mục tiêu đánh vào nhận thức về thói quen xả rác và việc bảo vệ môi trường của ước tính 500.000 người qua các kênh trực tuyến và truyền thông xã hội. Hoạt động sẽ bắt đầu 08 tuần trước khi diễn ra Ngày Trái Đất trên trang Facebook của chúng tôi (hiện có hơn 16.000 người theo dõi), cùng với website, các đối tác truyền thông và báo chí.</p>
                             <div class="environment-post-tags">
                                 <div class="environment-tags">
                                     <span>Tags:</span>
-                                    <a href="404.html">Energy</a>
-                                    <a href="404.html">Animals</a>
-                                    <a href="404.html">Help</a>
+                                    <a href="#">Energy</a>
+                                    <a href="#">Animals</a>
+                                    <a href="#">Help</a>
                                 </div>
                                 <div class="environment-blog-social">
                                     <ul>
@@ -50,19 +50,19 @@
                             <ul>
                                 <li>
                                     <div class="environment-prev-post">
-                                        <figure><a href="404.html"><img src="{{asset("extra-images/post-img1.jpg")}}" alt=""></a></figure>
+                                        <figure><a href="#"><img src="{{asset("extra-images/post-img1.jpg")}}" alt=""></a></figure>
                                         <div class="environment-prev-artical">
-                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="404.html" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
+                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="#" class="environment-post-arrow"><i class="fa fa-angle-left"></i> Previous Post</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="environment-next-post">
-                                        <figure><a href="404.html"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a></figure>
+                                        <figure><a href="#"><img src="{{asset("extra-images/post-img2.jpg")}}" alt=""></a></figure>
                                         <div class="environment-next-artical">
-                                            <h3><a href="404.html">Suspendisse id velit lectu Phasellus ipsum</a></h3>
-                                            <a href="404.html" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
+                                            <h3><a href="#">Suspendisse id velit lectu Phasellus ipsum</a></h3>
+                                            <a href="#" class="environment-post-arrow">Next Post <i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </li>
@@ -73,7 +73,7 @@
                         <div class="environment-blog environment-related-blog">
                             <ul class="row">
                                 <li class="col-md-4">
-                                    <figure><a href="blog-detail.html"><img src="{{asset("extra-images/related-blog-img1.jpg")}}" alt=""><i class="fa fa-share-square-o"></i></a></figure>
+                                    <figure><a href="#"><img src="{{asset("extra-images/related-blog-img1.jpg")}}" alt=""><i class="fa fa-share-square-o"></i></a></figure>
                                     <div class="environment-related-blog-text">
                                         <h4><a href="blog-detail.html">Phasellus vitae ligula</a></h4>
                                         <p>Lorem ipsum dolor sit amet,cons cing elit. Ut vestibulum.</p>
